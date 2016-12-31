@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+  <url>
+    <loc>http://yoursite.com/2016/12/15/My-New-post/</loc>
+    <lastmod>2016-12-19T07:57:00.797Z</lastmod>
+    <data>
+        <display>
+        <title>FragmentPagerAdapter+ViewPager 實現TabLayout</title>
+        <pubTime>2016-12-15T14:39:42.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>TabLayout</tag>
+         
+        <tag>FragmentActivity</tag>
+         
+        <tag>Viewpager</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+</urlset>
