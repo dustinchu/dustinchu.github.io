@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/12/31/2016-end/</loc>
+    <lastmod>2017-01-16T15:32:01.245Z</lastmod>
+    <data>
+        <display>
+        <title>2016 end</title>
+        <pubTime>2016-12-31T13:46:14.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/12/15/My-New-post/</loc>
     <lastmod>2017-01-16T15:24:28.353Z</lastmod>
     <data>
@@ -48,21 +63,6 @@
              
               <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/12/31/2016-end/</loc>
-    <lastmod>2017-01-16T14:30:51.097Z</lastmod>
-    <data>
-        <display>
-        <title>2016 end</title>
-        <pubTime>2016-12-31T13:46:14.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
