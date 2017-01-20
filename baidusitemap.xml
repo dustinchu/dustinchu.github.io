@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/12/31/2016-end/</loc>
+    <lastmod>2017-01-20T10:34:28.113Z</lastmod>
+    <data>
+        <display>
+        <title>2016 end</title>
+        <pubTime>2016-12-31T13:46:14.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/01/13/java-line/</loc>
     <lastmod>2017-01-19T16:04:21.260Z</lastmod>
     <data>
@@ -18,21 +33,6 @@
              
               <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/12/31/2016-end/</loc>
-    <lastmod>2017-01-17T14:44:55.630Z</lastmod>
-    <data>
-        <display>
-        <title>2016 end</title>
-        <pubTime>2016-12-31T13:46:14.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
