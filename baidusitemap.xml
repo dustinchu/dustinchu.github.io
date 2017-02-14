@@ -4,34 +4,21 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/12/31/2016-end/</loc>
-    <lastmod>2017-01-20T10:34:28.113Z</lastmod>
+    <loc>http://yoursite.com/2017/01/14/TextInputLayout/</loc>
+    <lastmod>2017-02-14T14:31:36.113Z</lastmod>
     <data>
         <display>
-        <title>2016 end</title>
-        <pubTime>2016-12-31T13:46:14.000Z</pubTime>
+        <title>EditText 的拍擋 - TextInputLayout</title>
+        <pubTime>2017-01-14T14:07:01.000Z</pubTime>
         
+        <tag>TextInputLayout</tag>
          
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/01/13/java-line/</loc>
-    <lastmod>2017-01-19T16:04:21.260Z</lastmod>
-    <data>
-        <display>
-        <title>java-line聊天分割</title>
-        <pubTime>2017-01-13T15:17:03.000Z</pubTime>
-        
-        <tag>java</tag>
+        <tag>EditText</tag>
          
          
            
              
-              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+              <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
           
         </display>
     </data>
@@ -40,13 +27,15 @@
     
   <url>
     <loc>http://yoursite.com/2017/01/05/toggleButton/</loc>
-    <lastmod>2017-01-16T15:33:12.940Z</lastmod>
+    <lastmod>2017-02-14T14:05:41.665Z</lastmod>
     <data>
         <display>
         <title>toggleButton</title>
         <pubTime>2017-01-05T14:56:29.000Z</pubTime>
         
         <tag>android</tag>
+         
+        <tag>分享</tag>
          
         <tag>toggleButton</tag>
          
@@ -64,7 +53,7 @@
     
   <url>
     <loc>http://yoursite.com/2016/12/15/My-New-post/</loc>
-    <lastmod>2017-01-16T15:24:28.353Z</lastmod>
+    <lastmod>2017-02-14T14:05:36.410Z</lastmod>
     <data>
         <display>
         <title>FragmentPagerAdapter+ViewPager 實現TabLayout</title>
@@ -78,11 +67,50 @@
          
         <tag>Viewpager</tag>
          
+        <tag>分享</tag>
+         
          
            
              
               <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/01/13/java-line/</loc>
+    <lastmod>2017-02-14T14:05:25.716Z</lastmod>
+    <data>
+        <display>
+        <title>java-line聊天分割</title>
+        <pubTime>2017-01-13T15:17:03.000Z</pubTime>
+        
+        <tag>分享</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/12/31/2016-end/</loc>
+    <lastmod>2017-02-14T14:04:52.315Z</lastmod>
+    <data>
+        <display>
+        <title>2016 end</title>
+        <pubTime>2016-12-31T13:46:14.000Z</pubTime>
+        
+         
+           
         </display>
     </data>
     </url>

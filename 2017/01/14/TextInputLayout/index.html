@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="分享,java," />
+  <meta name="keywords" content="TextInputLayout,EditText," />
 
 
 
@@ -85,14 +85,21 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="java-line聊天分割">
-<meta property="og:url" content="http://yoursite.com/2017/01/13/java-line/index.html">
+<meta property="og:title" content="EditText 的拍擋 - TextInputLayout">
+<meta property="og:url" content="http://yoursite.com/2017/01/14/TextInputLayout/index.html">
 <meta property="og:site_name" content="Dustinchu">
-<meta property="og:image" content="http://i.imgur.com/CEzUzWw.gif">
-<meta property="og:updated_time" content="2017-02-14T14:05:25.716Z">
+<meta property="og:image" content="http://blog.30sparks.com/content/images/2016/02/TextInputLayout.gif">
+<meta property="og:image" content="http://blog.30sparks.com/content/images/2016/02/overlapping_hint_focus.jpg">
+<meta property="og:image" content="http://blog.30sparks.com/content/images/2016/02/2016_02_12_17_16_23a.gif">
+<meta property="og:image" content="http://blog.30sparks.com/content/images/2016/02/Error_Msg.png">
+<meta property="og:image" content="http://blog.30sparks.com/content/images/2016/02/color_style.jpg
+">
+<meta property="og:image" content="http://blog.30sparks.com/content/images/2016/02/error_msg_style.jpg
+">
+<meta property="og:updated_time" content="2017-02-14T14:31:36.113Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java-line聊天分割">
-<meta name="twitter:image" content="http://i.imgur.com/CEzUzWw.gif">
+<meta name="twitter:title" content="EditText 的拍擋 - TextInputLayout">
+<meta name="twitter:image" content="http://blog.30sparks.com/content/images/2016/02/TextInputLayout.gif">
 
 
 
@@ -120,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/01/13/java-line/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/14/TextInputLayout/"/>
 
 
 
 
 
-  <title> java-line聊天分割 | Dustinchu  - There are no shortcuts to anyplace worth going. </title>
+  <title> EditText 的拍擋 - TextInputLayout | Dustinchu  - There are no shortcuts to anyplace worth going. </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -282,7 +289,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/13/java-line/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/14/TextInputLayout/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Dustinchu">
@@ -306,7 +313,7 @@
             
             
               
-                java-line聊天分割
+                EditText 的拍擋 - TextInputLayout
               
             
           </h1>
@@ -319,8 +326,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-13T23:17:03+08:00">
-                2017-01-13
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-14T22:07:01+08:00">
+                2017-01-14
               </time>
             
 
@@ -338,8 +345,8 @@
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
+                  <a href="/categories/android/" itemprop="url" rel="index">
+                    <span itemprop="name">android</span>
                   </a>
                 </span>
 
@@ -353,8 +360,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2017/01/13/java-line/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/01/13/java-line/" itemprop="commentCount"></span>
+                <a href="/2017/01/14/TextInputLayout/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/01/14/TextInputLayout/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -381,15 +388,48 @@
 
       
         <p><div class="fb-comments" data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div><br><a id="more"></a></p>
-<h2 id="line-聊天記錄-分割"><a href="#line-聊天記錄-分割" class="headerlink" title="line 聊天記錄 分割"></a>line 聊天記錄 分割</h2><blockquote>
-<p>版權聲明：轉載請保留原文連結及作者<br>以前想看line紀錄但太長了<br>寫了一個以日期來分聊天記錄的小程式<br>但效率不是很好也沒有太多時間回去在優化他了<br>如果剛學java的可以自己寫一個看看</p>
+<h2 id="自定義toggleButtong"><a href="#自定義toggleButtong" class="headerlink" title="自定義toggleButtong"></a>自定義toggleButtong</h2><blockquote>
+<p>版權聲明：轉載請保留原文連結及作者<br><a href="http://blog.30sparks.com/material-design-6-textinputlayout/" target="_blank" rel="external">http://blog.30sparks.com/material-design-6-textinputlayout/</a></p>
 </blockquote>
-<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="http://i.imgur.com/CEzUzWw.gif" width="400" height="400"></p>
-<h2 id="主要思路"><a href="#主要思路" class="headerlink" title="主要思路"></a>主要思路</h2><blockquote>
-<p>把txt讀近來後每一行判斷字串 是否有日期<br>例如<code>2016/01/31（日）</code> 先把日期改成你想要的方式 先儲存一份<br>在讀取新的txt 讀到你更改後的日期格式,把日期存成檔案名稱<br>裡面的內容存到txt裡,讀到下一個日期停止<br>先存一份更改日期的用意是.聊天內容或許會有日期或是/ 會抓錯<br>其他應該很簡單就不再詳細敘述了<br>分割好的內容會自動存在<code>C:\LINE</code>  資料夾內</p>
-</blockquote>
-<h3 id="下載點"><a href="#下載點" class="headerlink" title="下載點"></a>下載點</h3><ul>
-<li><a href="https://1drv.ms/u/s!AlmTUkxGoUrRpE1F-LpqSkcDcZBZ" title="下載點" target="_blank" rel="external">下載點</a></li>
+<p>Android Design Support Library 提供一個<code>TextInputLayout</code> 元件，可用來包著 <code>EditText</code>，令 <code>EditText</code> 得到 focus 時，自動將 <code>hints</code> 變成標題：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;android.support.design.widget.TextInputLayout</div><div class="line">        android:id="@+id/til_et_name"</div><div class="line">        android:layout_width="match_parent"</div><div class="line">        android:layout_height="wrap_content"</div><div class="line">        android:layout_below="@id/content_view"</div><div class="line">        &gt;</div><div class="line"></div><div class="line">    &lt;EditText</div><div class="line">            android:id="@+id/et_name"</div><div class="line">            android:layout_width="match_parent"</div><div class="line">            android:layout_height="wrap_content"</div><div class="line">            android:hint="Your name"</div><div class="line">            /&gt;</div><div class="line">&lt;/android.support.design.widget.TextInputLayout&gt;</div></pre></td></tr></table></figure>
+<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="http://blog.30sparks.com/content/images/2016/02/TextInputLayout.gif" width="400" height="400"></p>
+<p>一個  <code>TextInputLayout</code> 只能容納一個 <code>EditText</code>，所以每個  <code>EditText</code>都需要自訂各自的  <code>TextInputLayout</code>。</p>
+<h3 id="關於-Hint"><a href="#關於-Hint" class="headerlink" title="關於 Hint"></a>關於 Hint</h3><p><code>TextInputLayout</code> 可直接使用 <code>EditText</code> 上的 <code>hint</code>，用來當成 <code>header</code> 。不過，你也可直接設定 <code>hint</code> 到 <code>TextInputLayout</code> 上，它們的效果也是相同的，值得留意的是，你可同時設定 <code>hint</code> 到 <code>TextInputLayout</code> 和 <code>EditText</code> 上。這樣的話，它們一開始會重叠，而當拿到 focus 時，在 <code>TextInputLayout</code> 上的 <code>hint</code> 會被拿來當 <code>header</code> ，而在 <code>EditText</code> 上的會跟以往一樣，有文字輸入後 <code>hint</code> 會消失。不過我想，在正常情況下應該不會這樣做吧？<br><img src="http://blog.30sparks.com/content/images/2016/02/overlapping_hint_focus.jpg" width="400" height="400"></p>
+<h3 id="字數統計"><a href="#字數統計" class="headerlink" title="字數統計"></a>字數統計</h3><p>可使用 <code>app:counterEnabled=&quot;true&quot;</code> 和 <code>app:counterMaxLength</code> 可設定顯示輸入文字的長度。<br><img src="http://blog.30sparks.com/content/images/2016/02/2016_02_12_17_16_23a.gif" width="400" height="400"></p>
+<h3 id="錯誤訊息"><a href="#錯誤訊息" class="headerlink" title="錯誤訊息"></a>錯誤訊息</h3><p> <code>TextInputLayout</code> 還有另一好處，是可以顯示錯誤訊息。透過  <code>textInputLayout.setError(&quot;Erorr in name input&quot;)</code>便在底部可顯示錯誤訊息。<br> <img src="http://blog.30sparks.com/content/images/2016/02/Error_Msg.png" width="400" height="400"></p>
+<p> 例如為我們之前加的 <code>EditText</code> 加進驗証的的話，可以這樣做</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">final</span> TextInputLayout nameLayout = (TextInputLayout)findViewById(R.id.til_et_name);</div><div class="line"><span class="keyword">final</span> EditText nameEditText = (EditText)findViewById(R.id.et_name);</div><div class="line"><span class="keyword">final</span> Button button = (Button) findViewById(R.id.btn_submit);</div><div class="line"></div><div class="line">button.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View view)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span>(nameEditText.length() == <span class="number">0</span>)&#123;</div><div class="line">            nameLayout.setError(<span class="string">"Error in name input"</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">else</span>&#123;</div><div class="line">            nameLayout.setError(<span class="keyword">null</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p> 這樣當按 <code>button</code> 時，<code>若 nameEditText</code> 沒有文字的話，便會顯示 “Error in name input”。</p>
+<p> 不過有留意到顯示錯誤訊息時，整個 <code>messageEditText</code> 會被推下，因為當初 <code>TextInputLayout</code> 沒有預留空間去顯示錯誤訊息！想避免此情況，可以先設定<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nameLayout.setErrorEnabled(<span class="keyword">true</span>);</div></pre></td></tr></table></figure></p>
+<p>或者在 <code>layout xml</code> 上加入<code>app:errorEnabled=&quot;true&quot;</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;android.support.design.widget.TextInputLayout</div><div class="line">        android:id=<span class="string">"@+id/til_et_name"</span></div><div class="line">        android:layout_width=<span class="string">"match_parent"</span></div><div class="line">        android:layout_height=<span class="string">"wrap_content"</span></div><div class="line">        android:layout_below=<span class="string">"@id/content_view"</span></div><div class="line">        app:errorEnabled=<span class="string">"true"</span> &gt;</div></pre></td></tr></table></figure>
+<p>這樣，<code>TextInputLayout</code> 便會預留空間去顯示錯誤訊息了。留意的是，你可用 <code>nameLayout. setErrorEnabled(false)</code> 的話，去消除錯誤訊息，但整個<code>layout</code> 會被拉上去 (因錯誤訊息的位置也會被消除)。若不想 <code>layout</code> 移動的話，便應用<code>nameLayout.setError(null)</code> 去消除。</p>
+<h2 id="Style"><a href="#Style" class="headerlink" title="Style"></a>Style</h2><h3 id="顏色"><a href="#顏色" class="headerlink" title="顏色"></a>顏色</h3><p>想簡單更改底線顏色的話，可到 <code>style.xml</code> 修改 <code>colorAccent</code></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"&gt;</div><div class="line">    &lt;!-- ...other style settings --&gt;</div><div class="line">    &lt;item name="colorAccent"&gt;#0000FF&lt;/item&gt;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<p><img src="http://blog.30sparks.com/content/images/2016/02/color_style.jpg
+" width="400" height="400"></p>
+<h3 id="header"><a href="#header" class="headerlink" title="header"></a>header</h3><p>若只想改變 <code>header</code> 顏色 ，可使用 <code>app:hintTextAppearance=&quot;style&quot;</code>。先到 <code>style.xml</code> 中加入 <code>TextInputHint</code></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;style name="TextInputHint" parent="TextAppearance.AppCompat.Small"&gt;</div><div class="line">    &lt;item name="android:textStyle"&gt;italic&lt;/item&gt;</div><div class="line">    &lt;item name="android:textColor"&gt;#AA2288&lt;/item&gt;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<p>然後加到 <code>TextInputLayout</code> 加入 <code>app:hintTextAppearance=&quot;@style/TextInputHint &quot;</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;android.support.design.widget.TextInputLayout</div><div class="line">        android:id=<span class="string">"@+id/til_et_name"</span></div><div class="line">        android:layout_width=<span class="string">"match_parent"</span></div><div class="line">        android:layout_height=<span class="string">"wrap_content"</span></div><div class="line">        app:errorEnabled=<span class="string">"true"</span></div><div class="line">        app:hintTextAppearance =<span class="string">"@style/TextInputHint "</span></div><div class="line">&gt;</div></pre></td></tr></table></figure>
+<p>佷簡單便可修改 <code>header</code> 的風格了。</p>
+<h3 id="錯誤訊息-1"><a href="#錯誤訊息-1" class="headerlink" title="錯誤訊息"></a>錯誤訊息</h3><p>要更改錯誤訊息的顏色的話，跟改 <code>header</code>顏色的方法差不多，這次使用的是<code>app:errorTextAppearance</code>。</p>
+<ul>
+<li>style.xml:</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;style name="TextInputError" parent="TextAppearance.AppCompat.Small"&gt;</div><div class="line">    &lt;item name="android:textStyle"&gt;bold|italic&lt;/item&gt;</div><div class="line">    &lt;item name="android:textColor"&gt;#FF00FF&lt;/item&gt;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>layout:</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;android.support.design.widget.TextInputLayout</div><div class="line">        android:id=<span class="string">"@+id/til_et_name"</span></div><div class="line">        android:layout_width=<span class="string">"match_parent"</span></div><div class="line">        android:layout_height=<span class="string">"wrap_content"</span></div><div class="line">        app:errorEnabled=<span class="string">"true"</span></div><div class="line">        app:errorTextAppearance=<span class="string">"@style/TextInputError"</span></div><div class="line">&gt;</div></pre></td></tr></table></figure>
+<p>這樣便可以自訂錯誤訊息的風格了。<br><img src="http://blog.30sparks.com/content/images/2016/02/error_msg_style.jpg
+" width="400" height="400"></p>
+<h3 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h3><p>要令文字輸入的 UI 更具動感，<code>TextInputLayout</code> 是一個很方便簡單的工具。快加到你的 UI 中吧。</p>
+<h3 id="相關連結"><a href="#相關連結" class="headerlink" title="相關連結"></a>相關連結</h3><ul>
+<li><a href="http://blog.30sparks.com/material-design-patterns-tutorial/" target="_blank" rel="external">Material Design Patterns 教學首頁</a></li>
+<li>[官方文件 - TextInputLayout]<a href="https://developer.android.com/reference/android/support/design/widget/TextInputLayout.html" target="_blank" rel="external">https://developer.android.com/reference/android/support/design/widget/TextInputLayout.html</a>)</li>
+<li><a href="https://github.com/codepath/android_guides/wiki/Working-with-the-EditText" target="_blank" rel="external">Working with the EditText</a></li>
 </ul>
 
       
@@ -422,9 +462,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/分享/" rel="tag"># 分享</a>
+            <a href="/tags/TextInputLayout/" rel="tag"># TextInputLayout</a>
           
-            <a href="/tags/java/" rel="tag"># java</a>
+            <a href="/tags/EditText/" rel="tag"># EditText</a>
           
         </div>
       
@@ -433,8 +473,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/05/toggleButton/" rel="next" title="toggleButton">
-                <i class="fa fa-chevron-left"></i> toggleButton
+              <a href="/2017/01/13/java-line/" rel="next" title="java-line聊天分割">
+                <i class="fa fa-chevron-left"></i> java-line聊天分割
               </a>
             
           </div>
@@ -442,10 +482,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/14/TextInputLayout/" rel="prev" title="EditText 的拍擋 - TextInputLayout">
-                EditText 的拍擋 - TextInputLayout <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -583,7 +619,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#line-聊天記錄-分割"><span class="nav-number">1.</span> <span class="nav-text">line 聊天記錄 分割</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#效果"><span class="nav-number">1.1.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主要思路"><span class="nav-number">2.</span> <span class="nav-text">主要思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下載點"><span class="nav-number">2.1.</span> <span class="nav-text">下載點</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#自定義toggleButtong"><span class="nav-number">1.</span> <span class="nav-text">自定義toggleButtong</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#效果"><span class="nav-number">1.1.</span> <span class="nav-text">效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#關於-Hint"><span class="nav-number">1.2.</span> <span class="nav-text">關於 Hint</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字數統計"><span class="nav-number">1.3.</span> <span class="nav-text">字數統計</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#錯誤訊息"><span class="nav-number">1.4.</span> <span class="nav-text">錯誤訊息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Style"><span class="nav-number">2.</span> <span class="nav-text">Style</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#顏色"><span class="nav-number">2.1.</span> <span class="nav-text">顏色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#header"><span class="nav-number">2.2.</span> <span class="nav-text">header</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#錯誤訊息-1"><span class="nav-number">2.3.</span> <span class="nav-text">錯誤訊息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#結語"><span class="nav-number">2.4.</span> <span class="nav-text">結語</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相關連結"><span class="nav-number">2.5.</span> <span class="nav-text">相關連結</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -714,9 +750,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'dustinchu';
-      var disqus_identifier = '2017/01/13/java-line/';
+      var disqus_identifier = '2017/01/14/TextInputLayout/';
 
-      var disqus_title = "java-line聊天分割";
+      var disqus_title = "EditText 的拍擋 - TextInputLayout";
 
 
       function run_disqus_script(disqus_script) {
