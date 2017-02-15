@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/01/14/TextInputLayout/</loc>
+    <lastmod>2017-02-15T14:08:45.911Z</lastmod>
+    <data>
+        <display>
+        <title>EditText 的拍擋 - TextInputLayout</title>
+        <pubTime>2017-01-14T14:07:01.000Z</pubTime>
+        
+        <tag>TextInputLayout</tag>
+         
+        <tag>EditText</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/01/16/Textinputlayout%E4%BD%BF%E7%94%A8%E5%8F%8A%E8%87%AA%E8%A8%82%E7%BE%A9%E9%A1%8F%E8%89%B2/</loc>
-    <lastmod>2017-02-15T13:53:36.568Z</lastmod>
+    <lastmod>2017-02-15T14:08:39.436Z</lastmod>
     <data>
         <display>
         <title>Textinputlayout使用及自訂義顏色</title>
@@ -90,28 +112,6 @@
         <tag>toggleButton</tag>
          
         <tag>view</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/01/14/TextInputLayout/</loc>
-    <lastmod>2017-02-14T14:37:28.627Z</lastmod>
-    <data>
-        <display>
-        <title>EditText 的拍擋 - TextInputLayout</title>
-        <pubTime>2017-01-14T14:07:01.000Z</pubTime>
-        
-        <tag>TextInputLayout</tag>
-         
-        <tag>EditText</tag>
          
          
            
