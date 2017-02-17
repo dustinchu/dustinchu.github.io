@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/01/13/java-line/</loc>
+    <lastmod>2017-02-17T15:31:09.374Z</lastmod>
+    <data>
+        <display>
+        <title>java-line聊天分割</title>
+        <pubTime>2017-01-13T15:17:03.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/01/19/avexir%E5%82%99%E6%96%99/</loc>
     <lastmod>2017-02-17T13:55:28.625Z</lastmod>
     <data>
@@ -45,28 +67,6 @@
            
              
               <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/01/13/java-line/</loc>
-    <lastmod>2017-02-17T13:37:50.483Z</lastmod>
-    <data>
-        <display>
-        <title>java-line聊天分割</title>
-        <pubTime>2017-01-13T15:17:03.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
           
         </display>
     </data>
