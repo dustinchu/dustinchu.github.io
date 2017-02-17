@@ -4,6 +4,104 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/01/19/avexir%E5%82%99%E6%96%99/</loc>
+    <lastmod>2017-02-17T13:51:55.276Z</lastmod>
+    <data>
+        <display>
+        <title>提升倉管備料效率-小程式</title>
+        <pubTime>2016-01-19T15:35:18.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/01/05/toggleButton/</loc>
+    <lastmod>2017-02-17T13:38:03.325Z</lastmod>
+    <data>
+        <display>
+        <title>toggleButton</title>
+        <pubTime>2017-01-05T14:56:29.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>works</tag>
+         
+        <tag>toggleButton</tag>
+         
+        <tag>view</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/01/13/java-line/</loc>
+    <lastmod>2017-02-17T13:37:50.483Z</lastmod>
+    <data>
+        <display>
+        <title>java-line聊天分割</title>
+        <pubTime>2017-01-13T15:17:03.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/12/15/My-New-post/</loc>
+    <lastmod>2017-02-17T13:37:35.632Z</lastmod>
+    <data>
+        <display>
+        <title>FragmentPagerAdapter+ViewPager 實現TabLayout</title>
+        <pubTime>2016-12-15T14:39:42.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>TabLayout</tag>
+         
+        <tag>FragmentActivity</tag>
+         
+        <tag>Viewpager</tag>
+         
+        <tag>works</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/01/14/TextInputLayout/</loc>
     <lastmod>2017-02-15T14:08:45.911Z</lastmod>
     <data>
@@ -36,82 +134,6 @@
         <tag>TextInputLayout</tag>
          
         <tag>EditText</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/01/13/java-line/</loc>
-    <lastmod>2017-02-15T13:37:37.860Z</lastmod>
-    <data>
-        <display>
-        <title>java-line聊天分割</title>
-        <pubTime>2017-01-13T15:17:03.000Z</pubTime>
-        
-        <tag>java</tag>
-         
-        <tag>share</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/12/15/My-New-post/</loc>
-    <lastmod>2017-02-15T13:37:37.212Z</lastmod>
-    <data>
-        <display>
-        <title>FragmentPagerAdapter+ViewPager 實現TabLayout</title>
-        <pubTime>2016-12-15T14:39:42.000Z</pubTime>
-        
-        <tag>share</tag>
-         
-        <tag>android</tag>
-         
-        <tag>TabLayout</tag>
-         
-        <tag>FragmentActivity</tag>
-         
-        <tag>Viewpager</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/01/05/toggleButton/</loc>
-    <lastmod>2017-02-15T13:37:33.672Z</lastmod>
-    <data>
-        <display>
-        <title>toggleButton</title>
-        <pubTime>2017-01-05T14:56:29.000Z</pubTime>
-        
-        <tag>share</tag>
-         
-        <tag>android</tag>
-         
-        <tag>toggleButton</tag>
-         
-        <tag>view</tag>
          
          
            
