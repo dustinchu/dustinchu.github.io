@@ -94,7 +94,7 @@
 <meta property="og:image" content="http://images.cnitblog.com/blog/651487/201412/131924126509589.png">
 <meta property="og:image" content="http://images.cnitblog.com/blog/651487/201412/132029278538173.jpg">
 <meta property="og:image" content="http://images.cnitblog.com/blog/651487/201412/132019329316286.png">
-<meta property="og:updated_time" content="2017-02-19T09:08:20.502Z">
+<meta property="og:updated_time" content="2017-02-19T09:10:15.429Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="詳細解讀DialogFragment">
 <meta name="twitter:image" content="http://images.cnitblog.com/blog/651487/201412/132119407433428.png">
@@ -394,7 +394,7 @@
 <p>相信看這篇文章的人都應該知道android中的Dialog了吧，如果對於Dialog還不是很了解可以看我之前的一篇詳解文章：<br>Dialog詳解：<a href="http://www.cnblogs.com/tianzhijiexian/p/3867731.html" target="_blank" rel="external">http://www.cnblogs.com/tianzhijiexian/p/3867731.html</a><br>隨著Fragment這個類的引入，Google官方推薦大家使用DialogFragment來代替傳統的Dialog，那麼是不是說我們之前學習的Dialog知識都沒有用處了呢？非也，新的fragment是來方便大家更好的管理和重用Dialog，之前的知識其實都是可以拿來就用的，僅僅需要少許的改變。</p>
 </blockquote>
 <h3 id="Dialog和DialogFragment的區別和優劣"><a href="#Dialog和DialogFragment的區別和優劣" class="headerlink" title="Dialog和DialogFragment的區別和優劣"></a>Dialog和DialogFragment的區別和優劣</h3><blockquote>
-<p>新來的DialogFragment讓dialog也變成了碎片，相比之前來說應該做了很多優化和處理，對於程序員來看對話框現在更加具體了，就是一個activity上的一個fragment，我們也可以用fragment的知識來管理對話框了。<br>我們看看之前是怎麼運用對話框對象的</p>
+<p>新來的DialogFragment讓dialog也變成了碎片，相比之前來說應該做了很多優化和處理，對於程序員來看對話框現在更加具體了，就是一個activity上的一個fragment，<br>我們也可以用fragment的知識來管理對話框了。我們看看之前是怎麼運用對話框對象的</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">AlertDialog dialog = <span class="keyword">new</span> AlertDialog.Builder( <span class="keyword">this</span> )</div><div class="line">        .setTitle( <span class="string">"Dialog"</span> )</div><div class="line">        .setMessage( <span class="string">"thisis a dialog"</span> )</div><div class="line">        .show();</div></pre></td></tr></table></figure>
 <p>如果這個時候屏幕方向發生變化，就會導致Activity重建，然後之前顯示的對話框就不見了。查看log可以發現這個錯誤：</p>
