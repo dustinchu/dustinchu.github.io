@@ -94,7 +94,7 @@
 <meta property="og:image" content="http://images.cnitblog.com/blog/651487/201412/131924126509589.png">
 <meta property="og:image" content="http://images.cnitblog.com/blog/651487/201412/132029278538173.jpg">
 <meta property="og:image" content="http://images.cnitblog.com/blog/651487/201412/132019329316286.png">
-<meta property="og:updated_time" content="2017-02-19T09:04:10.873Z">
+<meta property="og:updated_time" content="2017-02-19T09:06:20.018Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="詳細解讀DialogFragment">
 <meta name="twitter:image" content="http://images.cnitblog.com/blog/651487/201412/132119407433428.png">
@@ -398,7 +398,9 @@
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">AlertDialog dialog = <span class="keyword">new</span> AlertDialog.Builder( <span class="keyword">this</span> )</div><div class="line">        .setTitle( <span class="string">"Dialog"</span> )</div><div class="line">        .setMessage( <span class="string">"thisis a dialog"</span> )</div><div class="line">        .show();</div></pre></td></tr></table></figure>
 <p>如果這個時候屏幕方向發生變化，就會導致Activity重建，然後之前顯示的對話框就不見了。查看log可以發現這個錯誤：</p>
-<p> <font color="red">4-1917:30:06.999: E/WindowManager(14495):<br> Activitycom.example.androidtest.MainActivity has leaked windowcom.android.internal.policy.impl.PhoneWindow$DecorView{42ca3c18 VE….R….. .. 0,0-1026,414} that was originally added here</font>  0</p>
+ <font color="red">04-1917:30:06.999: E/WindowManager(14495): Activitycom.example.androidtest.MainActivity has leaked windowcom.android.internal.policy.impl.PhoneWindow$DecorView{42ca3c18 V.E…..R……. 0,0-1026,414} that was originally added here</font> 
+
+
 <p>當然我們也可以無視這個錯誤，因為程序不會因此崩潰（看來android本身就已經預料到這種情況了）。</p>
 <p>如果我們想要在旋轉屏幕的時候也能保證這個對話框顯示就需要做一定的處理了，<br>在activity要銷毀前設立一個標誌，看這時對話框是否是顯示狀態，<br>如果是那麼activity在下次建立時直接顯示對話框。</p>
 <h3 id="在onSaveInstanceState中"><a href="#在onSaveInstanceState中" class="headerlink" title="在onSaveInstanceState中"></a>在onSaveInstanceState中</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Override</span></div><div class="line">     <span class="function"><span class="keyword">protected</span>  <span class="keyword">void</span> <span class="title">onSaveInstanceState</span><span class="params">(Bundle outState)</span> </span>&#123;</div><div class="line">         <span class="keyword">super</span> .onSaveInstanceState(outState);</div><div class="line">         <span class="keyword">if</span> (dialog != <span class="keyword">null</span> &amp;&amp; dialog.isShowing()) &#123;</div><div class="line">            outState.putBoolean( <span class="string">"DIALOG_SHOWN"</span>, <span class="keyword">true</span> );</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
