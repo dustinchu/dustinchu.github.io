@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/12/31/2016-end/</loc>
+    
+    <lastmod>2017-02-21T13:59:25.255Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/01/20/%E8%A9%B3%E7%B4%B0%E8%A7%A3%E8%AE%80DialogFragment/</loc>
     
     <lastmod>2017-02-19T09:31:19.626Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://yoursite.com/2017/01/16/Textinputlayout%E4%BD%BF%E7%94%A8%E5%8F%8A%E8%87%AA%E8%A8%82%E7%BE%A9%E9%A1%8F%E8%89%B2/</loc>
     
     <lastmod>2017-02-15T14:08:39.436Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/12/31/2016-end/</loc>
-    
-    <lastmod>2017-02-14T14:04:52.315Z</lastmod>
     
   </url>
   

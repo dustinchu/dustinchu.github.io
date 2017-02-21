@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/12/31/2016-end/</loc>
+    <lastmod>2017-02-21T13:59:25.255Z</lastmod>
+    <data>
+        <display>
+        <title>2016 end</title>
+        <pubTime>2016-12-31T13:46:14.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/01/20/%E8%A9%B3%E7%B4%B0%E8%A7%A3%E8%AE%80DialogFragment/</loc>
     <lastmod>2017-02-19T09:31:19.626Z</lastmod>
     <data>
@@ -160,21 +175,6 @@
              
               <breadCrumb title="android" url="http://yoursite.com/categories/android/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/12/31/2016-end/</loc>
-    <lastmod>2017-02-14T14:04:52.315Z</lastmod>
-    <data>
-        <display>
-        <title>2016 end</title>
-        <pubTime>2016-12-31T13:46:14.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
