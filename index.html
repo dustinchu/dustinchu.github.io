@@ -282,6 +282,156 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/24/java-txt資料讀取存入SQL/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Dustinchu">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/logo.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Dustinchu">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Dustinchu" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/24/java-txt資料讀取存入SQL/" itemprop="url">
+                  java-txt資料讀取存入SQL
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-24T17:10:23+08:00">
+                2017-03-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <a href="/2017/03/24/java-txt資料讀取存入SQL/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/24/java-txt資料讀取存入SQL/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id=""><a href="#" class="headerlink" title=""></a><div class="fb-comments" data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div></h2><p>##java-txt資料讀取存入SQL ##</p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>最近本來打算專案可以抓時間學習python<br>主管最近突然跟我說10天要把舊ERP的一個員工教育訓練的程式移植出來.<br>由於舊ERP太爛了沒有用SQL..資料是儲存在txt..!!!<br>就只好寫個程式來匯入 由於時間太趕了..就不太注重細節趕快把這寫出來<br>如果是csv檔案的話稍微修改就可以用了!</p>
+</blockquote>
+<h2 id="txt資料"><a href="#txt資料" class="headerlink" title="txt資料"></a>txt資料</h2><blockquote>
+<p>“345”|”456”|”xxxx”|4|12/05/11|12/05/11|0|””|0|””|”name”|12/06/01<br>先寫程式把資料的 “ | 這兩個符號先更改<br>改完如下</p>
+<p>#345#@#456#@#xxxx#@4@12/05/11@12/05/11@0@##@0@##@#name#@12/06/01</p>
+</blockquote>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.sql.Connection;</div><div class="line"><span class="keyword">import</span> java.sql.SQLException;</div><div class="line"></div><div class="line"><span class="keyword">import</span> javax.sql.DataSource;</div><div class="line"></div><div class="line"><span class="keyword">import</span> utils.sqlconnection;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.io.BufferedReader;</div><div class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</div><div class="line"><span class="keyword">import</span> java.io.FileReader;</div><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"><span class="keyword">import</span> java.lang.reflect.Array;</div><div class="line"><span class="keyword">import</span> java.sql.DriverManager;</div><div class="line"><span class="keyword">import</span> java.sql.PreparedStatement;</div><div class="line"><span class="keyword">import</span> java.sql.SQLException;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SQL</span> <span class="keyword">extends</span> <span class="title">sqlconnection</span></span></div><div class="line">&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line">	&#123;</div><div class="line">		<span class="keyword">try</span></div><div class="line">		&#123;</div><div class="line"></div><div class="line">			java.sql.Connection conn;</div><div class="line">			<span class="keyword">try</span></div><div class="line">			&#123;</div><div class="line">				conn = DriverManager.getConnection(CONNURL, SQL_NAME,SQL_PASSWORD);</div><div class="line">				PreparedStatement pstmt = conn.prepareStatement(SQL_INSERT);</div><div class="line">				FileReader fr = <span class="keyword">new</span> FileReader(FILE_PATH);</div><div class="line">				BufferedReader brdFile = <span class="keyword">new</span> BufferedReader(fr);</div><div class="line">				String strLine = <span class="keyword">null</span>;</div><div class="line">				<span class="keyword">while</span> ((strLine = brdFile.readLine()) != <span class="keyword">null</span>)</div><div class="line">				&#123;</div><div class="line">					strLine = strLine.replace(<span class="string">"#"</span>, <span class="string">""</span>);<span class="comment">//先將資料夾裡面的#改成""</span></div><div class="line">					String[] array = strLine.split(<span class="string">"@"</span>);<span class="comment">// 因為是用"@"分開所以用split切開存入字串陣列</span></div><div class="line">					System.out.println(strLine);</div><div class="line">					<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length; i++)</div><div class="line">					&#123;</div><div class="line"><span class="comment">//						System.out.println(array[i]); 可以用來檢視分割的檔案是否正確</span></div><div class="line">						pstmt.setString(i+<span class="number">1</span>,array[i]);</div><div class="line">					&#125;</div><div class="line"></div><div class="line">				pstmt.execute();</div><div class="line">				&#125;   </div><div class="line"></div><div class="line">			&#125; <span class="keyword">catch</span> (FileNotFoundException e)</div><div class="line">			&#123;</div><div class="line">				<span class="comment">// TODO Auto-generated catch block</span></div><div class="line">				e.printStackTrace();</div><div class="line">			&#125; <span class="keyword">catch</span> (IOException e)</div><div class="line">			&#123;</div><div class="line">				<span class="comment">// TODO Auto-generated catch block</span></div><div class="line">				e.printStackTrace();</div><div class="line">			&#125;</div><div class="line">		&#125; <span class="keyword">catch</span> (SQLException e)</div><div class="line">		&#123;</div><div class="line">			<span class="comment">// TODO Auto-generated catch block</span></div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/05/SQL語法紀錄/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1610,7 +1760,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>

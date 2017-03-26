@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yoursite.com/2017/03/05/SQL%E8%AA%9E%E6%B3%95%E7%B4%80%E9%8C%84/</loc>
-    <lastmod>2017-03-26T07:47:20.885Z</lastmod>
+    <lastmod>2017-03-26T09:32:50.612Z</lastmod>
     <data>
         <display>
         <title>SQL語法紀錄</title>
@@ -17,6 +17,28 @@
            
              
               <breadCrumb title="SQL" url="http://yoursite.com/categories/SQL/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/03/24/java-txt%E8%B3%87%E6%96%99%E8%AE%80%E5%8F%96%E5%AD%98%E5%85%A5SQL/</loc>
+    <lastmod>2017-03-26T09:30:11.708Z</lastmod>
+    <data>
+        <display>
+        <title>java-txt資料讀取存入SQL</title>
+        <pubTime>2017-03-24T09:10:23.000Z</pubTime>
+        
+        <tag>SQL</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
           
         </display>
     </data>
