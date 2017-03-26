@@ -4,15 +4,20 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/03/26/SQL%E8%AA%9E%E6%B3%95%E7%B4%80%E9%8C%84/</loc>
-    <lastmod>2017-03-26T06:36:51.470Z</lastmod>
+    <loc>http://yoursite.com/2017/03/05/SQL%E8%AA%9E%E6%B3%95%E7%B4%80%E9%8C%84/</loc>
+    <lastmod>2017-03-26T06:40:46.439Z</lastmod>
     <data>
         <display>
         <title>SQL語法紀錄</title>
-        <pubTime>2017-03-26T06:36:51.000Z</pubTime>
+        <pubTime>2017-03-05T06:36:51.000Z</pubTime>
         
+        <tag>SQL</tag>
+         
          
            
+             
+              <breadCrumb title="SQL" url="http://yoursite.com/categories/SQL/"/>
+          
         </display>
     </data>
     </url>

@@ -5,8 +5,9 @@
     
     <entry>
       <title><![CDATA[SQL語法紀錄]]></title>
-      <url>http://yoursite.com/2017/03/26/SQL%E8%AA%9E%E6%B3%95%E7%B4%80%E9%8C%84/</url>
-      <content type="html"><![CDATA[<div class="fb-comments" data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div>
+      <url>http://yoursite.com/2017/03/05/SQL%E8%AA%9E%E6%B3%95%E7%B4%80%E9%8C%84/</url>
+      <content type="html"><![CDATA[<p><div class="fb-comments" data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div><br><a id="more"></a></p>
+<p><div class="fb-comments" data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div><br>|     name     | age |             blog                |<br>| ———— | — | ——————————- |<br>| <em>LearnShare</em> |  12 | <a href="http://xianbai.me" target="_blank" rel="external">LearnShare</a> |<br>| <strong>Mike</strong>     |  32 | <a href="http://mike.me" target="_blank" rel="external">Mike</a>          |</p>
 ]]></content>
     </entry>
     
