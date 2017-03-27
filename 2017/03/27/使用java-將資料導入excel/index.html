@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="works,SQL,java," />
+  <meta name="keywords" content="works,java,excel," />
 
 
 
@@ -85,12 +85,14 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="java-txt資料讀取存入SQL">
-<meta property="og:url" content="http://yoursite.com/2017/03/24/java-txt資料讀取存入SQL/index.html">
+<meta property="og:title" content="使用java_將資料導入excel">
+<meta property="og:url" content="http://yoursite.com/2017/03/27/使用java-將資料導入excel/index.html">
 <meta property="og:site_name" content="Dustinchu">
-<meta property="og:updated_time" content="2017-03-26T10:26:07.620Z">
+<meta property="og:image" content="http://i.imgur.com/VqdIMFv.jpg">
+<meta property="og:updated_time" content="2017-03-27T15:04:55.066Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java-txt資料讀取存入SQL">
+<meta name="twitter:title" content="使用java_將資料導入excel">
+<meta name="twitter:image" content="http://i.imgur.com/VqdIMFv.jpg">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/24/java-txt資料讀取存入SQL/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/27/使用java-將資料導入excel/"/>
 
 
 
 
 
-  <title> java-txt資料讀取存入SQL | Dustinchu </title>
+  <title> 使用java_將資料導入excel | Dustinchu </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -278,7 +280,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/24/java-txt資料讀取存入SQL/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/27/使用java-將資料導入excel/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Dustinchu">
@@ -302,7 +304,7 @@
             
             
               
-                java-txt資料讀取存入SQL
+                使用java_將資料導入excel
               
             
           </h1>
@@ -315,8 +317,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-24T17:10:23+08:00">
-                2017-03-24
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-27T22:10:23+08:00">
+                2017-03-27
               </time>
             
 
@@ -349,8 +351,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2017/03/24/java-txt資料讀取存入SQL/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/24/java-txt資料讀取存入SQL/" itemprop="commentCount"></span>
+                <a href="/2017/03/27/使用java-將資料導入excel/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/27/使用java-將資料導入excel/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -377,14 +379,57 @@
 
       
         <p><div class="fb-comments" data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div><br><a id="more"></a></p>
-<h2 id="java-txt資料讀取存入SQL"><a href="#java-txt資料讀取存入SQL" class="headerlink" title="java-txt資料讀取存入SQL"></a>java-txt資料讀取存入SQL</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
-<p>最近實在太忙了.沒什麼時間更新blog.<br>本來打算寫專案過程可以抓時間學習python<br>主管最近突然跟我說10天要把舊ERP的一個員工教育訓練的程式移植出來.<br>由於舊ERP太爛了沒有用SQL..資料是儲存在txt..!!!<br>就只好寫個程式來匯入 由於時間太趕了..就不太注重細節趕快把這寫出來<br>如果是csv檔案的話稍微修改就可以用了!</p>
+<h2 id="使用java-將資料導入excel"><a href="#使用java-將資料導入excel" class="headerlink" title="使用java_將資料導入excel"></a>使用java_將資料導入excel</h2><blockquote>
+<p>最近在把公司舊的ERP HR系統 移植出來<br>必須要用最快的方式移植出來不然我本來的專案會趕不上進度<br>順便找時間記錄一下最近開發紀錄</p>
 </blockquote>
-<h2 id="txt資料"><a href="#txt資料" class="headerlink" title="txt資料"></a>txt資料</h2><blockquote>
-<p>“345”|”456”|”xxxx”|4|12/05/11|12/05/11|0|””|0|””|”name”|12/06/01<br>先寫程式把資料的 “ | 這兩個符號先更改<br>改完如下</p>
-<p>#345#@#456#@#xxxx#@4@12/05/11@12/05/11@0@##@0@##@#name#@12/06/01</p>
+<h2 id="excel-幾種實現方式"><a href="#excel-幾種實現方式" class="headerlink" title="excel 幾種實現方式!"></a>excel 幾種實現方式!</h2><h3 id="POI"><a href="#POI" class="headerlink" title="POI"></a>POI</h3><ul>
+<li>POI<blockquote>
+<p>poi 是 apache poi開放源碼函式庫提供java對 Microsoft office 格式檔案讀寫功能<br>通過HSSF可以使用純JAVA代碼來讀取 寫入 修改EXCEL<br>HSSF -讀寫Microsoft Excel格式檔案功能(只支援97-2003)<br>XSSF -讀寫Microsoft Excel OOXML格式檔案功能<br>HWPF -讀寫讀寫Microsoft Word格式檔案功能<br>HSLF -讀寫讀寫Microsoft PowerPoint格式檔案功能<br>HDGF -讀寫讀寫Microsoft Visio格式檔案功能<br>-iText 可以通過iText 來建立PDF 只需在classpath加入iText.jar</p>
 </blockquote>
-<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.sql.Connection;</div><div class="line"><span class="keyword">import</span> java.sql.SQLException;</div><div class="line"></div><div class="line"><span class="keyword">import</span> javax.sql.DataSource;</div><div class="line"></div><div class="line"><span class="keyword">import</span> utils.sqlconnection;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.io.BufferedReader;</div><div class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</div><div class="line"><span class="keyword">import</span> java.io.FileReader;</div><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"><span class="keyword">import</span> java.lang.reflect.Array;</div><div class="line"><span class="keyword">import</span> java.sql.DriverManager;</div><div class="line"><span class="keyword">import</span> java.sql.PreparedStatement;</div><div class="line"><span class="keyword">import</span> java.sql.SQLException;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SQL</span> <span class="keyword">extends</span> <span class="title">sqlconnection</span></span></div><div class="line">&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line">	&#123;</div><div class="line">		<span class="keyword">try</span></div><div class="line">		&#123;</div><div class="line"></div><div class="line">			java.sql.Connection conn;</div><div class="line">			<span class="keyword">try</span></div><div class="line">			&#123;</div><div class="line">				conn = DriverManager.getConnection(CONNURL, SQL_NAME,SQL_PASSWORD);</div><div class="line">				PreparedStatement pstmt = conn.prepareStatement(SQL_INSERT);</div><div class="line">				FileReader fr = <span class="keyword">new</span> FileReader(FILE_PATH);</div><div class="line">				BufferedReader brdFile = <span class="keyword">new</span> BufferedReader(fr);</div><div class="line">				String strLine = <span class="keyword">null</span>;</div><div class="line">				<span class="keyword">while</span> ((strLine = brdFile.readLine()) != <span class="keyword">null</span>)</div><div class="line">				&#123;</div><div class="line">					strLine = strLine.replace(<span class="string">"#"</span>, <span class="string">""</span>);<span class="comment">//先將資料夾裡面的#改成""</span></div><div class="line">					String[] array = strLine.split(<span class="string">"@"</span>);<span class="comment">// 因為是用"@"分開所以用split切開存入字串陣列</span></div><div class="line">					System.out.println(strLine);</div><div class="line">					<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length; i++)</div><div class="line">					&#123;</div><div class="line"><span class="comment">//						System.out.println(array[i]); 可以用來檢視分割的檔案是否正確</span></div><div class="line">						pstmt.setString(i+<span class="number">1</span>,array[i]);</div><div class="line">					&#125;</div><div class="line"></div><div class="line">				pstmt.execute();</div><div class="line">				&#125;   </div><div class="line"></div><div class="line">			&#125; <span class="keyword">catch</span> (FileNotFoundException e)</div><div class="line">			&#123;</div><div class="line">				<span class="comment">// TODO Auto-generated catch block</span></div><div class="line">				e.printStackTrace();</div><div class="line">			&#125; <span class="keyword">catch</span> (IOException e)</div><div class="line">			&#123;</div><div class="line">				<span class="comment">// TODO Auto-generated catch block</span></div><div class="line">				e.printStackTrace();</div><div class="line">			&#125;</div><div class="line">		&#125; <span class="keyword">catch</span> (SQLException e)</div><div class="line">		&#123;</div><div class="line">			<span class="comment">// TODO Auto-generated catch block</span></div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>JXL</p>
+<blockquote>
+<p>有興趣的在去查一下</p>
+</blockquote>
+<h3 id="FASTEXCEL"><a href="#FASTEXCEL" class="headerlink" title="FASTEXCEL"></a>FASTEXCEL</h3></li>
+<li><p>FASTEXCEL</p>
+<blockquote>
+<p>是一個採用純java 開發的excel文件讀寫組件 支持Excel 97-2003<br>fastExcel 只能讀取單元格的字串資料其他屬性 像是顏色 字體就不支持 但也因為這樣FastExcel 需要用到的記憶體很少</p>
+</blockquote>
+<h3 id="JXL"><a href="#JXL" class="headerlink" title="JXL"></a>JXL</h3></li>
+<li><p>JXL</p>
+<blockquote>
+<p>java excel 可以讀取Excel文件內容 建立excel文件 更新已存在的excel</p>
+</blockquote>
+<h3 id="POI-JXK-比較"><a href="#POI-JXK-比較" class="headerlink" title="POI JXK 比較"></a>POI JXK 比較</h3></li>
+<li>POI  </li>
+</ul>
+<ol>
+<li>效率高</li>
+<li>功能強大使用上比較複雜</li>
+<li>支持公式 圖表</li>
+<li>能夠修改單元屬性格</li>
+<li>支持字體 數字 日期操作</li>
+</ol>
+<ul>
+<li>JXL</li>
+</ul>
+<ol>
+<li>效率低</li>
+<li>操作簡單</li>
+<li>部分支援</li>
+<li>能夠修改單元格屬性 但不比POI強大</li>
+<li>支援字體 數字 日期</li>
+</ol>
+<h2 id="使用JXL程式碼實例"><a href="#使用JXL程式碼實例" class="headerlink" title="使用JXL程式碼實例"></a>使用JXL程式碼實例</h2><blockquote>
+<p>程式都註解上去了!由於時間的關係需要快速的去開發<br>就嘗試幾個方法開發 需要更快速的來去完成工作才是目標<br>所以選擇使用 JXL!</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> excel;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.awt.Label;</div><div class="line"><span class="keyword">import</span> java.io.File;</div><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"></div><div class="line"><span class="keyword">import</span> jxl.Workbook;</div><div class="line"><span class="keyword">import</span> jxl.write.WritableSheet;</div><div class="line"><span class="keyword">import</span> jxl.write.WritableWorkbook;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">excel</span></span></div><div class="line">&#123;</div><div class="line">	<span class="comment">//jxl 建立　excel		</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line">	&#123;</div><div class="line">		String[] title = &#123;<span class="string">"id"</span>,<span class="string">"name"</span>,<span class="string">"sex"</span>&#125;;</div><div class="line">		<span class="comment">//建立文件</span></div><div class="line">		File file = <span class="keyword">new</span> File(<span class="string">"C:/jxl_test.xls"</span>);</div><div class="line">		<span class="keyword">try</span></div><div class="line">		&#123;</div><div class="line">			file.createNewFile();</div><div class="line">			<span class="comment">//建立 工作簿</span></div><div class="line">			WritableWorkbook workbook = Workbook.createWorkbook(file);</div><div class="line">			<span class="comment">//建立 Sheet</span></div><div class="line">			WritableSheet sheet = workbook.createSheet(<span class="string">"sheet1"</span>, <span class="number">0</span>);</div><div class="line">			jxl.write.Label label=<span class="keyword">null</span>;</div><div class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; title.length; i++)</div><div class="line">			&#123;</div><div class="line">				<span class="comment">//第一行 設定列名</span></div><div class="line">			label = <span class="keyword">new</span> jxl.write.Label(i, <span class="number">0</span>, title[i]);</div><div class="line">			sheet.addCell(label);</div><div class="line"></div><div class="line">			&#125;</div><div class="line">			<span class="comment">//增加資料</span></div><div class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">10</span>; i++)</div><div class="line">			&#123;</div><div class="line">				label = <span class="keyword">new</span> jxl.write.Label(<span class="number">0</span>, i, <span class="string">"a"</span>+<span class="number">1</span>);</div><div class="line">				sheet.addCell(label);</div><div class="line">				label = <span class="keyword">new</span> jxl.write.Label(<span class="number">1</span>, i, <span class="string">"user"</span>+<span class="number">1</span>);</div><div class="line">				sheet.addCell(label);</div><div class="line">				label = <span class="keyword">new</span> jxl.write.Label(<span class="number">2</span>, i, <span class="string">"男"</span>+<span class="number">1</span>);</div><div class="line">				sheet.addCell(label);</div><div class="line">			&#125;</div><div class="line">			<span class="comment">//寫入</span></div><div class="line">			workbook.write();</div><div class="line">			<span class="comment">//關閉</span></div><div class="line">			workbook.close();</div><div class="line"></div><div class="line">		&#125; <span class="keyword">catch</span> (Exception e)</div><div class="line">		&#123;</div><div class="line">			<span class="comment">// TODO Auto-generated catch block</span></div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="效果圖"><a href="#效果圖" class="headerlink" title="效果圖"></a>效果圖</h2><p><img src="http://i.imgur.com/VqdIMFv.jpg" width="400" height="400"></p>
+<p>```</p>
+<h2 id="JXL-jar-下載點分享"><a href="#JXL-jar-下載點分享" class="headerlink" title="JXL.jar 下載點分享"></a>JXL.jar 下載點分享</h2><ul>
+<li><a href="http://www.fooish.com/sql/auto-increment.html" target="_blank" rel="external">JXL.jar</a></li>
+</ul>
 
       
     </div>
@@ -410,9 +455,9 @@
           
             <a href="/tags/works/" rel="tag"># works</a>
           
-            <a href="/tags/SQL/" rel="tag"># SQL</a>
-          
             <a href="/tags/java/" rel="tag"># java</a>
+          
+            <a href="/tags/excel/" rel="tag"># excel</a>
           
         </div>
       
@@ -421,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/05/SQL語法紀錄/" rel="next" title="SQL語法紀錄">
-                <i class="fa fa-chevron-left"></i> SQL語法紀錄
+              <a href="/2017/03/24/java-txt資料讀取存入SQL/" rel="next" title="java-txt資料讀取存入SQL">
+                <i class="fa fa-chevron-left"></i> java-txt資料讀取存入SQL
               </a>
             
           </div>
@@ -430,10 +475,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/27/使用java-將資料導入excel/" rel="prev" title="使用java_將資料導入excel">
-                使用java_將資料導入excel <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -571,7 +612,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#java-txt資料讀取存入SQL"><span class="nav-number">1.</span> <span class="nav-text">java-txt資料讀取存入SQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#txt資料"><span class="nav-number">2.</span> <span class="nav-text">txt資料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#java"><span class="nav-number">3.</span> <span class="nav-text">java</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用java-將資料導入excel"><span class="nav-number">1.</span> <span class="nav-text">使用java_將資料導入excel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#excel-幾種實現方式"><span class="nav-number">2.</span> <span class="nav-text">excel 幾種實現方式!</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#POI"><span class="nav-number">2.1.</span> <span class="nav-text">POI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FASTEXCEL"><span class="nav-number">2.2.</span> <span class="nav-text">FASTEXCEL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JXL"><span class="nav-number">2.3.</span> <span class="nav-text">JXL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POI-JXK-比較"><span class="nav-number">2.4.</span> <span class="nav-text">POI JXK 比較</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用JXL程式碼實例"><span class="nav-number">3.</span> <span class="nav-text">使用JXL程式碼實例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果圖"><span class="nav-number">4.</span> <span class="nav-text">效果圖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JXL-jar-下載點分享"><span class="nav-number">5.</span> <span class="nav-text">JXL.jar 下載點分享</span></a></li></ol></div>
             
 
           </div>
@@ -702,9 +743,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'dustinchu';
-      var disqus_identifier = '2017/03/24/java-txt資料讀取存入SQL/';
+      var disqus_identifier = '2017/03/27/使用java-將資料導入excel/';
 
-      var disqus_title = "java-txt資料讀取存入SQL";
+      var disqus_title = "使用java_將資料導入excel";
 
 
       function run_disqus_script(disqus_script) {
