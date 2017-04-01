@@ -91,7 +91,8 @@
 </blockquote>
 <p>如果中文字符串在Python環境下遇到 UnicodeDecodeError，這是因為.py文件保存的格式有問題。可以在第一行增加註釋</p>
 <blockquote>
-<h1 id="–-coding-utf-8-–"><a href="#–-coding-utf-8-–" class="headerlink" title="– coding: utf-8 –"></a>– coding: utf-8 –</h1></blockquote>
+<p>–coding: utf-8–</p>
+</blockquote>
 <p>目的是告訴Python解釋器，用UTF-8編碼讀取源代碼。然後用Notepad++ 另存為… 並選擇UTF-8格式保存。</p>
 <h3 id="Python中整數和浮點數"><a href="#Python中整數和浮點數" class="headerlink" title="Python中整數和浮點數"></a>Python中整數和浮點數</h3><p>Python支持對整數和浮點數直接進行四則混合運算，運算規則和數學上的四則運算規則完全一致。</p>
 <p>基本的運算：</p>
