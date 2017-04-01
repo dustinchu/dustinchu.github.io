@@ -351,16 +351,47 @@
 <p>條件1：18歲或以上：adult<br>條件2：6歲或以上：teenager<br>條件3：6歲以下：kid</p>
 </blockquote>
 <p>我們可以用一個 if age &gt;= 18 判斷是否符合條件1，如果不符合，再通過一個 if 判斷 age &gt;= 6 來判斷是否符合條件2，否則，執行條件3：</p>
-<blockquote>
-<p>if age &gt;= 18:<br>    print ‘adult’<br>else:<br>    if age &gt;= 6:<br>        print ‘teenager’<br>    else:<br>        print ‘kid’<br>這樣寫出來，我們就得到了一個兩層嵌套的 if … else … 語句。這個邏輯沒有問題，但是，如果繼續增加條件，比如3歲以下是 baby：</p>
-</blockquote>
-<p>if age &gt;= 18:<br>    print ‘adult’<br>else:<br>    if age &gt;= 6:<br>        print ‘teenager’<br>    else:<br>        if age &gt;= 3:<br>            print ‘kid’<br>        else:<br>            print ‘baby’<br>這種縮進只會越來越多，代碼也會越來越難看。</p>
-<p>要避免嵌套結構的 if … else …，我們可以用 if … 多個elif … else … 的結構，一次寫完所有的規則：</p>
-<p>if age &gt;= 18:<br>    print ‘adult’<br>elif age &gt;= 6:<br>    print ‘teenager’<br>elif age &gt;= 3:<br>    print ‘kid’<br>else:<br>    print ‘baby’<br>elif 意思就是 else if。這樣一來，我們就寫出了結構非常清晰的一系列條件判斷。</p>
+<figure class="highlight python"><figcaption><span>if age >= 18:</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">    <span class="keyword">print</span> <span class="string">'adult'</span></div><div class="line"><span class="keyword">else</span>:</div><div class="line">    <span class="keyword">if</span> age &gt;= <span class="number">6</span>:</div><div class="line">        <span class="keyword">print</span> <span class="string">'teenager'</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">print</span> <span class="string">'kid'</span></div></pre></td></tr></table></figure>
+<p>這樣寫出來，我們就得到了一個兩層嵌套的 if … else … 語句。這個邏輯沒有問題，但是，如果繼續增加條件，比如3歲以下是 baby：</p>
+<figure class="highlight python"><figcaption><span>if age >= 18:</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">    <span class="keyword">print</span> <span class="string">'adult'</span></div><div class="line"><span class="keyword">else</span>:</div><div class="line">    <span class="keyword">if</span> age &gt;= <span class="number">6</span>:</div><div class="line">        <span class="keyword">print</span> <span class="string">'teenager'</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">if</span> age &gt;= <span class="number">3</span>:</div><div class="line">            <span class="keyword">print</span> <span class="string">'kid'</span></div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="keyword">print</span> <span class="string">'baby'</span></div></pre></td></tr></table></figure>
+<p>這種縮進只會越來越多，代碼也會越來越難看。</p>
+<p>要避免嵌套結構的 if … else …，我們可以用 <code>if ... 多個elif ... else ...</code>的結構，一次寫完所有的規則：</p>
+<figure class="highlight python"><figcaption><span>if age >= 18:</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">    <span class="keyword">print</span> <span class="string">'adult'</span></div><div class="line"><span class="keyword">elif</span> age &gt;= <span class="number">6</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">'teenager'</span></div><div class="line"><span class="keyword">elif</span> age &gt;= <span class="number">3</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">'kid'</span></div><div class="line"><span class="keyword">else</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">'baby'</span></div></pre></td></tr></table></figure>
+<p><code>elif</code> 意思就是 <code>else if</code>。這樣一來，我們就寫出了結構非常清晰的一系列條件判斷。</p>
 <p>特別注意: 這一系列條件判斷會從上到下依次判斷，如果某個判斷為 True，執行完對應的代碼塊，後面的條件判斷就直接忽略，不再執行了。</p>
-<p>請思考下面的代碼：</p>
-<p>age = 8<br>if age &gt;= 6:<br>    print ‘teenager’<br>elif age &gt;= 18:<br>    print ‘adult’<br>else:<br>    print ‘kid’<br>當 age = 8 時，結果正確，但 age = 20 時，為什麼沒有打印出 adult？</p>
+<ul>
+<li>請思考下面的代碼：</li>
+</ul>
+<figure class="highlight python"><figcaption><span>age = 8</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> age &gt;= <span class="number">6</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">'teenager'</span></div><div class="line"><span class="keyword">elif</span> age &gt;= <span class="number">18</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">'adult'</span></div><div class="line"><span class="keyword">else</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">'kid'</span></div></pre></td></tr></table></figure>
+<p>當 age = 8 時，結果正確，但 age = 20 時，為什麼沒有打印出 adult？</p>
 <p>如果要修復，應該如何修復？</p>
+<h3 id="Python之-for循環"><a href="#Python之-for循環" class="headerlink" title="Python之 for循環"></a>Python之 for循環</h3><p><code>list</code>或<code>`tuple</code>可以表示一個有序集合。如果我們想依次訪問一個list中的每一個元素呢？比如 list：</p>
+<figure class="highlight python"><figcaption><span>L = ['Adam', 'Lisa', 'Bart']</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">print</span> L[<span class="number">0</span>]</div><div class="line"><span class="keyword">print</span> L[<span class="number">1</span>]</div><div class="line"><span class="keyword">print</span> L[<span class="number">2</span>]</div></pre></td></tr></table></figure>
+<p>如果list只包含幾個元素，這樣寫還行，如果list包含1萬個元素，我們就不可能寫1萬行print。</p>
+<p>這時，循環就派上用場了。</p>
+<p>Python的 <code>for</code> 循環就可以依次把list或tuple的每個元素迭代出來：</p>
+<figure class="highlight plain"><figcaption><span>= ['Adam', 'Lisa', 'Bart']</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">for name in L:</div><div class="line">    print name</div></pre></td></tr></table></figure>
+<p>注意: name 這個變量是在 for 循環中定義的，意思是，依次取出list中的每一個元素，並把元素賦值給 name，然後執行for循環體（就是縮進的代碼塊）。</p>
+<p>這樣一來，遍歷一個list或tuple就非常容易了</p>
+<h3 id="Python之-while循環"><a href="#Python之-while循環" class="headerlink" title="Python之 while循環"></a>Python之 while循環</h3><p>和 for 循環不同的另一種循環是 while 循環，while 循環不會迭代 list 或 tuple 的元素，而是根據表達式判斷循環是否結束。</p>
+<p>比如要從 0 開始打印不大於 N 的整數：</p>
+<figure class="highlight plain"><figcaption><span>N = 10</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">x = 0</div><div class="line">while x &lt; N:</div><div class="line">    print x</div><div class="line">    x = x + 1</div></pre></td></tr></table></figure>
+<p>while循環每次先<code>判斷 x &lt; N，</code>如果為<code>True</code>，則執行循環體的代碼塊，否則，退出循環。</p>
+<p>在循環體內，<code>x = x + 1</code> 會讓<code>x</code>不斷增加，最終因為<code>x &lt; N</code>不成立而退出循環。</p>
+<p>如果沒有這一個語句，<code>while循環在判斷 x &lt; N 時總是為True，</code>就會無限循環下去，變成死循環，所以要特別留意while循環的退出條</p>
+<h3 id="Python之-break退出循環"><a href="#Python之-break退出循環" class="headerlink" title="Python之 break退出循環"></a>Python之 break退出循環</h3><p>用 for 循環或者 while 循環時，如果要在循環體內直接退出循環，可以使用 break 語句。</p>
+<p>比如計算1至100的整數和，我們用while來實現：</p>
+<figure class="highlight plain"><figcaption><span>sum = 0</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">x = 1</div><div class="line">while True:</div><div class="line">    sum = sum + x</div><div class="line">    x = x + 1</div><div class="line">    if x &gt; 100:</div><div class="line">        break</div><div class="line">print sum</div></pre></td></tr></table></figure>
+<p>咋一看， while True 就是一個死循環，但是在循環體內，我們還判斷了<code>x &gt; 100</code> 條件成立時，用break語句退出循環，這樣也可以實現循環的結束。</p>
+<h3 id="Python之-continue繼續循環"><a href="#Python之-continue繼續循環" class="headerlink" title="Python之 continue繼續循環"></a>Python之 continue繼續循環</h3><p>在循環過程中，可以用break退出當前循環，還可以用<code>continue</code>跳過後續循環代碼，繼續下一次循環。</p>
+<p>假設我們已經寫好了利用for循環計算平均分的代碼：</p>
+<figure class="highlight plain"><figcaption><span>L = [75, 98, 59, 81, 66, 43, 69, 85]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">sum = 0.0</div><div class="line">n = 0</div><div class="line">for x in L:</div><div class="line">    sum = sum + x</div><div class="line">    n = n + 1</div><div class="line">print sum / n</div></pre></td></tr></table></figure>
+<p>現在老師只想統計及格分數的平均分，就要把x &lt; 60 的分數剔除掉，這時，利用continue，可以做到當x &lt; 60的時候，不繼續執行循環體的後續代碼，直接進入下一次循環：</p>
+<figure class="highlight plain"><figcaption><span>for x in L:</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">    if x &lt; 60:</div><div class="line">        continue</div><div class="line">    sum = sum + x</div><div class="line">    n = n + 1</div></pre></td></tr></table></figure>
+<h3 id="Python之-多重循環"><a href="#Python之-多重循環" class="headerlink" title="Python之 多重循環"></a>Python之 多重循環</h3><p>在循環內部，還可以嵌套循環，我們來看一個例子：</p>
+<figure class="highlight plain"><figcaption><span>for x in ['A', 'B', 'C']:</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">    for y in [&apos;1&apos;, &apos;2&apos;, &apos;3&apos;]:</div><div class="line">        print x + y</div></pre></td></tr></table></figure>
+<p>x 每循環一次，y 就會循環 3 次，這樣，我們可以打印出一個全排列：</p>
+<p>A1<br>A2<br>A3<br>B1<br>B2<br>B3<br>C1<br>C2<br>C3</p>
 ]]></content>
     </entry>
     
