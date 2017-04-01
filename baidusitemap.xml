@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/04/01/python%E5%AD%B8%E7%BF%92%E7%B4%80%E9%8C%84/</loc>
+    <lastmod>2017-04-01T14:20:46.978Z</lastmod>
+    <data>
+        <display>
+        <title>python學習紀錄</title>
+        <pubTime>2017-04-01T13:06:26.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="http://yoursite.com/categories/python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/03/28/%E4%BD%BF%E7%94%A8jxl%E5%B0%87excel-%E8%AE%80%E5%88%B0JAVA%E4%B8%8A/</loc>
     <lastmod>2017-03-30T14:00:20.901Z</lastmod>
     <data>
@@ -11,9 +31,9 @@
         <title>使用jxl將excel-讀到JAVA上</title>
         <pubTime>2017-03-28T15:23:23.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>excel</tag>
          
@@ -57,9 +77,9 @@
         <title>使用jxl將java資料導入excel</title>
         <pubTime>2017-03-27T14:10:23.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>excel</tag>
          
@@ -81,9 +101,9 @@
         <title>java-txt資料讀取存入SQL</title>
         <pubTime>2017-03-24T09:10:23.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>SQL</tag>
          
@@ -140,9 +160,9 @@
         <title>java-line聊天分割</title>
         <pubTime>2017-01-13T15:17:03.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
          
            
@@ -162,9 +182,9 @@
         <title>提升倉管備料效率-小程式</title>
         <pubTime>2017-01-19T15:35:18.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
          
            
@@ -184,9 +204,9 @@
         <title>toggleButton</title>
         <pubTime>2017-01-05T14:56:29.000Z</pubTime>
         
-        <tag>android</tag>
-         
         <tag>works</tag>
+         
+        <tag>android</tag>
          
         <tag>toggleButton</tag>
          
@@ -210,6 +230,8 @@
         <title>FragmentPagerAdapter+ViewPager 實現TabLayout</title>
         <pubTime>2016-12-15T14:39:42.000Z</pubTime>
         
+        <tag>works</tag>
+         
         <tag>android</tag>
          
         <tag>TabLayout</tag>
@@ -217,8 +239,6 @@
         <tag>FragmentActivity</tag>
          
         <tag>Viewpager</tag>
-         
-        <tag>works</tag>
          
          
            
