@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/01/19/%E5%82%99%E6%96%99%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
+    <lastmod>2017-09-14T14:32:20.688Z</lastmod>
+    <data>
+        <display>
+        <title>提升倉管備料效率-小程式</title>
+        <pubTime>2017-01-19T15:35:18.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/05/04/java-swing-tiptop%20BOM%E6%9F%A5%E8%A9%A2%E7%B3%BB%E7%B5%B1%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
     <lastmod>2017-09-14T14:30:00.442Z</lastmod>
     <data>
@@ -18,28 +40,6 @@
         <tag>swing</tag>
          
         <tag>tiptop</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/01/19/%E5%82%99%E6%96%99%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
-    <lastmod>2017-09-14T14:28:35.581Z</lastmod>
-    <data>
-        <display>
-        <title>提升倉管備料效率-小程式</title>
-        <pubTime>2017-01-19T15:35:18.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
          
          
            
