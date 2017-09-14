@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/01/19/%E5%82%99%E6%96%99%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
+    <lastmod>2017-09-14T14:07:31.429Z</lastmod>
+    <data>
+        <display>
+        <title>提升倉管備料效率-小程式</title>
+        <pubTime>2017-01-19T15:35:18.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/09/03/taiwan/</loc>
     <lastmod>2017-09-14T12:49:32.874Z</lastmod>
     <data>
@@ -522,28 +544,6 @@
         <display>
         <title>java-line聊天分割</title>
         <pubTime>2017-01-13T15:17:03.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/01/19/%E5%82%99%E6%96%99%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
-    <lastmod>2017-02-17T13:55:28.625Z</lastmod>
-    <data>
-        <display>
-        <title>提升倉管備料效率-小程式</title>
-        <pubTime>2017-01-19T15:35:18.000Z</pubTime>
         
         <tag>works</tag>
          
