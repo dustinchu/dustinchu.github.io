@@ -127,13 +127,7 @@
 
 
 
-  <title>
-  
-
-  
-    java-txt資料讀取存入SQL | Dustinchu
-  
-</title>
+  <title> java-txt資料讀取存入SQL | Dustinchu </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -181,7 +175,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -305,17 +299,117 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h2 class="post-title" itemprop="name headline">java-txt資料讀取存入SQL</h2>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="https://dustinchu.github.io/2017/03/24/java-txt資料讀取存入SQL/">
 
-</header>
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Dustinchu">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/logo.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Dustinchu">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Dustinchu" src="">
+    </span>
+  </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                java-txt資料讀取存入SQL
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-24T17:10:23+08:00">
+                2017-03-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <a href="/2017/03/24/java-txt資料讀取存入SQL/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="https://dustinchu.github.io/2017/03/24/java-txt資料讀取存入SQL/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <div class="fb-like" data-layout="button_count" data-share="true"></div>
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
-      <div data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div>
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div>
 
 <a id="more"></a>
 <h2 id="java-txt資料讀取存入SQL"><a href="#java-txt資料讀取存入SQL" class="headerlink" title="java-txt資料讀取存入SQL"></a>java-txt資料讀取存入SQL</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
@@ -327,7 +421,105 @@
 </blockquote>
 <h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.sql.Connection;</div><div class="line"><span class="keyword">import</span> java.sql.SQLException;</div><div class="line"></div><div class="line"><span class="keyword">import</span> javax.sql.DataSource;</div><div class="line"></div><div class="line"><span class="keyword">import</span> utils.sqlconnection;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.io.BufferedReader;</div><div class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</div><div class="line"><span class="keyword">import</span> java.io.FileReader;</div><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"><span class="keyword">import</span> java.lang.reflect.Array;</div><div class="line"><span class="keyword">import</span> java.sql.DriverManager;</div><div class="line"><span class="keyword">import</span> java.sql.PreparedStatement;</div><div class="line"><span class="keyword">import</span> java.sql.SQLException;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SQL</span> <span class="keyword">extends</span> <span class="title">sqlconnection</span></span></div><div class="line">&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line">	&#123;</div><div class="line">		<span class="keyword">try</span></div><div class="line">		&#123;</div><div class="line"></div><div class="line">			java.sql.Connection conn;</div><div class="line">			<span class="keyword">try</span></div><div class="line">			&#123;</div><div class="line">				conn = DriverManager.getConnection(CONNURL, SQL_NAME,SQL_PASSWORD);</div><div class="line">				PreparedStatement pstmt = conn.prepareStatement(SQL_INSERT);</div><div class="line">				FileReader fr = <span class="keyword">new</span> FileReader(FILE_PATH);</div><div class="line">				BufferedReader brdFile = <span class="keyword">new</span> BufferedReader(fr);</div><div class="line">				String strLine = <span class="keyword">null</span>;</div><div class="line">				<span class="keyword">while</span> ((strLine = brdFile.readLine()) != <span class="keyword">null</span>)</div><div class="line">				&#123;</div><div class="line">					strLine = strLine.replace(<span class="string">"#"</span>, <span class="string">""</span>);<span class="comment">//先將資料夾裡面的#改成""</span></div><div class="line">					String[] array = strLine.split(<span class="string">"@"</span>);<span class="comment">// 因為是用"@"分開所以用split切開存入字串陣列</span></div><div class="line">					System.out.println(strLine);</div><div class="line">					<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length; i++)</div><div class="line">					&#123;</div><div class="line"><span class="comment">//						System.out.println(array[i]); 可以用來檢視分割的檔案是否正確</span></div><div class="line">						pstmt.setString(i+<span class="number">1</span>,array[i]);</div><div class="line">					&#125;</div><div class="line"></div><div class="line">				pstmt.execute();</div><div class="line">				&#125;   </div><div class="line"></div><div class="line">			&#125; <span class="keyword">catch</span> (FileNotFoundException e)</div><div class="line">			&#123;</div><div class="line">				<span class="comment">// TODO Auto-generated catch block</span></div><div class="line">				e.printStackTrace();</div><div class="line">			&#125; <span class="keyword">catch</span> (IOException e)</div><div class="line">			&#123;</div><div class="line">				<span class="comment">// TODO Auto-generated catch block</span></div><div class="line">				e.printStackTrace();</div><div class="line">			&#125;</div><div class="line">		&#125; <span class="keyword">catch</span> (SQLException e)</div><div class="line">		&#123;</div><div class="line">			<span class="comment">// TODO Auto-generated catch block</span></div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+
     
+        <div>
+         
+         <ul class="post-copyright">
+            <li class="post-copyright-link">
+             <strong>本文作者：</strong>
+             <a href="/" title="歡迎訪問 Dustinchu 的個人部落格">Dustinchu</a>
+           </li>
+           <li class="post-copyright-link">
+             <strong>文章標題：</strong>
+             <a href="https://dustinchu.github.io/2017/03/24/java-txt資料讀取存入SQL/" title="java-txt資料讀取存入SQL">java-txt資料讀取存入SQL</a>
+           </li>
+           <li class="post-copyright-link">
+             <strong>文章連接：</strong>
+             <a href="https://dustinchu.github.io/2017/03/24/java-txt資料讀取存入SQL/" title="java-txt資料讀取存入SQL">https://dustinchu.github.io/2017/03/24/java-txt資料讀取存入SQL/</a>
+           </li>
+           <li class="post-copyright-date">
+               <strong>發布時間：</strong>2017年3月24日 - 17时03分
+           </li>
+           <li class="post-copyright-license">
+             <strong>版權聲明： </strong>
+             本文由 Dustinchu 原創<br>採用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="license" target="_blank">保留屬名-非商業性使用-禁止編譯 4.0國際許可協議</a></br> 轉載請保留以上聲明訊息！
+           </li>
+         </ul>
+       
+     </div>
+
+      
+        <div class="post-tags">
+          
+            <a href="/tags/works/" rel="tag"># works</a>
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+            <a href="/tags/SQL/" rel="tag"># SQL</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/05/SQL語法紀錄/" rel="next" title="SQL語法紀錄">
+                <i class="fa fa-chevron-left"></i> SQL語法紀錄
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/27/使用jxl將java資料導入excel/" rel="prev" title="使用jxl將java資料導入excel">
+                使用jxl將java資料導入excel <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+	<h3> 相關文章：</h3><ul class="related-posts"><li><a href="/2017/06/20/java swing -教育訓練程式(第二版)/">java swing -教育訓練程式(第二版)</a></li><li><a href="/2017/06/10/java-swing-tiptop-程式代號查詢小程式/">java-swing-tiptop 程式代號查詢小程式</a></li><li><a href="/2017/07/01/java swing tiptop-財務資料與別廠區資料比對-小程式/">java swing tiptop 財務資料與別廠區資料比對 小程式</a></li><li><a href="/2017/07/10/java swing tiptop-財務報表-一/">java swing tiptop 財務報表(一)</a></li><li><a href="/2017/07/22/java-Swing-tiptop-財務報表-二/">java-Swing-tiptop 財務報表(二)</a></li><li><a href="/2017/08/03/java-Swing-tiptop-財務報表-三/">java-Swing-tiptop 財務報表(三)</a></li><li><a href="/2017/05/04/java-swing-tiptop BOM查詢系統小程式/">BOM查詢系統小程式</a></li><li><a href="/2017/05/30/java-swing-tiptop-調撥清單/">java-swing-tiptop 調撥清單</a></li><li><a href="/2017/01/13/java-line/">java-line聊天分割</a></li><li><a href="/2017/03/05/SQL語法紀錄/">SQL語法紀錄</a></li></ul>
+
+
+      
+      
+    </footer>
+  </article>
+
+
+    <div class="post-spread">
+
+
+
+
+
+      
+    </div>
   </div>
 
 
@@ -366,8 +558,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/logo.png"
@@ -431,6 +632,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#java-txt資料讀取存入SQL"><span class="nav-number">1.</span> <span class="nav-text">java-txt資料讀取存入SQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#txt資料"><span class="nav-number">2.</span> <span class="nav-text">txt資料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#java"><span class="nav-number">3.</span> <span class="nav-text">java</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
@@ -537,6 +754,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
