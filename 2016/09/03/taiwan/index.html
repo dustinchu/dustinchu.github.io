@@ -516,8 +516,16 @@
   </article>
 
 
-
     <div class="post-spread">
+    
+    if theme.show_ad_post == true #对应主题配置中添加的开关
+    script(async='', src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+    script.
+      (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-3136608336853382",
+      enable_page_level_ads: true
+      });
+
       
     </div>
   </div>
