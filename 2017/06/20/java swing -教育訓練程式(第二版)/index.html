@@ -10,7 +10,21 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -90,12 +104,12 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="java swing -教育訓練程式(第二版)">
 <meta property="og:url" content="https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/index.html">
-<meta property="og:site_name" content="Dustinchu">
+<meta property="og:site_name" content="DustinChu Blog">
 <meta property="og:image" content="https://i.imgur.com/IcIOc61.png">
 <meta property="og:image" content="https://i.imgur.com/dEIIZ4n.png">
 <meta property="og:image" content="https://i.imgur.com/8gaoCeM.png">
 <meta property="og:image" content="https://i.imgur.com/8Vd9wjr.png">
-<meta property="og:updated_time" content="2017-09-14T14:43:05.580Z">
+<meta property="og:updated_time" content="2017-09-16T06:37:20.552Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java swing -教育訓練程式(第二版)">
 <meta name="twitter:image" content="https://i.imgur.com/IcIOc61.png">
@@ -132,7 +146,7 @@
 
 
 
-  <title> java swing -教育訓練程式(第二版) | Dustinchu </title>
+  <title> java swing -教育訓練程式(第二版) | DustinChu Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -190,7 +204,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Dustinchu</span>
+      <span class="site-title">DustinChu Blog</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -322,9 +336,9 @@
   </span>
 
   <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Dustinchu">
+    <meta itemprop="name" content="DustinChu Blog">
     <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Dustinchu" src="">
+      <img style="display:none;" itemprop="url image" alt="DustinChu Blog" src="">
     </span>
   </span>
 
@@ -418,7 +432,7 @@
 
 <a id="more"></a>
 <h2 id="教育訓練小程式"><a href="#教育訓練小程式" class="headerlink" title="教育訓練小程式"></a>教育訓練小程式</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
-<p>版權聲明：轉載請保留原文連結及作者<br>本來仿製公司舊ERP做的教育訓練程式<br>發現實在很不好用 決定重新開發一個<br>使用流程<br>建立課程&gt;講師課程邀請&gt;發送mail課程邀請信&gt;講師評分</p>
+<p>本來仿製公司舊ERP做的教育訓練程式<br>發現實在很不好用 決定重新開發一個<br>使用流程<br>建立課程&gt;講師課程邀請&gt;發送mail課程邀請信&gt;講師評分</p>
 </blockquote>
 <h2 id="程式主畫面"><a href="#程式主畫面" class="headerlink" title="程式主畫面"></a>程式主畫面</h2><h3 id="課程建立"><a href="#課程建立" class="headerlink" title="課程建立"></a>課程建立</h3><p><img src="https://i.imgur.com/IcIOc61.png" width="600" height="600"></p>
 <h3 id="課程邀請"><a href="#課程邀請" class="headerlink" title="課程邀請"></a>課程邀請</h3><p><img src="https://i.imgur.com/dEIIZ4n.png" width="600" height="600"></p>
@@ -445,34 +459,43 @@
     </div>
 
 
-    <footer class="post-footer">
+    <div>
+        
+          
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
 
-    
-        <div>
-         
-         <ul class="post-copyright">
-            <li class="post-copyright-link">
-             <strong>本文作者：</strong>
-             <a href="/" title="歡迎訪問 Dustinchu 的個人部落格">Dustinchu</a>
-           </li>
-           <li class="post-copyright-link">
-             <strong>文章標題：</strong>
-             <a href="https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/" title="java swing -教育訓練程式(第二版)">java swing -教育訓練程式(第二版)</a>
-           </li>
-           <li class="post-copyright-link">
-             <strong>文章連接：</strong>
-             <a href="https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/" title="java swing -教育訓練程式(第二版)">https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/</a>
-           </li>
-           <li class="post-copyright-date">
-               <strong>發布時間：</strong>2017年6月20日 - 21时06分
-           </li>
-           <li class="post-copyright-license">
-             <strong>版權聲明： </strong>
-             本文由 Dustinchu 原創<br>採用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="license" target="_blank">保留屬名-非商業性使用-禁止編譯 4.0國際許可協議</a></br> 轉載請保留以上聲明訊息！
-           </li>
-         </ul>
-       
-     </div>
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <p><span>文章標題:</span><a href="/2017/06/20/java swing -教育訓練程式(第二版)/">java swing -教育訓練程式(第二版)</a></p>
+  <p><span>文章作者:</span><a href="/" title="訪問 Dustinchu 的個人部落格">Dustinchu</a></p>
+  <p><span>發布時間:</span>2017年06月20日 - 21:06</p>
+  <p><span>最後更新:</span>2017年09月16日 - 14:09</p>
+  <p><span>原始連結:</span><a href="/2017/06/20/java swing -教育訓練程式(第二版)/" title="java swing -教育訓練程式(第二版)">https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/"  aria-label="複製成功!"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">屬名-非商業性使用-禁止編譯 4.0 國際</a>  轉載請保留原文連結及作者。</p>
+</div>
+<script>
+    var clipboard = new Clipboard('.fa-clipboard');
+	clipboard.on('success', $(function(){
+	  $(".fa-clipboard").click(function(){
+		swal({
+		  title: "",
+		  text: '複製成功',
+		  html: false,
+		  timer: 500,
+		  showConfirmButton: false
+	    });
+	  });
+    }));
+</script>
+
+
+        
+  </div>
 
       
         <div class="post-tags">
