@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://dustinchu.github.io/2017/09/01/Fragment%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F/</loc>
+    <lastmod>2017-09-23T18:44:28.249Z</lastmod>
+    <data>
+        <display>
+        <title>Fragment生命週期</title>
+        <pubTime>2017-08-31T17:17:25.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>Frgmebt</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://dustinchu.github.io/2017/01/16/Textinputlayout%E4%BD%BF%E7%94%A8%E5%8F%8A%E8%87%AA%E8%A8%82%E7%BE%A9%E9%A1%8F%E8%89%B2/</loc>
     <lastmod>2017-09-16T06:38:47.053Z</lastmod>
     <data>
@@ -33,9 +55,9 @@
         <title>toggleButton</title>
         <pubTime>2017-01-05T14:56:29.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>android</tag>
+         
+        <tag>works</tag>
          
         <tag>toggleButton</tag>
          
@@ -508,9 +530,9 @@
         <title>SQL語法紀錄</title>
         <pubTime>2017-03-05T06:36:51.000Z</pubTime>
         
-        <tag>SQL</tag>
-         
         <tag>works</tag>
+         
+        <tag>SQL</tag>
          
          
            
@@ -550,8 +572,6 @@
         <title>FragmentPagerAdapter+ViewPager 實現TabLayout</title>
         <pubTime>2016-12-15T14:39:42.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>android</tag>
          
         <tag>TabLayout</tag>
@@ -559,6 +579,8 @@
         <tag>FragmentActivity</tag>
          
         <tag>Viewpager</tag>
+         
+        <tag>works</tag>
          
          
            
@@ -578,11 +600,11 @@
         <title>java-txt資料讀取存入SQL</title>
         <pubTime>2017-03-24T09:10:23.000Z</pubTime>
         
-        <tag>SQL</tag>
-         
         <tag>works</tag>
          
         <tag>java</tag>
+         
+        <tag>SQL</tag>
          
          
            
