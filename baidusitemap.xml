@@ -4,18 +4,16 @@
 
     
   <url>
-    <loc>https://dustinchu.github.io/2017/09/15/AndroidDesignButton/</loc>
-    <lastmod>2017-09-25T13:19:14.957Z</lastmod>
+    <loc>https://dustinchu.github.io/2017/09/19/ButtonShape/</loc>
+    <lastmod>2017-09-26T15:34:06.175Z</lastmod>
     <data>
         <display>
-        <title>使用StateListAnimator讓Button動起來</title>
-        <pubTime>2017-09-15T12:32:28.000Z</pubTime>
+        <title>ButtonShape</title>
+        <pubTime>2017-09-19T14:43:04.000Z</pubTime>
         
         <tag>android</tag>
          
-        <tag>Material</tag>
-         
-        <tag>StateListAnimator</tag>
+        <tag>Butoon</tag>
          
          
            
@@ -29,7 +27,7 @@
     
   <url>
     <loc>https://dustinchu.github.io/2017/09/01/Fragment%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F/</loc>
-    <lastmod>2017-09-25T12:30:20.117Z</lastmod>
+    <lastmod>2017-09-26T14:59:00.305Z</lastmod>
     <data>
         <display>
         <title>Fragment生命週期</title>
@@ -38,6 +36,30 @@
         <tag>android</tag>
          
         <tag>Frgmebt</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/09/15/AndroidDesignButton/</loc>
+    <lastmod>2017-09-25T15:02:24.926Z</lastmod>
+    <data>
+        <display>
+        <title>使用StateListAnimator讓Button動起來</title>
+        <pubTime>2017-09-15T12:32:28.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>Material</tag>
+         
+        <tag>StateListAnimator</tag>
          
          
            
