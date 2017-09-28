@@ -1732,7 +1732,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff9494;
+  background: #592b6f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2543,6 +2543,16 @@ embed {
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
+.img-topic {
+  max-width: 300px;
+  max-height: 1800px;
+  display: block;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  padding: 0;
+  float: right;
+  clear: right;
+}
 .post {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -2567,14 +2577,20 @@ embed {
   padding: 0 20px;
   font-size: 14px;
   color: #fff;
-  background: #222;
-  border: 2px solid #12a9ec;
+  background: #12a9ec;
+  border: 2px solid #03a9f4;
   text-decoration: none;
   border-radius: 0;
   transition-property: background-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+}
+.btn:hover,
+.post-more-link .btn:hover {
+  border-color: #12a9ec;
+  color: #fff;
+  background: #12a9ec;
 }
 .post-more-link .btn {
   color: #12a9ec;
@@ -2590,4 +2606,42 @@ embed {
 user agent stylesheet,
 div {
   display: block;
+}
+.header-inner {
+  margin: 0 auto;
+  padding: 50px 0 0px;
+  width: 700px;
+}
+.post {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0px 0px 9px -1px #000;
+  -moz-box-shadow: 0px 0px 9px -1px #000;
+  box-shadow: 0px 0px 9px -1px #000;
+}
+.posts-expand .post-eof {
+  display: block;
+  margin: 0px auto 0px;
+  width: 8%;
+  height: 1px;
+  background: #fff;
+  text-align: center;
+}
+.posts-expand .post-meta {
+  margin: 10px 0 10px 0;
+}
+.posts-expand .post-meta {
+  margin: 3px 0 60px 0;
+  color: #999;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+.posts-expand .post-meta {
+  margin: 3px 0 20px 0;
+  color: #999;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 12px;
+  text-align: center;
 }
