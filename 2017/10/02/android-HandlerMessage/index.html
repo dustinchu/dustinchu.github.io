@@ -82,7 +82,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="works,java,swing," />
+  <meta name="keywords" content="android,Handler," />
 
 
 
@@ -101,18 +101,16 @@
 
 
 
+<meta name="description" content="網路抓取圖片，或是讀很大量的資料，如果在主執行緒中超過五秒還沒完成的話會收到android系統的錯誤強制關閉，這時候需要把這些耗時的工作放在一個子執行續上因為子執行緒涉及到UI更新，為了避免避免多個子執行緒去更新發生錯誤為了避免這種錯誤，更新UI只能在主執行緒更新由於Handler運行在主執行緒中(UI執行緒中)，它與子執行緒可以通過Message對象來傳遞資料，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java swing -教育訓練程式(第二版)">
-<meta property="og:url" content="https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/index.html">
+<meta property="og:title" content="android-Handler Message">
+<meta property="og:url" content="https://dustinchu.github.io/2017/10/02/android-HandlerMessage/index.html">
 <meta property="og:site_name" content="DustinChu Blog">
-<meta property="og:image" content="https://i.imgur.com/IcIOc61.png">
-<meta property="og:image" content="https://i.imgur.com/dEIIZ4n.png">
-<meta property="og:image" content="https://i.imgur.com/8gaoCeM.png">
-<meta property="og:image" content="https://i.imgur.com/8Vd9wjr.png">
-<meta property="og:updated_time" content="2017-09-16T06:37:20.552Z">
+<meta property="og:description" content="網路抓取圖片，或是讀很大量的資料，如果在主執行緒中超過五秒還沒完成的話會收到android系統的錯誤強制關閉，這時候需要把這些耗時的工作放在一個子執行續上因為子執行緒涉及到UI更新，為了避免避免多個子執行緒去更新發生錯誤為了避免這種錯誤，更新UI只能在主執行緒更新由於Handler運行在主執行緒中(UI執行緒中)，它與子執行緒可以通過Message對象來傳遞資料，">
+<meta property="og:updated_time" content="2017-10-06T07:56:58.892Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java swing -教育訓練程式(第二版)">
-<meta name="twitter:image" content="https://i.imgur.com/IcIOc61.png">
+<meta name="twitter:title" content="android-Handler Message">
+<meta name="twitter:description" content="網路抓取圖片，或是讀很大量的資料，如果在主執行緒中超過五秒還沒完成的話會收到android系統的錯誤強制關閉，這時候需要把這些耗時的工作放在一個子執行續上因為子執行緒涉及到UI更新，為了避免避免多個子執行緒去更新發生錯誤為了避免這種錯誤，更新UI只能在主執行緒更新由於Handler運行在主執行緒中(UI執行緒中)，它與子執行緒可以通過Message對象來傳遞資料，">
 
 
 
@@ -140,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/"/>
+  <link rel="canonical" href="https://dustinchu.github.io/2017/10/02/android-HandlerMessage/"/>
 
 <meta name="baidu-site-verification" content="1dLOlOIvKy" />
 
 
 
-  <title> java swing -教育訓練程式(第二版) | DustinChu Blog </title>
+  <title> android-Handler Message | DustinChu Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -329,7 +327,7 @@
 
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/">
+  <link itemprop="mainEntityOfPage" href="https://dustinchu.github.io/2017/10/02/android-HandlerMessage/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Dustinchu">
@@ -353,7 +351,7 @@
             
             
               
-                java swing -教育訓練程式(第二版)
+                android-Handler Message
               
             
           </h1>
@@ -366,8 +364,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-20T21:11:59+08:00">
-                2017-06-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-02T02:51:50+08:00">
+                2017-10-02
               </time>
 
 
@@ -387,8 +385,8 @@
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
+                  <a href="/categories/android/" itemprop="url" rel="index">
+                    <span itemprop="name">android</span>
                   </a>
                 </span>
 
@@ -402,8 +400,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2017/06/20/java swing -教育訓練程式(第二版)/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/" itemprop="commentCount">0</span> comments
+                <a href="/2017/10/02/android-HandlerMessage/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="https://dustinchu.github.io/2017/10/02/android-HandlerMessage/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -417,7 +415,7 @@
     <i class="fa fa-calendar-o"></i>
     </span>
     <span class="post-meta-item-text">字數統計</span>
-    <span class="post-meta-item-text">163&nbsp;個字</span>
+    <span class="post-meta-item-text">425&nbsp;個字</span>
     </span>
     
     <span class="post-count">
@@ -426,7 +424,7 @@
     <i class="fa fa-calendar-o"></i>
     </span>
     <span class="post-meta-item-text">預計閱讀時間</span>
-    <span class="post-meta-item-text">1&nbsp;分鐘</span>
+    <span class="post-meta-item-text">2&nbsp;分鐘</span>
     </span>
     
 
@@ -455,18 +453,24 @@
       
 
       
-        <div data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div>
+        <!-- <img src="https://i.imgur.com/95eAj3V.png" width="900" height="400" /> -->
+<blockquote>
+<p>網路抓取圖片，或是讀很大量的資料，如果在主執行緒中超過五秒還沒完成的話<br>會收到android系統的錯誤強制關閉，這時候需要把這些耗時的工作放在一個子執行續上<br>因為子執行緒涉及到UI更新，為了避免避免多個子執行緒去更新發生錯誤<br>為了避免這種錯誤，更新UI只能在主執行緒更新<br>由於Handler運行在主執行緒中(UI執行緒中)，它與子執行緒可以通過Message對象來傳遞資料，</p>
+</blockquote>
+<div data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div>
 
 <a id="more"></a>
-<h2 id="教育訓練小程式"><a href="#教育訓練小程式" class="headerlink" title="教育訓練小程式"></a>教育訓練小程式</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
-<p>本來仿製公司舊ERP做的教育訓練程式<br>發現實在很不好用 決定重新開發一個<br>使用流程<br>建立課程&gt;講師課程邀請&gt;發送mail課程邀請信&gt;講師評分</p>
-</blockquote>
-<h2 id="程式主畫面"><a href="#程式主畫面" class="headerlink" title="程式主畫面"></a>程式主畫面</h2><h3 id="課程建立"><a href="#課程建立" class="headerlink" title="課程建立"></a>課程建立</h3><p><img src="https://i.imgur.com/IcIOc61.png" width="600" height="600"></p>
-<h3 id="課程邀請"><a href="#課程邀請" class="headerlink" title="課程邀請"></a>課程邀請</h3><p><img src="https://i.imgur.com/dEIIZ4n.png" width="600" height="600"></p>
-<h3 id="Mail回覆是否要上課"><a href="#Mail回覆是否要上課" class="headerlink" title="Mail回覆是否要上課"></a>Mail回覆是否要上課</h3><ul>
-<li>這邊有一個server 來判斷 使用這點入 確定後 所回傳url值 來去判斷使用者 將資料寫入資料庫<br><img src="https://i.imgur.com/8gaoCeM.png" width="600" height="600"><h3 id="講師評分-課程講義上傳"><a href="#講師評分-課程講義上傳" class="headerlink" title="講師評分 課程講義上傳"></a>講師評分 課程講義上傳</h3></li>
-<li>由於會不知道有幾個人上課 這邊的Button 是使用checkBox來去監聽按鈕狀況<br><img src="https://i.imgur.com/8Vd9wjr.png" width="600" height="600"></li>
+<ul>
+<li>最近比較常用到順便紀錄一下!!</li>
 </ul>
+<p><font color="#DC143C" size="4" face="黑体"> 注意 </font></p>
+<blockquote>
+<p>如果要使用要在<code>Handler</code>使用<code>startActivity</code>的話<br>因為上下文的關係 要注意<code>Context</code></p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">static</span> Context mContext;</div><div class="line">Intent intent = <span class="keyword">new</span> Intent(mContext, InferenceActivity.class);</div><div class="line">mContext.startActivity(intent);</div></pre></td></tr></table></figure>
+<h2 id="Handler-範例"><a href="#Handler-範例" class="headerlink" title="Handler 範例"></a>Handler 範例</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">	<span class="meta">@InjectView</span>(R.id.btn_update)</div><div class="line">    Button mBtnUpdate;</div><div class="line"></div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_main_);</div><div class="line">        ButterKnife.inject(<span class="keyword">this</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@OnClick</span>(&#123;R.id.btn_update&#125;)</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View view)</span> </span>&#123;</div><div class="line">        <span class="keyword">switch</span> (view.getId()) &#123;</div><div class="line">            <span class="keyword">case</span> R.id.btn_update:</div><div class="line">                 Login();</div><div class="line">                <span class="keyword">break</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Login</span><span class="params">()</span> </span>&#123;</div><div class="line">        Runnable run = <span class="keyword">new</span> Runnable() &#123;</div><div class="line">            <span class="meta">@Override</span></div><div class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</div><div class="line">                Message msg = <span class="keyword">new</span> Message();</div><div class="line"></div><div class="line"></div><div class="line">                     msg.what = <span class="number">1000</span>;</div><div class="line"></div><div class="line"></div><div class="line">                &#125;</div><div class="line">                mHandler.sendMessage(msg);</div><div class="line">            &#125;</div><div class="line">        &#125;;</div><div class="line">        <span class="keyword">new</span> Thread(run).start();</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    Handler mHandler = <span class="keyword">new</span> Handler() &#123;</div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">handleMessage</span><span class="params">(android.os.Message msg)</span> </span>&#123;</div><div class="line">            <span class="keyword">switch</span> (msg.what) &#123;</div><div class="line">                <span class="keyword">case</span> <span class="number">1000</span>:</div><div class="line"></div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">                <span class="keyword">case</span> <span class="number">1001</span>:</div><div class="line"></div><div class="line">                    <span class="keyword">break</span>;</div><div class="line"></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Handler-範例二"><a href="#Handler-範例二" class="headerlink" title="Handler 範例二"></a>Handler 範例二</h2><h3 id="MainActivity"><a href="#MainActivity" class="headerlink" title="MainActivity"></a>MainActivity</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="meta">@InjectView</span>(R.id.btn_start)</div><div class="line">    Button mBtnStart;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_main_);</div><div class="line">        ButterKnife.inject(<span class="keyword">this</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">   <span class="meta">@OnClick</span>(R.id.btn_start)</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View view)</span> </span>&#123;</div><div class="line">     DateUpdate dateUpdate = <span class="keyword">new</span> DateUpdate();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> Handler <span class="title">getHandler</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.mHandler;</div><div class="line">    &#125;</div><div class="line">   Handler mHandler = <span class="keyword">new</span> Handler() &#123;</div><div class="line">       <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">handleMessage</span><span class="params">(android.os.Message msg)</span> </span>&#123;</div><div class="line">           DialogShowMessage showMessage = <span class="keyword">new</span> DialogShowMessage(mContext, <span class="string">""</span>);</div><div class="line">           <span class="keyword">switch</span> (msg.what) &#123;</div><div class="line">               <span class="keyword">case</span> <span class="number">1000</span>:</div><div class="line">               <span class="comment">//程式碼</span></div><div class="line">                   <span class="keyword">break</span>;</div><div class="line">               <span class="keyword">case</span> <span class="number">1001</span>:</div><div class="line">             <span class="comment">//程式碼</span></div><div class="line">                   <span class="keyword">break</span>;</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">   &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="DateUpdate"><a href="#DateUpdate" class="headerlink" title="DateUpdate"></a>DateUpdate</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DateUpdate</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DateUpdate</span><span class="params">()</span> </span>&#123;</div><div class="line"></div><div class="line">        Runnable run = <span class="keyword">new</span> Runnable() &#123;</div><div class="line">            <span class="meta">@Override</span></div><div class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;       </div><div class="line">                Message msg = <span class="keyword">new</span> Message();</div><div class="line"></div><div class="line">                    <span class="keyword">if</span> () &#123;</div><div class="line"></div><div class="line">                        msg.what = <span class="number">1000</span>;</div><div class="line">                    &#125; <span class="keyword">else</span> &#123;</div><div class="line"></div><div class="line">                        msg.what = <span class="number">1001</span>;</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                mHandler.sendMessage(msg);</div><div class="line">            &#125;</div><div class="line">        &#125;;</div><div class="line">        <span class="keyword">new</span> Thread(run).start();</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    StartSuccessActivity startSuccessActivity = <span class="keyword">new</span> StartSuccessActivity();</div><div class="line">    Handler mHandler = startSuccessActivity.getHandler();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -496,12 +500,12 @@
   <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
-  <p><span>文章標題:</span><a href="/2017/06/20/java swing -教育訓練程式(第二版)/">java swing -教育訓練程式(第二版)</a></p>
+  <p><span>文章標題:</span><a href="/2017/10/02/android-HandlerMessage/">android-Handler Message</a></p>
   <p><span>文章作者:</span><a href="/" title="訪問 Dustinchu 的個人部落格">Dustinchu</a></p>
-  <p><span>發布時間:</span>2017年06月20日 - 21:06</p>
-  <p><span>最後更新:</span>2017年09月16日 - 14:09</p>
-  <p><span>原始連結:</span><a href="/2017/06/20/java swing -教育訓練程式(第二版)/" title="java swing -教育訓練程式(第二版)">https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/</a>
-    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/"  aria-label="複製成功!"></i></span>
+  <p><span>發布時間:</span>2017年10月02日 - 02:10</p>
+  <p><span>最後更新:</span>2017年10月06日 - 15:10</p>
+  <p><span>原始連結:</span><a href="/2017/10/02/android-HandlerMessage/" title="android-Handler Message">https://dustinchu.github.io/2017/10/02/android-HandlerMessage/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://dustinchu.github.io/2017/10/02/android-HandlerMessage/"  aria-label="複製成功!"></i></span>
   </p>
   <p><span>許可協議:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">屬名-非商業性使用-禁止編譯 4.0 國際</a>  轉載請保留原文連結及作者。</p>
 </div>
@@ -527,11 +531,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/works/" rel="tag"># works</a>
+            <a href="/tags/android/" rel="tag"># android</a>
           
-            <a href="/tags/java/" rel="tag"># java</a>
-          
-            <a href="/tags/swing/" rel="tag"># swing</a>
+            <a href="/tags/Handler/" rel="tag"># Handler</a>
           
         </div>
       
@@ -540,8 +542,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/10/java-swing-tiptop-程式代號查詢小程式/" rel="next" title="java-swing-tiptop 程式代號查詢小程式">
-                <i class="fa fa-chevron-left"></i> java-swing-tiptop 程式代號查詢小程式
+              <a href="/2017/10/01/android-AsyncTask-轉/" rel="next" title="android AsyncTask(轉)">
+                <i class="fa fa-chevron-left"></i> android AsyncTask(轉)
               </a>
             
           </div>
@@ -550,16 +552,12 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/01/java swing tiptop-財務資料與別廠區資料比對-小程式/" rel="prev" title="java swing tiptop 財務資料與別廠區資料比對 小程式">
-                java swing tiptop 財務資料與別廠區資料比對 小程式 <i class="fa fa-chevron-right"></i>
-              </a>
-            
           </div>
         </div>
       
 
       
-	<h3> 相關文章：</h3><ul class="related-posts"><li><a href="/2017/04/30/java-swing-tiptop出貨排程小程式/">java-swing tiptop出貨排程小程式</a></li><li><a href="/2017/06/10/java-swing-tiptop-程式代號查詢小程式/">java-swing-tiptop 程式代號查詢小程式</a></li><li><a href="/2017/08/03/java-Swing-tiptop-財務報表-三/">java-Swing-tiptop 財務報表(三)</a></li><li><a href="/2017/05/08/java-swing-tiptop異動數量查詢/">java swing tiptop異動數量查詢</a></li><li><a href="/2017/07/10/java swing tiptop-財務報表-一/">java swing tiptop 財務報表(一)</a></li><li><a href="/2017/05/15/java-swing-tiptop-採購單價查詢/">java-swing-tiptop 採購單價查詢</a></li><li><a href="/2017/05/04/java-swing-tiptop BOM查詢系統小程式/">BOM查詢系統小程式</a></li><li><a href="/2017/05/30/java-swing-tiptop-調撥清單/">java-swing-tiptop 調撥清單</a></li><li><a href="/2017/07/22/java-Swing-tiptop-財務報表-二/">java-Swing-tiptop 財務報表(二)</a></li><li><a href="/2017/04/26/java-swing-tiptop內銷應收小程式/">java swing tiptop內銷應收小程式</a></li></ul>
+	<h3> 相關文章：</h3><ul class="related-posts"><li><a href="/2017/09/15/AndroidDesignButton/">使用StateListAnimator讓Button動起來</a></li><li><a href="/2017/09/23/Android-OEE/">Android-OEE</a></li><li><a href="/2017/09/01/Fragment生命週期/">Fragment生命週期</a></li><li><a href="/2016/12/15/My-New-post/">FragmentPagerAdapter+ViewPager 實現TabLayout</a></li><li><a href="/2017/09/19/ButtonShape/">ButtonShape</a></li><li><a href="/2017/10/01/android-AsyncTask-轉/">android AsyncTask(轉)</a></li><li><a href="/2017/01/05/toggleButton/">toggleButton</a></li></ul>
 
 
 <div class ="widget tag">
@@ -603,7 +601,7 @@
   <div class="comments" id="comments">
     
       <div class="fb-comments"
-           data-href="https://dustinchu.github.io/2017/06/20/java swing -教育訓練程式(第二版)/"
+           data-href="https://dustinchu.github.io/2017/10/02/android-HandlerMessage/"
            data-numposts="10"
            data-width="100%"
            data-colorscheme="light">
@@ -714,7 +712,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#教育訓練小程式"><span class="nav-number">1.</span> <span class="nav-text">教育訓練小程式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#程式主畫面"><span class="nav-number">2.</span> <span class="nav-text">程式主畫面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#課程建立"><span class="nav-number">2.1.</span> <span class="nav-text">課程建立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#課程邀請"><span class="nav-number">2.2.</span> <span class="nav-text">課程邀請</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mail回覆是否要上課"><span class="nav-number">2.3.</span> <span class="nav-text">Mail回覆是否要上課</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#講師評分-課程講義上傳"><span class="nav-number">2.4.</span> <span class="nav-text">講師評分 課程講義上傳</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Handler-範例"><span class="nav-number">1.</span> <span class="nav-text">Handler 範例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Handler-範例二"><span class="nav-number">2.</span> <span class="nav-text">Handler 範例二</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MainActivity"><span class="nav-number">2.1.</span> <span class="nav-text">MainActivity</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DateUpdate"><span class="nav-number">2.2.</span> <span class="nav-text">DateUpdate</span></a></li></ol></li></ol></div>
             
 
           </div>
