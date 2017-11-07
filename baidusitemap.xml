@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-%E4%BD%BF%E7%94%A8Word2Vec-%E8%AE%93%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92WIKI/</loc>
+    <lastmod>2017-11-07T02:18:59.459Z</lastmod>
+    <data>
+        <display>
+        <title>Deeplearning4j(DL4J)使用Word2Vec 讓機器學習WIKI</title>
+        <pubTime>2017-10-31T19:32:28.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>Word2Vec</tag>
+         
+         
+           
+             
+              <breadCrumb title="DL4J" url="https://dustinchu.github.io/categories/DL4J/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://dustinchu.github.io/2017/10/02/android-HandlerMessage/</loc>
-    <lastmod>2017-10-07T06:19:30.762Z</lastmod>
+    <lastmod>2017-10-07T06:59:50.432Z</lastmod>
     <data>
         <display>
         <title>android-Handler Message</title>
@@ -101,9 +123,9 @@
         <title>java swing tiptop 財務資料與別廠區資料比對 小程式</title>
         <pubTime>2017-07-01T13:11:59.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -219,9 +241,9 @@
         <title>java-swt 線上人數查看器</title>
         <pubTime>2017-06-05T13:11:59.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swt</tag>
          
@@ -243,9 +265,9 @@
         <title>java swing tiptop異動數量查詢</title>
         <pubTime>2017-05-08T11:54:42.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -269,9 +291,9 @@
         <title>java swing tiptop內銷應收小程式</title>
         <pubTime>2017-04-26T11:54:42.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -295,9 +317,9 @@
         <title>java swing 教育訓練小程式</title>
         <pubTime>2017-05-25T13:11:59.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -319,9 +341,9 @@
         <title>java-swing tiptop出貨排程小程式</title>
         <pubTime>2017-04-30T11:54:42.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -345,9 +367,9 @@
         <title>java-swing-tiptop 調撥清單</title>
         <pubTime>2017-05-30T13:11:59.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -371,9 +393,9 @@
         <title>java-swing-tiptop 程式代號查詢小程式</title>
         <pubTime>2017-06-10T13:11:59.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -395,9 +417,9 @@
         <title>java-swing-tiptop 採購單價查詢</title>
         <pubTime>2017-05-15T11:54:42.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -421,9 +443,9 @@
         <title>java-Swing-tiptop 財務報表(三)</title>
         <pubTime>2017-08-03T13:02:59.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -445,9 +467,9 @@
         <title>java-Swing-tiptop 財務報表(二)</title>
         <pubTime>2017-07-22T10:01:59.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -469,9 +491,9 @@
         <title>BOM查詢系統小程式</title>
         <pubTime>2017-05-04T11:54:42.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -495,9 +517,9 @@
         <title>java-line聊天分割</title>
         <pubTime>2017-01-13T15:17:03.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
          
            
@@ -517,9 +539,9 @@
         <title>java swing -教育訓練程式(第二版)</title>
         <pubTime>2017-06-20T13:11:59.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -541,9 +563,9 @@
         <title>java swing tiptop 財務報表(一)</title>
         <pubTime>2017-07-10T13:11:59.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>swing</tag>
          
@@ -585,9 +607,9 @@
         <title>提升倉管備料效率-小程式</title>
         <pubTime>2017-01-19T15:35:18.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
          
            
@@ -644,9 +666,9 @@
         <title>SQL語法紀錄</title>
         <pubTime>2017-03-05T06:36:51.000Z</pubTime>
         
-        <tag>SQL</tag>
-         
         <tag>works</tag>
+         
+        <tag>SQL</tag>
          
          
            
@@ -688,13 +710,13 @@
         
         <tag>android</tag>
          
-        <tag>works</tag>
-         
         <tag>TabLayout</tag>
          
         <tag>FragmentActivity</tag>
          
         <tag>Viewpager</tag>
+         
+        <tag>works</tag>
          
          
            
@@ -714,11 +736,11 @@
         <title>java-txt資料讀取存入SQL</title>
         <pubTime>2017-03-24T09:10:23.000Z</pubTime>
         
-        <tag>SQL</tag>
+        <tag>java</tag>
          
         <tag>works</tag>
          
-        <tag>java</tag>
+        <tag>SQL</tag>
          
          
            
@@ -753,9 +775,9 @@
         <title>使用jxl將excel-讀到JAVA上</title>
         <pubTime>2017-03-28T15:23:23.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>excel</tag>
          
@@ -777,9 +799,9 @@
         <title>使用jxl將java資料導入excel</title>
         <pubTime>2017-03-27T14:10:23.000Z</pubTime>
         
-        <tag>works</tag>
-         
         <tag>java</tag>
+         
+        <tag>works</tag>
          
         <tag>excel</tag>
          

@@ -82,7 +82,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="works,SQL," />
+  <meta name="keywords" content="java,Word2Vec," />
 
 
 
@@ -101,13 +101,23 @@
 
 
 
+<meta name="description" content="word2vec 是基於非監督式學習，訓練集一定一定要越大越好，語料涵蓋的越全面，訓練出來的結果也會越漂亮，本篇所採用的是維基百科於的備份，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SQL語法紀錄">
-<meta property="og:url" content="https://dustinchu.github.io/2017/03/05/SQL語法紀錄/index.html">
+<meta property="og:title" content="Deeplearning4j(DL4J)使用Word2Vec 讓機器學習WIKI">
+<meta property="og:url" content="https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-使用Word2Vec-讓機器學習WIKI/index.html">
 <meta property="og:site_name" content="DustinChu Blog">
-<meta property="og:updated_time" content="2017-09-14T14:43:59.493Z">
+<meta property="og:description" content="word2vec 是基於非監督式學習，訓練集一定一定要越大越好，語料涵蓋的越全面，訓練出來的結果也會越漂亮，本篇所採用的是維基百科於的備份，">
+<meta property="og:image" content="https://i.imgur.com/ADUtIDs.png">
+<meta property="og:image" content="https://i.imgur.com/mSJmpxS.png">
+<meta property="og:image" content="https://i.imgur.com/GxnWvS1.png">
+<meta property="og:image" content="https://i.imgur.com/8gBYzN5.png">
+<meta property="og:image" content="https://i.imgur.com/elZ6lTZ.png">
+<meta property="og:image" content="https://i.imgur.com/beIRK7Z.png">
+<meta property="og:updated_time" content="2017-11-07T02:18:59.459Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SQL語法紀錄">
+<meta name="twitter:title" content="Deeplearning4j(DL4J)使用Word2Vec 讓機器學習WIKI">
+<meta name="twitter:description" content="word2vec 是基於非監督式學習，訓練集一定一定要越大越好，語料涵蓋的越全面，訓練出來的結果也會越漂亮，本篇所採用的是維基百科於的備份，">
+<meta name="twitter:image" content="https://i.imgur.com/ADUtIDs.png">
 
 
 
@@ -135,13 +145,13 @@
 
 
 
-  <link rel="canonical" href="https://dustinchu.github.io/2017/03/05/SQL語法紀錄/"/>
+  <link rel="canonical" href="https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-使用Word2Vec-讓機器學習WIKI/"/>
 
 <meta name="baidu-site-verification" content="1dLOlOIvKy" />
 
 
 
-  <title> SQL語法紀錄 | DustinChu Blog </title>
+  <title> Deeplearning4j(DL4J)使用Word2Vec 讓機器學習WIKI | DustinChu Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -324,7 +334,7 @@
 
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://dustinchu.github.io/2017/03/05/SQL語法紀錄/">
+  <link itemprop="mainEntityOfPage" href="https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-使用Word2Vec-讓機器學習WIKI/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Dustinchu">
@@ -348,7 +358,7 @@
             
             
               
-                SQL語法紀錄
+                Deeplearning4j(DL4J)使用Word2Vec 讓機器學習WIKI
               
             
           </h1>
@@ -361,8 +371,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-05T14:36:51+08:00">
-                2017-03-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-01T03:32:28+08:00">
+                2017-11-01
               </time>
 
 
@@ -382,8 +392,8 @@
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/SQL/" itemprop="url" rel="index">
-                    <span itemprop="name">SQL</span>
+                  <a href="/categories/DL4J/" itemprop="url" rel="index">
+                    <span itemprop="name">DL4J</span>
                   </a>
                 </span>
 
@@ -397,8 +407,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2017/03/05/SQL語法紀錄/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="https://dustinchu.github.io/2017/03/05/SQL語法紀錄/" itemprop="commentCount">0</span> comments
+                <a href="/2017/11/01/Deeplearning4j-DL4J-使用Word2Vec-讓機器學習WIKI/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-使用Word2Vec-讓機器學習WIKI/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -412,7 +422,7 @@
     <i class="fa fa-calendar-o"></i>
     </span>
     <span class="post-meta-item-text">字數統計</span>
-    <span class="post-meta-item-text">960&nbsp;個字</span>
+    <span class="post-meta-item-text">534&nbsp;個字</span>
     </span>
     
     <span class="post-count">
@@ -421,7 +431,7 @@
     <i class="fa fa-calendar-o"></i>
     </span>
     <span class="post-meta-item-text">預計閱讀時間</span>
-    <span class="post-meta-item-text">4&nbsp;分鐘</span>
+    <span class="post-meta-item-text">2&nbsp;分鐘</span>
     </span>
     
 
@@ -450,235 +460,21 @@
       
 
       
-        <div data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div>
+        <!-- <img src="http://wuchong.me/blog/2014/12/13/hexo-theme-creating-image-styles/https://i.imgur.com/VZChPnR.png" class="img-topic" /> -->
+<!-- <img src="https://i.imgur.com/VZChPnR.png"class="img-topic" /> -->
+<!-- <img src="https://i.imgur.com/VZChPnR.png" width="900" height="400" /> -->
+<p> word2vec 是基於非監督式學習，訓練集一定一定要越大越好，語料涵蓋的越全面，訓練出來的結果也會越漂亮，本篇所採用的是維基百科於的備份，</p>
+<div data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div>
 
 <a id="more"></a>
-<h2 id="SQL語法紀錄"><a href="#SQL語法紀錄" class="headerlink" title="SQL語法紀錄"></a>SQL語法紀錄</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>一直以來只記得 select insert drop…<br>每次要用都忘記..還是來記錄一下!</p>
-<h2 id="基礎語法"><a href="#基礎語法" class="headerlink" title="基礎語法"></a>基礎語法</h2><table>
-<thead>
-<tr>
-<th style="text-align:left">操作功能</th>
-<th style="text-align:center">SQL 語法</th>
-<th style="text-align:right">說明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">建立資料庫</td>
-<td style="text-align:center"><code>create database</code> 資料庫名稱;</td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">列出所有資料庫</td>
-<td style="text-align:center"><code>show databases;</code></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">刪除資料庫</td>
-<td style="text-align:center"><code>drop database 資料庫名稱;</code></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">使用資料庫</td>
-<td style="text-align:center"><code>use 資料庫名稱;</code></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">建立資料表</td>
-<td style="text-align:center"><strong><code>create table 資料表名稱(&lt;br&gt;sn integer auto_increment primary key,&lt;br&gt;name char(20),&lt;br&gt;mail char(50),&lt;br&gt;home char(50),&lt;br&gt;messages char(50));</code></strong></td>
-<td style="text-align:right">常用資料庫資料型態 <br>1. INT (整數) <br>2. CHAR (1~255字元字串) <br>3. VARCHAR (不超過255字元不定長度字串) <br>4. TEXT (不定長度字串最多65535字元)</td>
-</tr>
-<tr>
-<td style="text-align:left">列出資料表欄位資訊</td>
-<td style="text-align:center"><strong><code>describe 資料表名稱;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">修改資料表欄位</td>
-<td style="text-align:center"><strong><code>alter table 資料表名稱&lt;br&gt;change column 原來欄位名稱&lt;br&gt;新欄位名稱資料型態;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">新增資料表欄位</td>
-<td style="text-align:center"><strong><code>alter table 資料表名稱 add &lt;br&gt;column 欄位名稱 資料型態;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">刪除資料表欄位</td>
-<td style="text-align:center"><strong><code>alter table 資料表名稱 drop column 欄位名稱;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">刪除資料表</td>
-<td style="text-align:center"><strong><code>drop table 資料表名稱;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">清空資料表</td>
-<td style="text-align:center"><strong><code>truncate table 資料表名稱;</code></strong></td>
-<td style="text-align:right">只清除資料並保留結構、欄位、索引 …</td>
-</tr>
-<tr>
-<td style="text-align:left">插入欄位資料</td>
-<td style="text-align:center"><strong><code>insert into 資料表名稱(欄位1,欄位2,欄位3,欄位4, ...... 欄位N)&lt;br&gt;values(&#39;值1&#39;,&#39;值2&#39;,&#39;值3&#39;,&#39;值4&#39;, ...... &#39;值N&#39;);</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">更新修改欄位資料</td>
-<td style="text-align:center"><strong><code>update 資料表名稱 set 欄位1=&#39;值1&#39;,欄位2=&#39;值2&#39;,欄位3=&#39;值3&#39;,... &lt;br&gt;欄位N=&#39;值N&#39;where 條件式 (例如 sn=&#39;5&#39; 或 name=&#39;塔司尼&#39; );</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">查詢單一欄位資料</td>
-<td style="text-align:center"><strong><code>select 欄位名 from 資料表名稱;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">查詢多個欄位資料</td>
-<td style="text-align:center"><strong><code>select 欄位名, 欄位名, 欄位名 from 資料表名稱;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">查詢欄位資料的唯一值</td>
-<td style="text-align:center"><strong><code>select distinct 欄位名 from 資料表名稱;</code></strong></td>
-<td style="text-align:right">重複值只列一次</td>
-</tr>
-<tr>
-<td style="text-align:left">查詢所有欄位資料</td>
-<td style="text-align:center"><strong><code>select * from 資料表名稱;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">條件式查詢</td>
-<td style="text-align:center"><strong><code>select * from 資料表名稱 where 條件式 (例如 sn=&#39;5&#39;);</code></strong></td>
-<td style="text-align:right">（=, &lt;, &gt;, !=）</td>
-</tr>
-<tr>
-<td style="text-align:left">條件式查詢 and</td>
-<td style="text-align:center"><strong><code>select * from 資料表名稱 where 條件式1 and 條件式2;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">條件式查詢 or</td>
-<td style="text-align:center"><strong><code>select * from 資料表名稱 where 條件式1 or 條件式2;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">查詢某一範圍 between</td>
-<td style="text-align:center"><strong><code>select * from 資料表名稱 where 欄位名 between 值1 and 值2;</code></strong></td>
-<td style="text-align:right">值為數字</td>
-</tr>
-<tr>
-<td style="text-align:left">查詢空值欄位的資料</td>
-<td style="text-align:center"><strong><code>select * from 資料表名稱 where 欄位名 is null</code></strong></td>
-<td style="text-align:right">not null;</td>
-</tr>
-<tr>
-<td style="text-align:left">查詢特定筆數資料</td>
-<td style="text-align:center"><strong><code>select * from 資料表名稱 limit 8, 10;</code></strong></td>
-<td style="text-align:right">第9筆開始選取10筆</td>
-</tr>
-<tr>
-<td style="text-align:left">查詢結果遞增排序</td>
-<td style="text-align:center"><strong><code>select * from 資料表名稱 order by 欄位名;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">查詢結果遞減排序</td>
-<td style="text-align:center"><strong><code>select * from 資料表名稱 order by 欄位名 desc ;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">查詢比對字串列出單一欄位</td>
-<td style="text-align:center"><strong><code>select 欄位名 from 資料表名稱 where 欄位名 like &#39;%字串%&#39;;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">查詢比對字串列出所有欄位</td>
-<td style="text-align:center"><strong><code>select * from 資料表名稱 where 欄位名 like &#39;%字串%&#39;;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">刪除條件值資料</td>
-<td style="text-align:center"><strong><code>delete from 資料表名稱 where 條件式 (例如 sn=&#39;5&#39; 或 id=&#39;91001&#39; );</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">刪除條件值資料</td>
-<td style="text-align:center"><strong><code>delete from 資料表名稱 where 條件式1 and 條件式2;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">刪除條件值資料</td>
-<td style="text-align:center"><strong><code>delete from 資料表名稱 where 條件式1 or 條件式2;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">比對刪除條件值資料</td>
-<td style="text-align:center"><strong><code>delete from 資料表名稱 where 欄位名 like &#39;%字串%&#39;;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">一筆數值找尋資料</td>
-<td style="text-align:center"><strong><code>Select * from XXXX where XXXX = &#39;XXX&#39;;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">兩筆數值找尋資料</td>
-<td style="text-align:center"><strong><code>Select * from XXXX where XXXX = &#39;XXX&#39;and xxxx=&#39;xxxx&#39;;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">一筆資料找尋刪除資料</td>
-<td style="text-align:center"><strong><code>delete from XXXX where xxxx=&#39;xxxx&#39;;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">兩筆資料找尋刪除資料</td>
-<td style="text-align:center"><strong><code>delete from XXXX where xxxx=&#39;xxxx&#39; and xxxx=&#39;xxxx&#39;;</code></strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="進階語法"><a href="#進階語法" class="headerlink" title="進階語法"></a>進階語法</h2><table>
-<thead>
-<tr>
-<th style="text-align:left">操作功能</th>
-<th style="text-align:center">SQL 語法</th>
-<th style="text-align:right">說明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">查看正在執行的行程</td>
-<td style="text-align:center"><strong><code>show processlist;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">查看 Master 狀態</td>
-<td style="text-align:center"><strong><code>show master status;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">查看 Slave 狀態</td>
-<td style="text-align:center"><strong><code>show slave status\G;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">查看 binlog 狀態</td>
-<td style="text-align:center"><strong><code>show binary logs;</code></strong></td>
-<td style="text-align:right"></td>
-</tr>
-<tr>
-<td style="text-align:left">清除過時的 binlog</td>
-<td style="text-align:center"><strong><code>purge binary logs to &#39;mysql-bin.000006&#39;;</code></strong></td>
-<td style="text-align:right">將刪除 mysql-bin.000001 ~ 5 的 binlog</td>
-</tr>
-</tbody>
-</table>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
-<li><a href="http://www.fooish.com/sql/auto-increment.html" target="_blank" rel="external">SQL常用參考資料1</a></li>
-<li><a href="http://www.1keydata.com/tw/sql/sqlselect.html" target="_blank" rel="external">SQL常用參考資料2</a></li>
-</ul>
+<h2 id="取得資料"><a href="#取得資料" class="headerlink" title="取得資料"></a>取得資料</h2><p><a href="http://www.books.com.tw/products/CN11222339" target="_blank" rel="external">維基百科備份下載</a><br>我這邊下載的是 <code>zhwiki-20171001-pages-meta-current.xml.bz2</code><br>解壓縮後<code>zhwiki-20171001-pages-meta-current.xml</code></p>
+<h2 id="處理XML"><a href="#處理XML" class="headerlink" title="處理XML"></a>處理XML</h2><p>我是使用Ruby來處理XML<a href="https://github.com/yohasebe/wp2txt" target="_blank" rel="external">Github</a><br>使用 <code>$ wp2txt --input-file zhwiki-20171001-pages-meta.xml</code> 這樣會將<code>wiki xml</code>分割成許多的txt<br>像是這樣<br><img src="https://i.imgur.com/ADUtIDs.png" width="300" height="300"><br>如果你不想要訓練太多，想測試一下，可以將他分割的一部分給機器訓練就好了比較不會花太久時間訓練他<br>將分割的txt合併請輸入<br><code>$ cat zhwiki-20171001-pages-meta-* | grep -v &#39;^\s*$&#39; &gt; zhwiki-corpus.txt</code><br>跑完後應該會像這樣<br><img src="https://i.imgur.com/mSJmpxS.png" width="200" height="200"><br>內容會是這樣<br><img src="https://i.imgur.com/GxnWvS1.png" width="300" height="300"></p>
+<h2 id="自然語言分詞"><a href="#自然語言分詞" class="headerlink" title="自然語言分詞"></a>自然語言分詞</h2><p>我這邊是使用<a href="https://github.com/hankcs/HanLP" target="_blank" rel="external">Github</a><br>也可以使用 StanfordNlp<br>就看個人喜好與實作效率來決定使用哪一個就好了<br>分詞完資料像這樣<br><img src="https://i.imgur.com/8gBYzN5.png" width="200" height="400"></p>
+<h2 id="DL4J訓練-訓練完畢保存"><a href="#DL4J訓練-訓練完畢保存" class="headerlink" title="DL4J訓練 訓練完畢保存"></a>DL4J訓練 訓練完畢保存</h2><p>這邊訓練的文件使用剛剛分割完的001其中一個Txt<br>目前使用CPU學習的話學習整個wiki 我的電腦要學習兩天</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Word2VecCmd</span> </span>&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Logger log = LoggerFactory.getLogger(Word2VecRawTextExample.class);</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(<span class="keyword">final</span> String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line"></div><div class="line">        log.info(<span class="string">"Load data...."</span>);</div><div class="line">        SentenceIterator iter = <span class="keyword">new</span> LineSentenceIterator(<span class="keyword">new</span> File(<span class="string">"D:\\wp2txt-master\\wiki\\001.txt"</span>));</div><div class="line">        iter.setPreProcessor(<span class="keyword">new</span> SentencePreProcessor() &#123;</div><div class="line">            <span class="meta">@Override</span></div><div class="line">            <span class="function"><span class="keyword">public</span> String <span class="title">preProcess</span><span class="params">(String sentence)</span> </span>&#123;</div><div class="line">                <span class="keyword">return</span> sentence.toLowerCase();</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line"></div><div class="line"></div><div class="line">        TokenizerFactory t = <span class="keyword">new</span> DefaultTokenizerFactory();</div><div class="line">        t.setTokenPreProcessor(<span class="keyword">new</span> CommonPreprocessor());</div><div class="line"></div><div class="line"></div><div class="line">        log.info(<span class="string">"Build model..."</span>);</div><div class="line">        <span class="keyword">int</span> batchSize = <span class="number">1000</span>;</div><div class="line">        <span class="keyword">int</span> iterations = <span class="number">5</span>;</div><div class="line">        <span class="keyword">int</span> layerSize = <span class="number">150</span>;</div><div class="line"></div><div class="line">        Word2Vec vec = <span class="keyword">new</span> Word2Vec.Builder()</div><div class="line">            .batchSize(batchSize)</div><div class="line"></div><div class="line">            .minWordFrequency(<span class="number">5</span>)</div><div class="line">            .useAdaGrad(<span class="keyword">false</span>)</div><div class="line">            .layerSize(layerSize)</div><div class="line">            .iterations(iterations)</div><div class="line">            .seed(<span class="number">7485</span>)</div><div class="line">            .windowSize(<span class="number">5</span>)</div><div class="line">            .learningRate(<span class="number">0.025</span>)</div><div class="line">            .minLearningRate(<span class="number">1e-3</span>)</div><div class="line">            .negativeSample(<span class="number">10</span>)</div><div class="line">            .iterate(iter)</div><div class="line">            .tokenizerFactory(t)</div><div class="line">            .workers(<span class="number">6</span>)</div><div class="line">            .build();</div><div class="line">        log.info(<span class="string">"Fitting Word2Vec model...."</span>);</div><div class="line">        vec.fit();</div><div class="line"></div><div class="line">        WordVectorSerializer.writeWordVectors(vec, <span class="string">"pathToWriteto.txt"</span>);</div><div class="line">        log.info(<span class="string">"Closest Words:"</span>);</div><div class="line">        Collection&lt;String&gt; lst = vec.wordsNearest(<span class="string">"數學"</span>, <span class="number">3</span>);</div><div class="line">        System.out.println(lst);</div><div class="line">        <span class="keyword">double</span> lst1 = vec.similarity(<span class="string">"數學"</span>, <span class="string">"物理"</span>);</div><div class="line">        System.out.println(lst1);</div><div class="line"></div><div class="line">        log.info(<span class="string">"Save......."</span>);</div><div class="line">        WordVectorSerializer.writeWordVectors(vec, <span class="string">"D:\\wordvectors.txt"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>輸出結果<br><img src="https://i.imgur.com/elZ6lTZ.png" width="300" height="300"></p>
+<h2 id="訓練讀取"><a href="#訓練讀取" class="headerlink" title="訓練讀取"></a>訓練讀取</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Word2VecPredictCmd</span> </span>&#123;</div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(<span class="keyword">final</span> String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">    WordVectors vec = WordVectorSerializer.loadTxtVectors(<span class="keyword">new</span> File(<span class="string">"D:\\wordvectors.txt"</span>));</div><div class="line"></div><div class="line"></div><div class="line">      String[] names = &#123;<span class="string">"數學"</span>&#125;;</div><div class="line">      <span class="keyword">for</span>(String name:names) &#123;</div><div class="line">          System.out.println(name+<span class="string">"&gt;&gt;&gt;&gt;&gt;&gt;"</span>);</div><div class="line">          Collection&lt;String&gt; lst = vec.wordsNearest(name, <span class="number">5</span>);</div><div class="line">          System.out.println(lst);</div><div class="line">          <span class="keyword">double</span> lst1 = vec.similarity(<span class="string">"數學"</span>, <span class="string">"物理"</span>);</div><div class="line">          System.out.println(lst1);</div><div class="line"></div><div class="line">      &#125;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>輸出結果<br><img src="https://i.imgur.com/beIRK7Z.png" width="300" height="300"></p>
 
       
     </div>
@@ -701,6 +497,37 @@
     <div>
         
           
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <p><span>文章標題:</span><a href="/2017/11/01/Deeplearning4j-DL4J-使用Word2Vec-讓機器學習WIKI/">Deeplearning4j(DL4J)使用Word2Vec 讓機器學習WIKI</a></p>
+  <p><span>文章作者:</span><a href="/" title="訪問 Dustinchu 的個人部落格">Dustinchu</a></p>
+  <p><span>發布時間:</span>2017年11月01日 - 03:11</p>
+  <p><span>最後更新:</span>2017年11月07日 - 10:11</p>
+  <p><span>原始連結:</span><a href="/2017/11/01/Deeplearning4j-DL4J-使用Word2Vec-讓機器學習WIKI/" title="Deeplearning4j(DL4J)使用Word2Vec 讓機器學習WIKI">https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-使用Word2Vec-讓機器學習WIKI/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-使用Word2Vec-讓機器學習WIKI/"  aria-label="複製成功!"></i></span>
+  </p>
+  <p><span>許可協議:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">屬名-非商業性使用-禁止編譯 4.0 國際</a>  轉載請保留原文連結及作者。</p>
+</div>
+<script>
+    var clipboard = new Clipboard('.fa-clipboard');
+	clipboard.on('success', $(function(){
+	  $(".fa-clipboard").click(function(){
+		swal({
+		  title: "",
+		  text: '複製成功',
+		  html: false,
+		  timer: 500,
+		  showConfirmButton: false
+	    });
+	  });
+    }));
+</script>
+
 
         
   </div>
@@ -708,9 +535,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/works/" rel="tag"># works</a>
+            <a href="/tags/java/" rel="tag"># java</a>
           
-            <a href="/tags/SQL/" rel="tag"># SQL</a>
+            <a href="/tags/Word2Vec/" rel="tag"># Word2Vec</a>
           
         </div>
       
@@ -719,8 +546,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/20/詳細解讀DialogFragment/" rel="next" title="詳細解讀DialogFragment">
-                <i class="fa fa-chevron-left"></i> 詳細解讀DialogFragment
+              <a href="/2017/10/02/android-HandlerMessage/" rel="next" title="android-Handler Message">
+                <i class="fa fa-chevron-left"></i> android-Handler Message
               </a>
             
           </div>
@@ -729,16 +556,12 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/24/java-txt資料讀取存入SQL/" rel="prev" title="java-txt資料讀取存入SQL">
-                java-txt資料讀取存入SQL <i class="fa fa-chevron-right"></i>
-              </a>
-            
           </div>
         </div>
       
 
       
-	<h3> 相關文章：</h3><ul class="related-posts"><li><a href="/2017/03/24/java-txt資料讀取存入SQL/">java-txt資料讀取存入SQL</a></li><li><a href="/2017/05/08/java-swing-tiptop異動數量查詢/">java swing tiptop異動數量查詢</a></li><li><a href="/2017/07/22/java-Swing-tiptop-財務報表-二/">java-Swing-tiptop 財務報表(二)</a></li><li><a href="/2017/07/10/java swing tiptop-財務報表-一/">java swing tiptop 財務報表(一)</a></li><li><a href="/2017/06/20/java swing -教育訓練程式(第二版)/">java swing -教育訓練程式(第二版)</a></li><li><a href="/2017/07/01/java swing tiptop-財務資料與別廠區資料比對-小程式/">java swing tiptop 財務資料與別廠區資料比對 小程式</a></li><li><a href="/2017/04/30/java-swing-tiptop出貨排程小程式/">java-swing tiptop出貨排程小程式</a></li><li><a href="/2017/06/10/java-swing-tiptop-程式代號查詢小程式/">java-swing-tiptop 程式代號查詢小程式</a></li><li><a href="/2017/05/15/java-swing-tiptop-採購單價查詢/">java-swing-tiptop 採購單價查詢</a></li><li><a href="/2017/01/13/java-line/">java-line聊天分割</a></li></ul>
+	<h3> 相關文章：</h3><ul class="related-posts"><li><a href="/2017/05/08/java-swing-tiptop異動數量查詢/">java swing tiptop異動數量查詢</a></li><li><a href="/2017/08/03/java-Swing-tiptop-財務報表-三/">java-Swing-tiptop 財務報表(三)</a></li><li><a href="/2017/07/10/java swing tiptop-財務報表-一/">java swing tiptop 財務報表(一)</a></li><li><a href="/2017/06/20/java swing -教育訓練程式(第二版)/">java swing -教育訓練程式(第二版)</a></li><li><a href="/2017/07/01/java swing tiptop-財務資料與別廠區資料比對-小程式/">java swing tiptop 財務資料與別廠區資料比對 小程式</a></li><li><a href="/2017/04/30/java-swing-tiptop出貨排程小程式/">java-swing tiptop出貨排程小程式</a></li><li><a href="/2017/06/10/java-swing-tiptop-程式代號查詢小程式/">java-swing-tiptop 程式代號查詢小程式</a></li><li><a href="/2017/05/15/java-swing-tiptop-採購單價查詢/">java-swing-tiptop 採購單價查詢</a></li><li><a href="/2017/01/13/java-line/">java-line聊天分割</a></li><li><a href="/2017/07/22/java-Swing-tiptop-財務報表-二/">java-Swing-tiptop 財務報表(二)</a></li></ul>
 
 
 <div class ="widget tag">
@@ -782,7 +605,7 @@
   <div class="comments" id="comments">
     
       <div class="fb-comments"
-           data-href="https://dustinchu.github.io/2017/03/05/SQL語法紀錄/"
+           data-href="https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-使用Word2Vec-讓機器學習WIKI/"
            data-numposts="10"
            data-width="100%"
            data-colorscheme="light">
@@ -893,7 +716,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#SQL語法紀錄"><span class="nav-number">1.</span> <span class="nav-text">SQL語法紀錄</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基礎語法"><span class="nav-number">2.</span> <span class="nav-text">基礎語法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#進階語法"><span class="nav-number">3.</span> <span class="nav-text">進階語法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考資料"><span class="nav-number">4.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#取得資料"><span class="nav-number">1.</span> <span class="nav-text">取得資料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#處理XML"><span class="nav-number">2.</span> <span class="nav-text">處理XML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自然語言分詞"><span class="nav-number">3.</span> <span class="nav-text">自然語言分詞</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DL4J訓練-訓練完畢保存"><span class="nav-number">4.</span> <span class="nav-text">DL4J訓練 訓練完畢保存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#訓練讀取"><span class="nav-number">5.</span> <span class="nav-text">訓練讀取</span></a></li></ol></div>
             
 
           </div>
