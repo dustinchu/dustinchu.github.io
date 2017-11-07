@@ -107,7 +107,7 @@
 <meta property="og:url" content="https://dustinchu.github.io/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/index.html">
 <meta property="og:site_name" content="DustinChu Blog">
 <meta property="og:description" content="處理大量原始資料。機器學習算法期望數據在開始訓練過程之前以某種方式被格式化。為了準備機器學習算法攝取的數據，必須對其進行預處理並將其轉換為正確的格式">
-<meta property="og:updated_time" content="2017-11-07T08:26:51.972Z">
+<meta property="og:updated_time" content="2017-11-07T08:28:35.887Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python使用sklearn進行資料預處理(學習筆記)">
 <meta name="twitter:description" content="處理大量原始資料。機器學習算法期望數據在開始訓練過程之前以某種方式被格式化。為了準備機器學習算法攝取的數據，必須對其進行預處理並將其轉換為正確的格式">
@@ -415,7 +415,7 @@
     <i class="fa fa-calendar-o"></i>
     </span>
     <span class="post-meta-item-text">字數統計</span>
-    <span class="post-meta-item-text">644&nbsp;個字</span>
+    <span class="post-meta-item-text">641&nbsp;個字</span>
     </span>
     
     <span class="post-count">
@@ -466,9 +466,7 @@
 <p>當如果想要將數值轉換成布林值的時候，可以使用這個方法<br>如果&gt;2.1的話 1  否則 0</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">data_binarized = preprocessing.Binarizer(threshold=<span class="number">2.1</span>).transform(input_data)</div><div class="line">print(data_binarized)</div></pre></td></tr></table></figure>
-<blockquote>
-<p>輸出結果<br>[[ 1.  0.  1.]<br>[ 0.  1.  0.]<br>[ 1.  0.  0.]<br>[ 1.  0.  0.]]</p>
-</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[[ <span class="number">1.</span>  <span class="number">0.</span>  <span class="number">1.</span>]</div><div class="line">[ <span class="number">0.</span>  <span class="number">1.</span>  <span class="number">0.</span>]</div><div class="line">[ <span class="number">1.</span>  <span class="number">0.</span>  <span class="number">0.</span>]</div><div class="line">[ <span class="number">1.</span>  <span class="number">0.</span>  <span class="number">0.</span>]]</div></pre></td></tr></table></figure>
 <h3 id="矩陣平均值"><a href="#矩陣平均值" class="headerlink" title="矩陣平均值"></a>矩陣平均值</h3><p>去除平均值是機器學習中常用的預處理技術。從我們的特徵向量中去除均值通常是有用的，因此每個特徵都以零為中心。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">#mean() 计算矩阵均值  axis=0 每一列</span></div><div class="line">print(<span class="string">"\nBEFORE:"</span>)</div><div class="line">print(<span class="string">"Mean ="</span>, input_data.mean(axis=<span class="number">0</span>))</div><div class="line"><span class="comment">#std 計算 矩陣標準差</span></div><div class="line">print(<span class="string">"Std deviation ="</span>, input_data.std(axis=<span class="number">0</span>))</div></pre></td></tr></table></figure>
 <blockquote>
