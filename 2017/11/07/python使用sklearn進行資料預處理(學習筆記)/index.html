@@ -82,7 +82,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="python,sklearn," />
 
 
 
@@ -101,15 +101,16 @@
 
 
 
-<meta name="description" content="There are no shortcuts to anyplace worth going.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DustinChu Blog">
-<meta property="og:url" content="https://dustinchu.github.io/categories/python/index.html">
+<meta name="description" content="處理大量原始資料。機器學習算法期望數據在開始訓練過程之前以某種方式被格式化。為了準備機器學習算法攝取的數據，必須對其進行預處理並將其轉換為正確的格式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python使用sklearn進行資料預處理(學習筆記)">
+<meta property="og:url" content="https://dustinchu.github.io/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/index.html">
 <meta property="og:site_name" content="DustinChu Blog">
-<meta property="og:description" content="There are no shortcuts to anyplace worth going.">
+<meta property="og:description" content="處理大量原始資料。機器學習算法期望數據在開始訓練過程之前以某種方式被格式化。為了準備機器學習算法攝取的數據，必須對其進行預處理並將其轉換為正確的格式">
+<meta property="og:updated_time" content="2017-11-07T07:39:33.462Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DustinChu Blog">
-<meta name="twitter:description" content="There are no shortcuts to anyplace worth going.">
+<meta name="twitter:title" content="python使用sklearn進行資料預處理(學習筆記)">
+<meta name="twitter:description" content="處理大量原始資料。機器學習算法期望數據在開始訓練過程之前以某種方式被格式化。為了準備機器學習算法攝取的數據，必須對其進行預處理並將其轉換為正確的格式">
 
 
 
@@ -137,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="https://dustinchu.github.io/categories/python/"/>
+  <link rel="canonical" href="https://dustinchu.github.io/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/"/>
 
 <meta name="baidu-site-verification" content="1dLOlOIvKy" />
 
 
 
-  <title> Category: python | DustinChu Blog </title>
+  <title> python使用sklearn進行資料預處理(學習筆記) | DustinChu Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -191,7 +192,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -314,75 +315,280 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        python
-        <small>Category</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/" itemprop="url">
-              
-                <span itemprop="name">python使用sklearn進行資料預處理(學習筆記)</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-07T15:29:25+08:00"
-              content="2017-11-07" >
-          11-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/01/python學習筆記/" itemprop="url">
-              
-                <span itemprop="name">python學習筆記</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-01T21:06:26+08:00"
-              content="2017-04-01" >
-          04-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
 
+  
+  
+  
+
+
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="https://dustinchu.github.io/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Dustinchu">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/logo.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="DustinChu Blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="DustinChu Blog" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                python使用sklearn進行資料預處理(學習筆記)
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-07T15:29:25+08:00">
+                2017-11-07
+              </time>
+
+
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <a href="/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="https://dustinchu.github.io/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+    
+    <span class="post-count">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+    </span>
+    <span class="post-meta-item-text">字數統計</span>
+    <span class="post-meta-item-text">180&nbsp;個字</span>
+    </span>
+    
+    <span class="post-count">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+    </span>
+    <span class="post-meta-item-text">預計閱讀時間</span>
+    <span class="post-meta-item-text">1&nbsp;分鐘</span>
+    </span>
+    
+
+
+    
+          
+            <span class="post-meta-divider">|</span>
+            <div class="fb-like" data-layout="button_count" data-share="true"></div>
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <!-- <img src="http://wuchong.me/blog/2014/12/13/hexo-theme-creating-image-styles/https://i.imgur.com/VZChPnR.png" class="img-topic" /> -->
+<!-- <img src="https://i.imgur.com/VZChPnR.png"class="img-topic" /> -->
+<!-- <img src="https://i.imgur.com/VZChPnR.png" width="900" height="400" /> -->
+<p> 處理大量原始資料。機器學習算法期望數據在開始訓練過程之前以某種方式被格式化。為了準備機器學習算法攝取的數據，必須對其進行預處理並將其轉換為正確的格式</p>
+<div data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div>
+
+<a id="more"></a>
+<h2 id="導入的包"><a href="#導入的包" class="headerlink" title="導入的包"></a>導入的包</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> preprocessing</div></pre></td></tr></table></figure>
+<h2 id="測試資料"><a href="#測試資料" class="headerlink" title="測試資料"></a>測試資料</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">input_data = np.array([[<span class="number">5.1</span>, <span class="number">-2.9</span>, <span class="number">3.3</span>],</div><div class="line">                       [<span class="number">-1.2</span>, <span class="number">7.8</span>, <span class="number">-6.1</span>],</div><div class="line">                       [<span class="number">3.9</span>, <span class="number">0.4</span>, <span class="number">2.1</span>],</div><div class="line">                       [<span class="number">7.3</span>, <span class="number">-9.9</span>, <span class="number">-4.5</span>]])</div></pre></td></tr></table></figure>
+<h3 id="二值化"><a href="#二值化" class="headerlink" title="二值化"></a>二值化</h3><blockquote>
+<p>當如果想要將數值轉換成布林值的時候，可以使用這個方法<br>如果&gt;2.1的話 1  否則 0</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">data_binarized = preprocessing.Binarizer(threshold=<span class="number">2.1</span>).transform(input_data)</div><div class="line">print(data_binarized)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>輸出結果<br>[[ 1.  0.  1.]<br>[ 0.  1.  0.]<br>[ 1.  0.  0.]<br>[ 1.  0.  0.]]</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <div>
+        
+          
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <p><span>文章標題:</span><a href="/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/">python使用sklearn進行資料預處理(學習筆記)</a></p>
+  <p><span>文章作者:</span><a href="/" title="訪問 Dustinchu 的個人部落格">Dustinchu</a></p>
+  <p><span>發布時間:</span>2017年11月07日 - 15:11</p>
+  <p><span>最後更新:</span>2017年11月07日 - 15:11</p>
+  <p><span>原始連結:</span><a href="/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/" title="python使用sklearn進行資料預處理(學習筆記)">https://dustinchu.github.io/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://dustinchu.github.io/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/"  aria-label="複製成功!"></i></span>
+  </p>
+  <p><span>許可協議:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">屬名-非商業性使用-禁止編譯 4.0 國際</a>  轉載請保留原文連結及作者。</p>
+</div>
+<script>
+    var clipboard = new Clipboard('.fa-clipboard');
+	clipboard.on('success', $(function(){
+	  $(".fa-clipboard").click(function(){
+		swal({
+		  title: "",
+		  text: '複製成功',
+		  html: false,
+		  timer: 500,
+		  showConfirmButton: false
+	    });
+	  });
+    }));
+</script>
+
+
+        
+  </div>
+
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/sklearn/" rel="tag"># sklearn</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/01/Deeplearning4j-DL4J-使用Word2Vec-讓機器學習WIKI/" rel="next" title="Deeplearning4j(DL4J)使用Word2Vec 讓機器學習WIKI">
+                <i class="fa fa-chevron-left"></i> Deeplearning4j(DL4J)使用Word2Vec 讓機器學習WIKI
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+	<h3> 相關文章：</h3><ul class="related-posts"><li><a href="/2017/04/01/python學習筆記/">python學習筆記</a></li></ul>
+
+
+<div class ="widget tag">
+  <h3 class ="title"> </ h3>
+ <ul class ="entry">
+ <head>
+ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+ <script>
+   (adsbygoogle = window.adsbygoogle || []).push({
+     google_ad_client: "ca-pub-3136608336853382",
+     enable_page_level_ads: true
+   });
+ </script>
+ </head>
+ </ul>
+</div>
+
+
+      
+      
+    </footer>
+  </article>
+
+
+    <div class="post-spread">
+
+
+
+
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -390,6 +596,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="fb-comments"
+           data-href="https://dustinchu.github.io/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -409,8 +626,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/logo.png"
@@ -474,6 +700,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#導入的包"><span class="nav-number">1.</span> <span class="nav-text">導入的包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#測試資料"><span class="nav-number">2.</span> <span class="nav-text">測試資料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#二值化"><span class="nav-number">2.1.</span> <span class="nav-text">二值化</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
@@ -574,6 +816,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
