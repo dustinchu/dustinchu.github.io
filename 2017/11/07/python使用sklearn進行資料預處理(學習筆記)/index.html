@@ -107,7 +107,7 @@
 <meta property="og:url" content="https://dustinchu.github.io/2017/11/07/python使用sklearn進行資料預處理(學習筆記)/index.html">
 <meta property="og:site_name" content="DustinChu Blog">
 <meta property="og:description" content="處理大量原始資料。機器學習算法期望數據在開始訓練過程之前以某種方式被格式化。為了準備機器學習算法攝取的數據，必須對其進行預處理並將其轉換為正確的格式">
-<meta property="og:updated_time" content="2017-11-07T08:23:10.498Z">
+<meta property="og:updated_time" content="2017-11-07T08:26:51.972Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python使用sklearn進行資料預處理(學習筆記)">
 <meta name="twitter:description" content="處理大量原始資料。機器學習算法期望數據在開始訓練過程之前以某種方式被格式化。為了準備機器學習算法攝取的數據，必須對其進行預處理並將其轉換為正確的格式">
@@ -415,7 +415,7 @@
     <i class="fa fa-calendar-o"></i>
     </span>
     <span class="post-meta-item-text">字數統計</span>
-    <span class="post-meta-item-text">635&nbsp;個字</span>
+    <span class="post-meta-item-text">644&nbsp;個字</span>
     </span>
     
     <span class="post-count">
@@ -469,28 +469,29 @@
 <blockquote>
 <p>輸出結果<br>[[ 1.  0.  1.]<br>[ 0.  1.  0.]<br>[ 1.  0.  0.]<br>[ 1.  0.  0.]]</p>
 </blockquote>
-<h3 id="矩陣平均值"><a href="#矩陣平均值" class="headerlink" title="矩陣平均值"></a>矩陣平均值</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">去除平均值是機器學習中常用的預處理技術。從我們的特徵向量中去除均值通常是有用的，因此每個特徵都以零為中心。</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">#mean() 计算矩阵均值  axis=0 每一列</span></div><div class="line">print(<span class="string">"\nBEFORE:"</span>)</div><div class="line">print(<span class="string">"Mean ="</span>, input_data.mean(axis=<span class="number">0</span>))</div><div class="line"><span class="comment">#std 計算 矩陣標準差</span></div><div class="line">print(<span class="string">"Std deviation ="</span>, input_data.std(axis=<span class="number">0</span>))</div></pre></td></tr></table></figure>
+<h3 id="矩陣平均值"><a href="#矩陣平均值" class="headerlink" title="矩陣平均值"></a>矩陣平均值</h3><p>去除平均值是機器學習中常用的預處理技術。從我們的特徵向量中去除均值通常是有用的，因此每個特徵都以零為中心。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">#mean() 计算矩阵均值  axis=0 每一列</span></div><div class="line">print(<span class="string">"\nBEFORE:"</span>)</div><div class="line">print(<span class="string">"Mean ="</span>, input_data.mean(axis=<span class="number">0</span>))</div><div class="line"><span class="comment">#std 計算 矩陣標準差</span></div><div class="line">print(<span class="string">"Std deviation ="</span>, input_data.std(axis=<span class="number">0</span>))</div></pre></td></tr></table></figure>
 <blockquote>
-<p>輸出結果<br>BEFORE:<br>Mean = [ 3.775 -1.15  -1.3  ]<br>Std deviation = [ 3.12039661  6.36651396  4.0620192 ]</p>
+<p>輸出結果<br>BEFORE:<br>Mean = [ 3.775   -1.15    -1.3  ]<br>Std deviation = [ 3.12039661    6.36651396     4.0620192 ]</p>
 </blockquote>
 <h4 id="去除均值"><a href="#去除均值" class="headerlink" title="去除均值"></a>去除均值</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">data_scaled = preprocessing.scale(input_data)</div><div class="line">print(<span class="string">"\nAFTER:"</span>)</div><div class="line">print(<span class="string">"Mean ="</span>, data_scaled.mean(axis=<span class="number">0</span>))</div><div class="line">print(<span class="string">"Std deviation ="</span>, data_scaled.std(axis=<span class="number">0</span>))</div></pre></td></tr></table></figure>
 <blockquote>
-<p>輸出結果<br>AFTER:<br>Mean = [  1.11022302e-16   0.00000000e+00   2.77555756e-17]<br>Std deviation = [ 1.  1.  1.]</p>
+<p>輸出結果<br>AFTER:<br>Mean = [  1.11022302e-16      0.00000000e+00      2.77555756e-17]<br>Std deviation = [ 1.      1.      1.]</p>
 </blockquote>
 <h3 id="缩放"><a href="#缩放" class="headerlink" title="缩放"></a>缩放</h3><blockquote>
 <p>在特徵向量中，每個特徵的值可以在許多隨機值之間變化。因此，擴展這些特徵變得非常重要，這樣對於機器學習算法來說，這是一個公平的競爭環境。僅僅因為測量的性質</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#將屬性縮放到一個指定的範圍</span></div><div class="line">data_scaler_minmax = preprocessing.MinMaxScaler(feature_range=(<span class="number">0</span>, <span class="number">1</span>))</div><div class="line">data_scaled_minmax = data_scaler_minmax.fit_transform(input_data)</div><div class="line">print(<span class="string">"\nMin max scaled data:\n"</span>, data_scaled_minmax)</div></pre></td></tr></table></figure>
 <blockquote>
-<p>輸出結果<br>Min max scaled data:<br> [[ 0.74117647  0.39548023  1.        ]<br> [ 0.          1.          0.        ]<br> [ 0.6         0.5819209   0.87234043]<br> [ 1.          0.          0.17021277]]</p>
+<p>輸出結果<br>Min max scaled data:<br> [[ 0.74117647      0.39548023    1.        ]<br> [ 0.             1.             0.        ]<br> [ 0.6            0.5819209      0.87234043]<br> [ 1.             0.             0.17021277]]</p>
 </blockquote>
 <p> 每行被縮放，最大值是1所有其他值是相對於這個值。</p>
 <h3 id="正規化"><a href="#正規化" class="headerlink" title="正規化"></a>正規化</h3><p> 正規化指的是最小絕對偏差，通過確保絕對值之和在每一行中為1來工作。L2 歸一化，指的是最小二乘法，確保平方和為1。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">data_normalized_l1 = preprocessing.normalize(input_data, norm=<span class="string">'l1'</span>)</div><div class="line">data_normalized_l2 = preprocessing.normalize(input_data, norm=<span class="string">'l2'</span>)</div><div class="line">print(<span class="string">"\nL1 normalized data:\n"</span>, data_normalized_l1)</div><div class="line">print(<span class="string">"\nL2 normalized data:\n"</span>, data_normalized_l2)</div></pre></td></tr></table></figure>
 <blockquote>
-<p>輸出結果<br>L1 normalized data:<br> [[ 0.45132743 -0.25663717  0.2920354 ]<br> [-0.0794702   0.51655629 -0.40397351]<br> [ 0.609375    0.0625      0.328125  ]<br> [ 0.33640553 -0.4562212  -0.20737327]]<br>L2 normalized data:<br> [[ 0.75765788 -0.43082507  0.49024922]<br> [-0.12030718  0.78199664 -0.61156148]<br> [ 0.87690281  0.08993875  0.47217844]<br> [ 0.55734935 -0.75585734 -0.34357152]]</p>
+<p>輸出結果<br>L1 normalized data:<br> [[ 0.45132743     -0.25663717     0.2920354 ]<br> [-0.0794702       0.51655629    -0.40397351]<br> [ 0.609375       0.0625          0.328125  ]<br> [ 0.33640553    -0.4562212     -0.20737327]]<br>L2 normalized data:<br> [[ 0.75765788     -0.43082507     0.49024922]<br> [-0.12030718      0.78199664     -0.61156148]<br> [ 0.87690281     0.08993875      0.47217844]<br> [ 0.55734935     -0.75585734     -0.34357152]]</p>
 </blockquote>
-<h3 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h3><p><a href="http://www.cnblogs.com/chaosimple/p/4153167.html" target="_blank" rel="external">sklearn</a><br><a href="http://changtw-blog.logdown.com/posts/895468-python-numpy-axis-concept-organize-notes" target="_blank" rel="external">numpy axis概念整理筆記</a></p>
+<h3 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h3><p><a href="http://www.cnblogs.com/chaosimple/p/4153167.html" target="_blank" rel="external">sklearn</a><br><a href="http://changtw-blog.logdown.com/posts/895468-python-numpy-axis-concept-organize-notes" target="_blank" rel="external">numpy axis概念整理筆記</a><br><a href="http://blog.csdn.net/chixujohnny/article/details/51106481" target="_blank" rel="external">numpy.std() 計算矩陣標準差</a></p>
 
       
     </div>
