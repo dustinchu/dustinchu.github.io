@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://dustinchu.github.io/2017/09/23/Android-OEE/</loc>
+    <lastmod>2017-11-23T08:51:30.601Z</lastmod>
+    <data>
+        <display>
+        <title>Android-OEE</title>
+        <pubTime>2017-09-22T17:50:25.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>OEE</tag>
+         
+        <tag>works</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-%E4%BD%BF%E7%94%A8Word2Vec-%E8%AE%93%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92WIKI/</loc>
     <lastmod>2017-11-07T08:42:56.658Z</lastmod>
     <data>
@@ -80,30 +104,6 @@
         <tag>android</tag>
          
         <tag>AsyncTask</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/09/23/Android-OEE/</loc>
-    <lastmod>2017-09-30T02:24:09.591Z</lastmod>
-    <data>
-        <display>
-        <title>Android-OEE</title>
-        <pubTime>2017-09-22T17:50:25.000Z</pubTime>
-        
-        <tag>android</tag>
-         
-        <tag>OEE</tag>
-         
-        <tag>Works</tag>
          
          
            

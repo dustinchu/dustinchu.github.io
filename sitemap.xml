@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dustinchu.github.io/2017/09/23/Android-OEE/</loc>
+    
+    <lastmod>2017-11-23T08:51:30.601Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-%E4%BD%BF%E7%94%A8Word2Vec-%E8%AE%93%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92WIKI/</loc>
     
     <lastmod>2017-11-07T08:42:56.658Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://dustinchu.github.io/2017/10/01/android-AsyncTask-%E8%BD%89/</loc>
     
     <lastmod>2017-10-07T06:19:16.795Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dustinchu.github.io/2017/09/23/Android-OEE/</loc>
-    
-    <lastmod>2017-09-30T02:24:09.591Z</lastmod>
     
   </url>
   
