@@ -6,10 +6,7 @@
     <entry>
       <title><![CDATA[vaadin 響應式即時看板]]></title>
       <url>https://dustinchu.github.io/2017/12/05/vaadin-%E9%9F%BF%E6%87%89%E5%BC%8F%E5%8D%B3%E6%99%82%E7%9C%8B%E6%9D%BF/</url>
-      <content type="html"><![CDATA[<!-- <img src="https://i.imgur.com/HGsJTFY.png" class="img-topic" /> -->
-<!-- <img src="https://i.imgur.com/VZChPnR.png"class="img-topic" /> -->
-<!-- <img src="https://i.imgur.com/HGsJTFY.png" width="900" height="400" /> -->
- <!-- <img src="https://i.imgur.com/HGsJTFY.png" width="900" height="400" /> -->
+      <content type="html"><![CDATA[<p><img src="https://i.imgur.com/qu5OJ0G.png" width="900" height="400"></p>
 <blockquote>
 <p>撈取公司MES的生產資料 將資料圖表化 顯示即時看板<br>要花時間想前端又要做後端 好累阿……</p>
 </blockquote>
