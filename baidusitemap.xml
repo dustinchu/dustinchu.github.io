@@ -4,8 +4,132 @@
 
     
   <url>
+    <loc>https://dustinchu.github.io/2018/01/06/android%E4%BD%BF%E7%94%A8%E6%87%B8%E6%B5%AE%E7%AA%97%E9%AB%94%E8%A3%BD%E4%BD%9C%E8%85%B3%E6%9C%AC/</loc>
+    <lastmod>2018-05-06T13:30:31.732Z</lastmod>
+    <data>
+        <display>
+        <title>android使用懸浮窗體製作腳本</title>
+        <pubTime>2018-01-06T12:58:52.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>works</tag>
+         
+         
+           
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/works/"/>
+          
+             
+              <breadCrumb title="android" url="https://dustinchu.github.io/categories/works/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/01/20/%E8%A9%B3%E7%B4%B0%E8%A7%A3%E8%AE%80DialogFragment/</loc>
+    <lastmod>2018-05-03T13:36:16.577Z</lastmod>
+    <data>
+        <display>
+        <title>詳細解讀DialogFragment</title>
+        <pubTime>2017-01-20T14:07:01.000Z</pubTime>
+        
+        <tag>DialogFragment</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/01/19/%E5%82%99%E6%96%99%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
+    <lastmod>2018-05-03T13:36:14.016Z</lastmod>
+    <data>
+        <display>
+        <title>提升倉管備料效率-小程式</title>
+        <pubTime>2017-01-19T15:35:18.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/03/27/%E4%BD%BF%E7%94%A8jxl%E5%B0%87java%E8%B3%87%E6%96%99%E5%B0%8E%E5%85%A5excel/</loc>
+    <lastmod>2018-05-03T13:36:10.674Z</lastmod>
+    <data>
+        <display>
+        <title>使用jxl將java資料導入excel</title>
+        <pubTime>2017-03-27T14:10:23.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>excel</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/03/28/%E4%BD%BF%E7%94%A8jxl%E5%B0%87excel-%E8%AE%80%E5%88%B0JAVA%E4%B8%8A/</loc>
+    <lastmod>2018-05-03T13:36:07.338Z</lastmod>
+    <data>
+        <display>
+        <title>使用jxl將excel-讀到JAVA上</title>
+        <pubTime>2017-03-28T15:23:23.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>excel</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://dustinchu.github.io/2017/12/05/vaadin-%E9%9F%BF%E6%87%89%E5%BC%8F%E5%8D%B3%E6%99%82%E7%9C%8B%E6%9D%BF/</loc>
-    <lastmod>2018-05-01T13:44:26.149Z</lastmod>
+    <lastmod>2018-05-03T13:36:04.019Z</lastmod>
     <data>
         <display>
         <title>vaadin 響應式即時看板</title>
@@ -19,6 +143,538 @@
            
              
               <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/01/05/toggleButton/</loc>
+    <lastmod>2018-05-03T13:36:01.250Z</lastmod>
+    <data>
+        <display>
+        <title>toggleButton</title>
+        <pubTime>2017-01-05T14:56:29.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>works</tag>
+         
+        <tag>toggleButton</tag>
+         
+        <tag>view</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/android/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2016/12/15/My-New-post/</loc>
+    <lastmod>2018-05-03T13:35:51.318Z</lastmod>
+    <data>
+        <display>
+        <title>FragmentPagerAdapter+ViewPager 實現TabLayout</title>
+        <pubTime>2016-12-15T14:39:42.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>works</tag>
+         
+        <tag>TabLayout</tag>
+         
+        <tag>FragmentActivity</tag>
+         
+        <tag>Viewpager</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/android/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/03/24/java-txt%E8%B3%87%E6%96%99%E8%AE%80%E5%8F%96%E5%AD%98%E5%85%A5SQL/</loc>
+    <lastmod>2018-05-03T13:35:43.309Z</lastmod>
+    <data>
+        <display>
+        <title>java-txt資料讀取存入SQL</title>
+        <pubTime>2017-03-24T09:10:23.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>SQL</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/06/05/java-swt-%E7%B7%9A%E4%B8%8A%E4%BA%BA%E6%95%B8%E6%9F%A5%E7%9C%8B%E5%99%A8/</loc>
+    <lastmod>2018-05-03T13:35:40.063Z</lastmod>
+    <data>
+        <display>
+        <title>java-swt 線上人數查看器</title>
+        <pubTime>2017-06-05T13:11:59.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swt</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/05/08/java-swing-tiptop%E7%95%B0%E5%8B%95%E6%95%B8%E9%87%8F%E6%9F%A5%E8%A9%A2/</loc>
+    <lastmod>2018-05-03T13:35:37.095Z</lastmod>
+    <data>
+        <display>
+        <title>java swing tiptop異動數量查詢</title>
+        <pubTime>2017-05-08T11:54:42.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+        <tag>tiptop</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/05/25/java-swing-tiptop%E6%95%99%E8%82%B2%E8%A8%93%E7%B7%B4%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
+    <lastmod>2018-05-03T13:35:34.248Z</lastmod>
+    <data>
+        <display>
+        <title>java swing 教育訓練小程式</title>
+        <pubTime>2017-05-25T13:11:59.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/04/30/java-swing-tiptop%E5%87%BA%E8%B2%A8%E6%8E%92%E7%A8%8B%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
+    <lastmod>2018-05-03T13:35:31.000Z</lastmod>
+    <data>
+        <display>
+        <title>java-swing tiptop出貨排程小程式</title>
+        <pubTime>2017-04-30T11:54:42.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+        <tag>tiptop</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/04/26/java-swing-tiptop%E5%85%A7%E9%8A%B7%E6%87%89%E6%94%B6%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
+    <lastmod>2018-05-03T13:35:27.943Z</lastmod>
+    <data>
+        <display>
+        <title>java swing tiptop內銷應收小程式</title>
+        <pubTime>2017-04-26T11:54:42.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+        <tag>tiptop</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/07/22/java-Swing-tiptop-%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-%E4%BA%8C/</loc>
+    <lastmod>2018-05-03T13:35:24.636Z</lastmod>
+    <data>
+        <display>
+        <title>java-Swing-tiptop 財務報表(二)</title>
+        <pubTime>2017-07-22T10:01:59.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/08/03/java-Swing-tiptop-%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-%E4%B8%89/</loc>
+    <lastmod>2018-05-03T13:35:21.660Z</lastmod>
+    <data>
+        <display>
+        <title>java-Swing-tiptop 財務報表(三)</title>
+        <pubTime>2017-08-03T13:02:59.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/05/30/java-swing-tiptop-%E8%AA%BF%E6%92%A5%E6%B8%85%E5%96%AE/</loc>
+    <lastmod>2018-05-03T13:35:18.081Z</lastmod>
+    <data>
+        <display>
+        <title>java-swing-tiptop 調撥清單</title>
+        <pubTime>2017-05-30T13:11:59.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+        <tag>tiptop</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/06/10/java-swing-tiptop-%E7%A8%8B%E5%BC%8F%E4%BB%A3%E8%99%9F%E6%9F%A5%E8%A9%A2%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
+    <lastmod>2018-05-03T13:35:14.760Z</lastmod>
+    <data>
+        <display>
+        <title>java-swing-tiptop 程式代號查詢小程式</title>
+        <pubTime>2017-06-10T13:11:59.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/05/15/java-swing-tiptop-%E6%8E%A1%E8%B3%BC%E5%96%AE%E5%83%B9%E6%9F%A5%E8%A9%A2/</loc>
+    <lastmod>2018-05-03T13:35:11.586Z</lastmod>
+    <data>
+        <display>
+        <title>java-swing-tiptop 採購單價查詢</title>
+        <pubTime>2017-05-15T11:54:42.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+        <tag>tiptop</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/05/04/java-swing-tiptop%20BOM%E6%9F%A5%E8%A9%A2%E7%B3%BB%E7%B5%B1%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
+    <lastmod>2018-05-03T13:35:08.517Z</lastmod>
+    <data>
+        <display>
+        <title>BOM查詢系統小程式</title>
+        <pubTime>2017-05-04T11:54:42.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+        <tag>tiptop</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/01/13/java-line/</loc>
+    <lastmod>2018-05-03T13:35:04.886Z</lastmod>
+    <data>
+        <display>
+        <title>java-line聊天分割</title>
+        <pubTime>2017-01-13T15:17:03.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/07/01/java%20swing%20tiptop-%E8%B2%A1%E5%8B%99%E8%B3%87%E6%96%99%E8%88%87%E5%88%A5%E5%BB%A0%E5%8D%80%E8%B3%87%E6%96%99%E6%AF%94%E5%B0%8D-%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
+    <lastmod>2018-05-03T13:35:01.090Z</lastmod>
+    <data>
+        <display>
+        <title>java swing tiptop 財務資料與別廠區資料比對 小程式</title>
+        <pubTime>2017-07-01T13:11:59.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/07/10/java%20swing%20tiptop-%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-%E4%B8%80/</loc>
+    <lastmod>2018-05-03T13:34:57.799Z</lastmod>
+    <data>
+        <display>
+        <title>java swing tiptop 財務報表(一)</title>
+        <pubTime>2017-07-10T13:11:59.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/06/20/java%20swing%20-%E6%95%99%E8%82%B2%E8%A8%93%E7%B7%B4%E7%A8%8B%E5%BC%8F(%E7%AC%AC%E4%BA%8C%E7%89%88)/</loc>
+    <lastmod>2018-05-03T13:34:55.015Z</lastmod>
+    <data>
+        <display>
+        <title>java swing -教育訓練程式(第二版)</title>
+        <pubTime>2017-06-20T13:11:59.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>swing</tag>
+         
+         
+           
+             
+              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/java/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/09/23/Android-OEE/</loc>
+    <lastmod>2018-05-03T13:34:40.726Z</lastmod>
+    <data>
+        <display>
+        <title>Android-OEE</title>
+        <pubTime>2017-09-22T17:50:25.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>OEE</tag>
+         
+        <tag>works</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
+          
+             
+              <breadCrumb title="works" url="https://dustinchu.github.io/categories/android/works/"/>
           
         </display>
     </data>
@@ -63,30 +719,6 @@
            
              
               <breadCrumb title="DL4J" url="https://dustinchu.github.io/categories/DL4J/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/09/23/Android-OEE/</loc>
-    <lastmod>2017-11-23T08:51:30.601Z</lastmod>
-    <data>
-        <display>
-        <title>Android-OEE</title>
-        <pubTime>2017-09-22T17:50:25.000Z</pubTime>
-        
-        <tag>android</tag>
-         
-        <tag>OEE</tag>
-         
-        <tag>works</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
           
         </display>
     </data>
@@ -160,30 +792,6 @@
 
     
   <url>
-    <loc>https://dustinchu.github.io/2017/07/01/java%20swing%20tiptop-%E8%B2%A1%E5%8B%99%E8%B3%87%E6%96%99%E8%88%87%E5%88%A5%E5%BB%A0%E5%8D%80%E8%B3%87%E6%96%99%E6%AF%94%E5%B0%8D-%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
-    <lastmod>2017-09-28T12:10:13.618Z</lastmod>
-    <data>
-        <display>
-        <title>java swing tiptop 財務資料與別廠區資料比對 小程式</title>
-        <pubTime>2017-07-01T13:11:59.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://dustinchu.github.io/2017/09/01/Fragment%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F/</loc>
     <lastmod>2017-09-26T14:59:00.305Z</lastmod>
     <data>
@@ -245,420 +853,6 @@
            
              
               <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/01/05/toggleButton/</loc>
-    <lastmod>2017-09-16T06:38:39.413Z</lastmod>
-    <data>
-        <display>
-        <title>toggleButton</title>
-        <pubTime>2017-01-05T14:56:29.000Z</pubTime>
-        
-        <tag>android</tag>
-         
-        <tag>works</tag>
-         
-        <tag>toggleButton</tag>
-         
-        <tag>view</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/06/05/java-swt-%E7%B7%9A%E4%B8%8A%E4%BA%BA%E6%95%B8%E6%9F%A5%E7%9C%8B%E5%99%A8/</loc>
-    <lastmod>2017-09-16T06:38:28.521Z</lastmod>
-    <data>
-        <display>
-        <title>java-swt 線上人數查看器</title>
-        <pubTime>2017-06-05T13:11:59.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swt</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/05/08/java-swing-tiptop%E7%95%B0%E5%8B%95%E6%95%B8%E9%87%8F%E6%9F%A5%E8%A9%A2/</loc>
-    <lastmod>2017-09-16T06:38:23.989Z</lastmod>
-    <data>
-        <display>
-        <title>java swing tiptop異動數量查詢</title>
-        <pubTime>2017-05-08T11:54:42.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-        <tag>tiptop</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/04/26/java-swing-tiptop%E5%85%A7%E9%8A%B7%E6%87%89%E6%94%B6%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
-    <lastmod>2017-09-16T06:38:18.613Z</lastmod>
-    <data>
-        <display>
-        <title>java swing tiptop內銷應收小程式</title>
-        <pubTime>2017-04-26T11:54:42.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-        <tag>tiptop</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/05/25/java-swing-tiptop%E6%95%99%E8%82%B2%E8%A8%93%E7%B7%B4%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
-    <lastmod>2017-09-16T06:38:12.446Z</lastmod>
-    <data>
-        <display>
-        <title>java swing 教育訓練小程式</title>
-        <pubTime>2017-05-25T13:11:59.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/04/30/java-swing-tiptop%E5%87%BA%E8%B2%A8%E6%8E%92%E7%A8%8B%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
-    <lastmod>2017-09-16T06:38:06.554Z</lastmod>
-    <data>
-        <display>
-        <title>java-swing tiptop出貨排程小程式</title>
-        <pubTime>2017-04-30T11:54:42.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-        <tag>tiptop</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/05/30/java-swing-tiptop-%E8%AA%BF%E6%92%A5%E6%B8%85%E5%96%AE/</loc>
-    <lastmod>2017-09-16T06:38:01.836Z</lastmod>
-    <data>
-        <display>
-        <title>java-swing-tiptop 調撥清單</title>
-        <pubTime>2017-05-30T13:11:59.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-        <tag>tiptop</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/06/10/java-swing-tiptop-%E7%A8%8B%E5%BC%8F%E4%BB%A3%E8%99%9F%E6%9F%A5%E8%A9%A2%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
-    <lastmod>2017-09-16T06:37:56.707Z</lastmod>
-    <data>
-        <display>
-        <title>java-swing-tiptop 程式代號查詢小程式</title>
-        <pubTime>2017-06-10T13:11:59.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/05/15/java-swing-tiptop-%E6%8E%A1%E8%B3%BC%E5%96%AE%E5%83%B9%E6%9F%A5%E8%A9%A2/</loc>
-    <lastmod>2017-09-16T06:37:51.865Z</lastmod>
-    <data>
-        <display>
-        <title>java-swing-tiptop 採購單價查詢</title>
-        <pubTime>2017-05-15T11:54:42.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-        <tag>tiptop</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/08/03/java-Swing-tiptop-%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-%E4%B8%89/</loc>
-    <lastmod>2017-09-16T06:37:46.287Z</lastmod>
-    <data>
-        <display>
-        <title>java-Swing-tiptop 財務報表(三)</title>
-        <pubTime>2017-08-03T13:02:59.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/07/22/java-Swing-tiptop-%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-%E4%BA%8C/</loc>
-    <lastmod>2017-09-16T06:37:37.538Z</lastmod>
-    <data>
-        <display>
-        <title>java-Swing-tiptop 財務報表(二)</title>
-        <pubTime>2017-07-22T10:01:59.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/05/04/java-swing-tiptop%20BOM%E6%9F%A5%E8%A9%A2%E7%B3%BB%E7%B5%B1%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
-    <lastmod>2017-09-16T06:37:34.642Z</lastmod>
-    <data>
-        <display>
-        <title>BOM查詢系統小程式</title>
-        <pubTime>2017-05-04T11:54:42.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-        <tag>tiptop</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/01/13/java-line/</loc>
-    <lastmod>2017-09-16T06:37:31.558Z</lastmod>
-    <data>
-        <display>
-        <title>java-line聊天分割</title>
-        <pubTime>2017-01-13T15:17:03.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/06/20/java%20swing%20-%E6%95%99%E8%82%B2%E8%A8%93%E7%B7%B4%E7%A8%8B%E5%BC%8F(%E7%AC%AC%E4%BA%8C%E7%89%88)/</loc>
-    <lastmod>2017-09-16T06:37:20.552Z</lastmod>
-    <data>
-        <display>
-        <title>java swing -教育訓練程式(第二版)</title>
-        <pubTime>2017-06-20T13:11:59.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/07/10/java%20swing%20tiptop-%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-%E4%B8%80/</loc>
-    <lastmod>2017-09-16T06:37:17.894Z</lastmod>
-    <data>
-        <display>
-        <title>java swing tiptop 財務報表(一)</title>
-        <pubTime>2017-07-10T13:11:59.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>swing</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/01/20/%E8%A9%B3%E7%B4%B0%E8%A7%A3%E8%AE%80DialogFragment/</loc>
-    <lastmod>2017-09-16T06:37:00.861Z</lastmod>
-    <data>
-        <display>
-        <title>詳細解讀DialogFragment</title>
-        <pubTime>2017-01-20T14:07:01.000Z</pubTime>
-        
-        <tag>DialogFragment</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/01/19/%E5%82%99%E6%96%99%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
-    <lastmod>2017-09-16T06:32:33.519Z</lastmod>
-    <data>
-        <display>
-        <title>提升倉管備料效率-小程式</title>
-        <pubTime>2017-01-19T15:35:18.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
           
         </display>
     </data>
@@ -745,58 +939,6 @@
 
     
   <url>
-    <loc>https://dustinchu.github.io/2016/12/15/My-New-post/</loc>
-    <lastmod>2017-09-14T14:43:47.698Z</lastmod>
-    <data>
-        <display>
-        <title>FragmentPagerAdapter+ViewPager 實現TabLayout</title>
-        <pubTime>2016-12-15T14:39:42.000Z</pubTime>
-        
-        <tag>android</tag>
-         
-        <tag>works</tag>
-         
-        <tag>TabLayout</tag>
-         
-        <tag>FragmentActivity</tag>
-         
-        <tag>Viewpager</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="https://dustinchu.github.io/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/03/24/java-txt%E8%B3%87%E6%96%99%E8%AE%80%E5%8F%96%E5%AD%98%E5%85%A5SQL/</loc>
-    <lastmod>2017-09-14T14:43:44.882Z</lastmod>
-    <data>
-        <display>
-        <title>java-txt資料讀取存入SQL</title>
-        <pubTime>2017-03-24T09:10:23.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>SQL</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://dustinchu.github.io/2016/12/31/2016-end/</loc>
     <lastmod>2017-09-14T14:42:57.674Z</lastmod>
     <data>
@@ -806,54 +948,6 @@
         
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/03/28/%E4%BD%BF%E7%94%A8jxl%E5%B0%87excel-%E8%AE%80%E5%88%B0JAVA%E4%B8%8A/</loc>
-    <lastmod>2017-09-14T14:42:56.052Z</lastmod>
-    <data>
-        <display>
-        <title>使用jxl將excel-讀到JAVA上</title>
-        <pubTime>2017-03-28T15:23:23.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>excel</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/03/27/%E4%BD%BF%E7%94%A8jxl%E5%B0%87java%E8%B3%87%E6%96%99%E5%B0%8E%E5%85%A5excel/</loc>
-    <lastmod>2017-09-14T14:42:55.529Z</lastmod>
-    <data>
-        <display>
-        <title>使用jxl將java資料導入excel</title>
-        <pubTime>2017-03-27T14:10:23.000Z</pubTime>
-        
-        <tag>works</tag>
-         
-        <tag>java</tag>
-         
-        <tag>excel</tag>
-         
-         
-           
-             
-              <breadCrumb title="java" url="https://dustinchu.github.io/categories/java/"/>
-          
         </display>
     </data>
     </url>
