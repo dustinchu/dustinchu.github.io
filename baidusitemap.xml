@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://dustinchu.github.io/2018/01/06/android%E4%BD%BF%E7%94%A8%E6%87%B8%E6%B5%AE%E7%AA%97%E9%AB%94%E8%A3%BD%E4%BD%9C%E8%85%B3%E6%9C%AC/</loc>
-    <lastmod>2018-05-08T12:12:48.276Z</lastmod>
+    <lastmod>2018-05-10T13:07:54.016Z</lastmod>
     <data>
         <display>
         <title>android使用懸浮窗體製作腳本</title>
@@ -22,6 +22,30 @@
           
              
               <breadCrumb title="works" url="https://dustinchu.github.io/categories/android/works/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-%E4%BD%BF%E7%94%A8Word2Vec-%E8%AE%93%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92WIKI/</loc>
+    <lastmod>2018-05-10T13:06:24.236Z</lastmod>
+    <data>
+        <display>
+        <title>Deeplearning4j(DL4J)使用Word2Vec 讓機器學習WIKI</title>
+        <pubTime>2017-10-31T19:32:28.000Z</pubTime>
+        
+        <tag>works</tag>
+         
+        <tag>java</tag>
+         
+        <tag>Word2Vec</tag>
+         
+         
+           
+             
+              <breadCrumb title="DL4J" url="https://dustinchu.github.io/categories/DL4J/"/>
           
         </display>
     </data>
@@ -697,28 +721,6 @@
            
              
               <breadCrumb title="python" url="https://dustinchu.github.io/categories/python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dustinchu.github.io/2017/11/01/Deeplearning4j-DL4J-%E4%BD%BF%E7%94%A8Word2Vec-%E8%AE%93%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92WIKI/</loc>
-    <lastmod>2018-04-25T14:18:21.231Z</lastmod>
-    <data>
-        <display>
-        <title>Deeplearning4j(DL4J)使用Word2Vec 讓機器學習WIKI</title>
-        <pubTime>2017-10-31T19:32:28.000Z</pubTime>
-        
-        <tag>java</tag>
-         
-        <tag>Word2Vec</tag>
-         
-         
-           
-             
-              <breadCrumb title="DL4J" url="https://dustinchu.github.io/categories/DL4J/"/>
           
         </display>
     </data>
