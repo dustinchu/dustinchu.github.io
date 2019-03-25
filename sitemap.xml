@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dustinchu.github.io/2018/03/25/work/</loc>
+    
+    <lastmod>2019-03-25T12:36:18.201Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dustinchu.github.io/2017/07/22/java-Swing-tiptop-%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-%E4%BA%8C/</loc>
+    
+    <lastmod>2019-03-25T12:28:15.739Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dustinchu.github.io/2017/08/03/java-Swing-tiptop-%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-%E4%B8%89/</loc>
+    
+    <lastmod>2019-03-25T12:27:29.337Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dustinchu.github.io/2018/03/01/scikit-learn-machine-learning-1/</loc>
+    
+    <lastmod>2018-07-03T12:19:24.381Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dustinchu.github.io/2018/02/05/LabviewSocket/</loc>
     
-    <lastmod>2018-06-24T08:36:18.715Z</lastmod>
+    <lastmod>2018-06-24T12:58:51.552Z</lastmod>
     
   </url>
   
@@ -117,20 +145,6 @@
     <loc>https://dustinchu.github.io/2017/04/26/java-swing-tiptop%E5%85%A7%E9%8A%B7%E6%87%89%E6%94%B6%E5%B0%8F%E7%A8%8B%E5%BC%8F/</loc>
     
     <lastmod>2018-05-03T13:35:27.943Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dustinchu.github.io/2017/07/22/java-Swing-tiptop-%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-%E4%BA%8C/</loc>
-    
-    <lastmod>2018-05-03T13:35:24.636Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dustinchu.github.io/2017/08/03/java-Swing-tiptop-%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-%E4%B8%89/</loc>
-    
-    <lastmod>2018-05-03T13:35:21.660Z</lastmod>
     
   </url>
   

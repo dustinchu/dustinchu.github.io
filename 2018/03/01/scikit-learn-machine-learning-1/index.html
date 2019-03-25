@@ -1,0 +1,1477 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Python,Matplotlib,Numpy," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
+
+
+
+
+  <meta property="fb:admins" content="e7d56c38adc352f28ca6a4a3043e76d8" />
+  <meta property="fb:app_id" content="933817693424422" />
+
+
+
+<meta name="description" content="整理一下自己學習的筆記 也希望可以幫助到正在學習機器學習的人這篇程式是在Jupyter Notebook 上執行編譯的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="scikit-learn machine learning (一) (學習筆記整理) ">
+<meta property="og:url" content="https://dustinchu.github.io/2018/03/01/scikit-learn-machine-learning-1/index.html">
+<meta property="og:site_name" content="DustinChu Blog">
+<meta property="og:description" content="整理一下自己學習的筆記 也希望可以幫助到正在學習機器學習的人這篇程式是在Jupyter Notebook 上執行編譯的">
+<meta property="og:image" content="https://i.imgur.com/VYyf0Xp.png">
+<meta property="og:updated_time" content="2018-07-03T12:19:24.381Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="scikit-learn machine learning (一) (學習筆記整理) ">
+<meta name="twitter:description" content="整理一下自己學習的筆記 也希望可以幫助到正在學習機器學習的人這篇程式是在Jupyter Notebook 上執行編譯的">
+<meta name="twitter:image" content="https://i.imgur.com/VYyf0Xp.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://dustinchu.github.io/2018/03/01/scikit-learn-machine-learning-1/"/>
+
+<meta name="baidu-site-verification" content="1dLOlOIvKy" />
+
+
+
+  <title> scikit-learn machine learning (一) (學習筆記整理)  | DustinChu Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '933817693424422',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3136608336853382",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">DustinChu Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">The future you must thank to the present hardworking one.</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="https://dustinchu.github.io/2018/03/01/scikit-learn-machine-learning-1/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Dustinchu">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/logo.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="DustinChu Blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="DustinChu Blog" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                scikit-learn machine learning (一) (學習筆記整理) 
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-01T02:58:52+08:00">
+                2018-03-01
+              </time>
+
+
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/Numpy/" itemprop="url" rel="index">
+                    <span itemprop="name">Numpy</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/Numpy/Matplotlib/" itemprop="url" rel="index">
+                    <span itemprop="name">Matplotlib</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <a href="/2018/03/01/scikit-learn-machine-learning-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="https://dustinchu.github.io/2018/03/01/scikit-learn-machine-learning-1/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+    
+    <span class="post-count">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+    </span>
+    <span class="post-meta-item-text">字數統計</span>
+    <span class="post-meta-item-text">3,186&nbsp;個字</span>
+    </span>
+    
+    <span class="post-count">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+    </span>
+    <span class="post-meta-item-text">預計閱讀時間</span>
+    <span class="post-meta-item-text">15&nbsp;分鐘</span>
+    </span>
+    
+
+
+    
+          
+            <span class="post-meta-divider">|</span>
+            <div class="fb-like" data-layout="button_count" data-share="true"></div>
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://i.imgur.com/VYyf0Xp.png" width="900" height="400"></p>
+<blockquote>
+<p>整理一下自己學習的筆記 也希望可以幫助到正在學習機器學習的人<br>這篇程式是在Jupyter Notebook 上執行編譯的</p>
+</blockquote>
+<div data-href="https://dustinchu.github.io/" data-width="500" data-numposts="5"></div>
+
+<a id="more"></a>
+<h2 id="創建-Numpy-array-的方法"><a href="#創建-Numpy-array-的方法" class="headerlink" title="創建 Numpy.array 的方法"></a>創建 Numpy.array 的方法</h2><blockquote>
+<p>import numpy as np</p>
+</blockquote>
+<p><strong>創建0矩陣</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.zeros(<span class="number">10</span>)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])</p>
+</blockquote>
+<p><strong>創建的數值 默認是浮點數</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.zeros(<span class="number">10</span>).dtype</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>dtype(‘float64’)</p>
+</blockquote>
+<p><strong>建立10個整數</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.zeros(<span class="number">10</span> , dtype =  int )</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])</p>
+</blockquote>
+<p><strong>也可以傳入二維</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.zeros( (<span class="number">3</span> , <span class="number">5</span> ) )</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0., 0., 0., 0., 0.],<br>[0., 0., 0., 0., 0.],<br>[0., 0., 0., 0., 0.]])</p>
+</blockquote>
+<p><strong>第一個參數他是名子的 也可以這樣寫</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.zeros( shape = (<span class="number">3</span> , <span class="number">5</span> ) , dtype = int  )</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0, 0, 0, 0, 0],<br>[0, 0, 0, 0, 0],<br>[0, 0, 0, 0, 0]])</p>
+</blockquote>
+<p><strong>獲得全1的向量</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.ones(<span class="number">10</span>)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])</p>
+</blockquote>
+<p><strong>當然這也可以傳入二維</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.ones( ( <span class="number">3</span> , <span class="number">5</span> ) )</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[1., 1., 1., 1., 1.],<br>[1., 1., 1., 1., 1.],<br>[1., 1., 1., 1., 1.]])</p>
+</blockquote>
+<p><strong>傳入指定值 傳入555 是 整型  要浮點型 要輸入555.0</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.full ( ( <span class="number">3</span> , <span class="number">5</span> ) , <span class="number">555</span> )</div></pre></td></tr></table></figure>
+<p><strong>加入參數名  這邊fill_value 可以傳變數名稱 也可以不傳  加入變數名稱 維護會比較容易一些</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.full ( shape = ( <span class="number">3</span> , <span class="number">5</span> ) ,  fill_value = <span class="number">555</span> )</div></pre></td></tr></table></figure>
+<p><strong>傳入的這兩個值 可以交換</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.full (  fill_value = <span class="number">555</span>  , shape = ( <span class="number">3</span> , <span class="number">5</span> ) )</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[555, 555, 555, 555, 555],<br>[555, 555, 555, 555, 555],<br>[555, 555, 555, 555, 555]])</p>
+</blockquote>
+<h3 id="arange"><a href="#arange" class="headerlink" title="arange"></a>arange</h3><p><strong>用生成表達式的方式建立 第一個參數=起始點 第二個參數=中止點 第三個參數=補償(<font color="#DC143C">不填默認唯</font>1)<br>結果不包刮20 python 的range 是不可以傳浮點數的</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[i <span class="keyword">for</span> i <span class="keyword">in</span> range (<span class="number">0</span> , <span class="number">20</span> , <span class="number">2</span>) ]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]</p>
+</blockquote>
+<p><strong>numpy 的arange 可以傳浮點數 第三個參數=補償 (<font color="#DC143C">預設值也是1</font>)</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.arange(<span class="number">0</span>, <span class="number">1</span> , <span class="number">0.2</span>)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0. , 0.2, 0.4, 0.6, 0.8])</p>
+</blockquote>
+<p><strong>只傳一個參數的話 起始值預設 是0</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.arange(<span class="number">10</span> )</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])</p>
+</blockquote>
+<h3 id="linspace"><a href="#linspace" class="headerlink" title="linspace"></a>linspace</h3><p><strong>參數與arange 一樣 第三個值不是補償<br>( <font color="#DC143C">這邊是0 - 20 的區間裡等長的擷出10個點 這邊10個點是包含 0 和20 </font>)<br>0 是起始點 20是終止點 中間8個值 與起始點 終止點 形成等差數列 他們的間距是相等的</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.linspace( <span class="number">0</span> , <span class="number">20</span>  ,<span class="number">10</span> )</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([ 0.        ,  2.22222222,  4.44444444,  6.66666667,  8.88888889,<br>11.11111111, 13.33333333, 15.55555556, 17.77777778, 20.        ])</p>
+</blockquote>
+<p><strong>如果要以2為補償使用linspace的話</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.linspace( <span class="number">0</span> , <span class="number">20</span>  ,<span class="number">11</span> )</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([ 0.,  2.,  4.,  6.,  8., 10., 12., 14., 16., 18., 20.])</p>
+</blockquote>
+<h3 id="random"><a href="#random" class="headerlink" title="random"></a>random</h3><p><strong>生成0 - 9的隨機數<br>(<font color="#DC143C">區間是0-10 但這隨機數是取不到10的</font>)</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.random.randint( <span class="number">0</span> , <span class="number">10</span> )</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>9</p>
+</blockquote>
+<p><strong>生成 0 - 9 隨機數的向量</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.random.randint( <span class="number">0</span> , <span class="number">10</span> , <span class="number">10</span>)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([9, 0, 9, 8, 2, 5, 7, 8, 4, 3])</p>
+</blockquote>
+<p><strong>生成 0 - 9 隨機數二維矩陣<br>(<font color="#DC143C">第三個參數 可以給他一個名稱會比較好閱讀</font>))</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.random.randint( <span class="number">0</span> , <span class="number">10</span> , size = (<span class="number">3</span>  , <span class="number">5</span> ))</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[8, 0, 3, 0, 1],<br>[7, 6, 4, 6, 8],<br>[7, 1, 3, 1, 2]])</p>
+</blockquote>
+<p><strong>讓隨機數產生一致<font color="#DC143C"><br>如果機器學習算法中要驗證這些隨機的向量 或是隨機的矩陣<br>但是每次取的值都是不一致的 這會沒辦法驗證<br>隨機數通常都是偉隨機數 都會有一個key</font></strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">np.random.seed(<span class="number">500</span>)</div><div class="line">np.random.randint( <span class="number">0</span> , <span class="number">10</span> , size = (<span class="number">3</span>  , <span class="number">5</span> ))</div></pre></td></tr></table></figure>
+<blockquote>
+<p>這樣子生成 生成的都會是一致的<br>結果<br>array([[7, 1, 1, 8, 7],<br>[1, 1, 5, 9, 2],<br>[2, 3, 6, 8, 7]])</p>
+</blockquote>
+<p><strong>生成隨機的浮點數 (<font color="#DC143C">是在0 - 1 之間分布的值</font>)<br>如果不輸入值 默認會產生一個</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.random.random(<span class="number">10</span>)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0.31647204, 0.36173317, 0.45072243, 0.91526806, 0.45995858,<br>0.27367946, 0.91749612, 0.45953222, 0.54459121, 0.69069037])</p>
+</blockquote>
+<p><strong>也可以生成一個二維0 - 1 之間的隨機浮點數</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.random.random((<span class="number">3</span> ,<span class="number">5</span>))</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0.83083808, 0.63590931, 0.64981717, 0.95375833, 0.56995437],<br>[0.6352015 , 0.03646224, 0.74912676, 0.85806843, 0.48540734],<br>[0.23216177, 0.50338804, 0.13613189, 0.1730703 , 0.10495834]])</p>
+</blockquote>
+<p><strong>產生符合正態分佈的浮點數 符合均值為0 方差為1分佈的隨機浮點數</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.random.normal()</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>0.7543888054016835</p>
+</blockquote>
+<p><strong>指定 均值 方差<br>(指定均值為10  方差為100 分佈的隨機數)</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.random.normal(<span class="number">10</span> , <span class="number">100</span>)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>114.58354338987674</p>
+</blockquote>
+<p><strong>也可以指定他的大小<br>(均值為0 方差為1 3*5的隨機矩陣)</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.random.normal(<span class="number">0</span> , <span class="number">1</span> , (<span class="number">3</span> ,<span class="number">5</span> ))</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[-0.23283302,  0.20643376,  0.3993155 ,  1.46962845, -0.86042417],<br>[ 0.90035145, -0.34036856,  0.59739536, -0.40102587, -1.59174938],<br>[-0.56669195,  0.33081722,  0.58673318,  0.18174824,  0.87216409]])</p>
+</blockquote>
+<h2 id="Numpy-array-基本操作"><a href="#Numpy-array-基本操作" class="headerlink" title="Numpy.array 基本操作"></a>Numpy.array 基本操作</h2><blockquote>
+<p>import numpy as np</p>
+</blockquote>
+<p><strong>先建立一個一維的數組 與二維數組  接下來會使用到</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">x = np.arange(<span class="number">10</span>)</div><div class="line">x</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])</p>
+</blockquote>
+<p><strong>二維數組</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">X = np.arange(<span class="number">15</span>).reshape(<span class="number">3</span> , <span class="number">5</span>)</div><div class="line">X</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[ 0,  1,  2,  3,  4],<br>       [ 5,  6,  7,  8,  9],<br>       [10, 11, 12, 13, 14]])</p>
+</blockquote>
+<p>###基本屬性###</p>
+<p><strong>查看幾維的數組</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x.ndim</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>1</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X.ndim</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>2</p>
+</blockquote>
+<p><strong>shape 返回是一個原組</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x.shape</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>(10,)</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X.shape</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>(3, 5)</p>
+</blockquote>
+<p><strong>size 元素個數</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x.size</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>10</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X.size</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>15</p>
+</blockquote>
+<p>###Unmpy.array資料訪問###</p>
+<blockquote>
+<p>x 值 =  array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])<br>X 值 = array([[ 0,  1,  2,  3,  4],<br>       [ 5,  6,  7,  8,  9],<br>       [10, 11, 12, 13, 14]])</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x[<span class="number">0</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>0</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x[<span class="number">-1</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>9</p>
+</blockquote>
+<p><strong>python 寫法</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[<span class="number">0</span>][<span class="number">0</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>0</p>
+</blockquote>
+<p><strong>建議使用Numpy的方式 後面會到為什麼</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[<span class="number">2</span>,<span class="number">2</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>12</p>
+</blockquote>
+<p><strong>使用欺騙方法 從0開始一直到5不包含5</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x[<span class="number">0</span>:<span class="number">5</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0, 1, 2, 3, 4])</p>
+</blockquote>
+<p><strong>如果:前面不輸入值的話 就是從頭一直訪問到第5元素</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x[:<span class="number">5</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0, 1, 2, 3, 4])</p>
+</blockquote>
+<p><strong>如果:後面不輸入值得話 就是從第5個元素訪問到最後</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x[<span class="number">5</span>:]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0, 1, 2, 3, 4])</p>
+</blockquote>
+<p><strong>可傳入第三個參數 第三個參數=補償  如果前面兩個不填寫<br>就是從頭訪問到尾 每次補償為2</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x[::<span class="number">2</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0, 2, 4, 6, 8])</p>
+</blockquote>
+<p><strong>補償也可以傳入-1 代表從倒數的訪問方式</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x[::<span class="number">-1</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([9, 8, 7, 6, 5, 4, 3, 2, 1, 0])</p>
+<p>X 值 = array([[ 0,  1,  2,  3,  4],<br>       [ 5,  6,  7,  8,  9],<br>       [10, 11, 12, 13, 14]])</p>
+</blockquote>
+<p><strong>如果想要得到前兩行的前三列</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[:<span class="number">2</span>, :<span class="number">3</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0, 1, 2],<br>       [5, 6, 7]])</p>
+</blockquote>
+<p><strong>如果使用python 的兩個[]來取值的話<br>來看一下會發生什麼事</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[:<span class="number">2</span>][:<span class="number">3</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0, 1, 2, 3, 4],<br>       [5, 6, 7, 8, 9]])</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[:<span class="number">2</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0, 1, 2, 3, 4],<br>       [5, 6, 7, 8, 9]])</p>
+<p>[:2]結果與 [:2][:3] 一樣的<br>[:2]代表取X這個數組的前兩個元素 也就是前兩行的內容<br>[:2][:3]這邊的[:3] python 在解析的時候是取<br>array([[0, 1, 2, 3, 4],<br>       [5, 6, 7, 8, 9]])<br>的前三元素 但這個數組裡面只有兩個元素<br>最終的結果依然是這兩個元素<br>[][]來搜尋數組的時候會沒辦法表達我們的語意的情況</p>
+<p><font color="#DC143C">所以真正表達取 前兩行的前三列的話 必須使用[:2,:3]</font><br>使用Numpy的話 一維數組 也盡量使用[2,2]這種表達式</p>
+</blockquote>
+<p><strong>訪問前兩行 每一行從頭到尾 但是間隔為2數組</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[:<span class="number">2</span> , ::<span class="number">2</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0, 2, 4],<br>       [5, 7, 9]])</p>
+</blockquote>
+<p><strong>訪問行從最後一行到第一行 到著數  列也是從最後一列到著數</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[::<span class="number">-1</span>,::<span class="number">-1</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[14, 13, 12, 11, 10],<br>       [ 9,  8,  7,  6,  5],<br>       [ 4,  3,  2,  1,  0]])</p>
+</blockquote>
+<p><strong>矩陣降維處理 只取第一行</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[<span class="number">0</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0, 1, 2, 3, 4])</p>
+</blockquote>
+<p><strong>也可以用二維的表達方式</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[<span class="number">0</span>,:]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0, 1, 2, 3, 4])</p>
+</blockquote>
+<p><strong>這樣會變成一維的向量</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[<span class="number">0</span>,:].ndim</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>1</p>
+</blockquote>
+<p><strong>要取一列的話  :代表取全部的行 列的維度上只取0 只看第一列</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[: , <span class="number">0</span> ]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([ 0,  5, 10])</p>
+</blockquote>
+<p><strong>這樣得到也是一維的數組</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X[: , <span class="number">0</span>].ndim</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>1</p>
+</blockquote>
+<p><strong>子矩陣</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">subX = X[:<span class="number">2</span>, :<span class="number">3</span>]</div><div class="line">subX</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0, 1, 2],<br>       [5, 6, 7]])</p>
+</blockquote>
+<p><strong>如果將subX 將其中的值修改</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">subX[<span class="number">0</span> , <span class="number">0</span> ] = <span class="number">100</span></div><div class="line">subX</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[100,   1,   2],<br>       [  5,   6,   7]])</p>
+</blockquote>
+<p><strong>但X原矩陣 有沒有被改變?<br>在python 使用這種方式 是建立一個新的矩陣<br>subX 與 原本的X 是沒有關係的<br>但是在Numpy不是這樣的<br>在Numpy為了效率的關係 所以他會影響到原矩陣<br>如果修改原矩陣的元素 subX子矩陣也會跟著更改</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[100,   1,   2,   3,   4],<br>       [  5,   6,   7,   8,   9],<br>       [ 10,  11,  12,  13,  14]])</p>
+</blockquote>
+<h4 id="COPY"><a href="#COPY" class="headerlink" title="COPY"></a>COPY</h4><p><strong>要用Numpy建立一個 與子矩陣沒關係的元素的話 要使用.copy</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">subX = X[:<span class="number">2</span> , :<span class="number">3</span>].copy()</div><div class="line">subX</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[100,   1,   2],<br>       [  5,   6,   7]])</p>
+</blockquote>
+<p><strong>subX 0 0 修改值</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">subX [<span class="number">0</span>,<span class="number">0</span> ] = <span class="number">0</span></div><div class="line">subX</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0, 1, 2],<br>       [5, 6, 7]])</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">X</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[100,   1,   2,   3,   4],<br>       [  5,   6,   7,   8,   9],<br>       [ 10,  11,  12,  13,  14]])</p>
+</blockquote>
+<p>###Reshape ###</p>
+<blockquote>
+<p>x 值 =  array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])</p>
+</blockquote>
+<p><strong>如果要將這10個值 變成2 * 5的矩陣</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x.reshape(<span class="number">2</span>,<span class="number">5</span>)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br> array([[0, 1, 2, 3, 4],<br>       [5, 6, 7, 8, 9]])</p>
+</blockquote>
+<p>####使用reshape 是沒有改變x 本身的####</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])</p>
+</blockquote>
+<p><strong>如果要將改變的存起來的話 需要給他新的值</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">A = x.reshape(<span class="number">2</span>,<span class="number">5</span>)</div><div class="line">A</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0, 1, 2, 3, 4],<br>      [5, 6, 7, 8, 9]])</p>
+</blockquote>
+<p><strong>如果要將 array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) 變成二維數組</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">B =x.reshape(<span class="number">1</span>,<span class="number">10</span>)</div><div class="line">B</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果 是有兩個[][]<br>array([[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]])</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">B.ndim</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>2</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">B.shape</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>(1 , 10)</p>
+</blockquote>
+<p><strong>如果想要10行 有多少 不管列有多少</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x.reshape(<span class="number">10</span> , <span class="number">-1</span>)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0],<br>       [1],<br>       [2],<br>       [3],<br>       [4],<br>       [5],<br>       [6],<br>       [7],<br>       [8],<br>       [9]])</p>
+</blockquote>
+<p><strong>也可以 我想要有5列 不管它有多少行</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x.reshape(<span class="number">-1</span> , <span class="number">5</span>)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[0, 1, 2, 3, 4],<br>       [5, 6, 7, 8, 9]])</p>
+</blockquote>
+<h2 id="合併操作"><a href="#合併操作" class="headerlink" title="合併操作"></a>合併操作</h2><p><strong>如果只需要合併兩個的話也可以傳兩個進去就好</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line">x = np.array([<span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span>])</div><div class="line">y = np.array([<span class="number">3</span> , <span class="number">2</span> , <span class="number">1</span> ])</div><div class="line">z = np.array([<span class="number">555</span>, <span class="number">555</span>, <span class="number">55</span>])</div><div class="line"></div><div class="line">np.concatenate([x , y , z])</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([  1,   2,   3,   3,   2,   1, 555, 555,  55])</p>
+</blockquote>
+<p><strong>二維矩陣也可以合併</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">A = np.array([[ <span class="number">1</span> , <span class="number">2</span> ,<span class="number">3</span>],</div><div class="line">              [<span class="number">4</span>  , <span class="number">5</span> ,<span class="number">6</span>]])</div><div class="line">np.concatenate([A , A])</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[1, 2, 3],<br>       [4, 5, 6],<br>       [1, 2, 3],<br>       [4, 5, 6]])</p>
+</blockquote>
+<p><strong>沿著列的方向合併</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.concatenate([A , A] , axis = <span class="number">1</span>)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[1, 2, 3, 1, 2, 3],<br>       [4, 5, 6, 4, 5, 6]])</p>
+</blockquote>
+<p><strong>二維與一維合併</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.concatenate([ A , z.reshape(<span class="number">1</span>, <span class="number">-1</span>)])</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[  1,   2,   3],<br>       [  4,   5,   6],<br>       [555, 555,  55]])</p>
+</blockquote>
+<p><strong>這樣A還是原來的值</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">A</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[1, 2, 3],<br>       [4, 5, 6]])</p>
+</blockquote>
+<p><strong>如果想要保存起來需要賦上一個新的值</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">A2 = np.concatenate([ A , z.reshape(<span class="number">1</span>, <span class="number">-1</span>)])</div><div class="line">A2</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[  1,   2,   3],<br>       [  4,   5,   6],<br>       [555, 555,  55]])</p>
+</blockquote>
+<p><strong>如果使用concatenate 又要加上reshape 覺得太麻煩的話<br>可以使用vstack 可以直接二維與一維合併</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">np.vstack([ A , z])</div><div class="line">```  </div><div class="line"></div><div class="line">&gt;結果</div><div class="line">array([[  <span class="number">1</span>,   <span class="number">2</span>,   <span class="number">3</span>],</div><div class="line">       [  <span class="number">4</span>,   <span class="number">5</span>,   <span class="number">6</span>],</div><div class="line">       [<span class="number">555</span>, <span class="number">555</span>,  <span class="number">55</span>]])</div><div class="line"></div><div class="line"><span class="comment">####有vstack  也有hstack水平方向####</span></div><div class="line"></div><div class="line">```python</div><div class="line">B = np.full(( <span class="number">2</span> , <span class="number">2</span> ) , <span class="number">100</span>)</div><div class="line">B</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[100, 100],<br>       [100, 100]])</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">np.hstack([ A , B])</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[  1,   2,   3, 100, 100],<br>       [  4,   5,   6, 100, 100]])</p>
+</blockquote>
+<h3 id="分割"><a href="#分割" class="headerlink" title="分割"></a>分割</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">x = np.arange(<span class="number">10</span>)</div><div class="line">x</div></pre></td></tr></table></figure>
+<blockquote>
+<p>array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])</p>
+</blockquote>
+<p><strong>split 傳入兩個參數  (切割三段)<br>第一個參數分割的數組<br>第二個參數分割點</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x1 , x2 ,x3 =np.split(x, [ <span class="number">3</span> , <span class="number">7</span> ])</div></pre></td></tr></table></figure>
+<p><strong>x1 0-3 不包含3</strong></p>
+<blockquote>
+<p>array([0, 1, 2])<br><strong>x2 3 , 7 中間的內容</strong><br>array([3, 4, 5, 6])<br><strong>X3 7到結尾的內容</strong><br>array([7, 8, 9])</p>
+</blockquote>
+<p>####split (切割兩段)####</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x2 ,x3 =np.split(x, [ <span class="number">5</span>])</div></pre></td></tr></table></figure>
+<p><strong>x2</strong></p>
+<blockquote>
+<p>array([0, 1, 2, 3, 4])</p>
+</blockquote>
+<p><strong>x3</strong></p>
+<blockquote>
+<p>array([5, 6, 7, 8, 9])</p>
+</blockquote>
+<p><strong>二維</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">A = np.arange(<span class="number">16</span>).reshape(( <span class="number">4</span>  , <span class="number">4</span> ))</div></pre></td></tr></table></figure>
+<blockquote>
+<p>結果<br>array([[ 0,  1,  2,  3],<br>       [ 4,  5,  6,  7],<br>       [ 8,  9, 10, 11],<br>       [12, 13, 14, 15]])</p>
+</blockquote>
+<p><strong>分成兩部分</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">A1 , A2 = np.split(A , [<span class="number">2</span>] )</div></pre></td></tr></table></figure>
+<p><strong>A1</strong></p>
+<blockquote>
+<p>array([[0, 1, 2, 3],<br>       [4, 5, 6, 7]])</p>
+</blockquote>
+<p><strong>A2</strong></p>
+<blockquote>
+<p>array([[ 8,  9, 10, 11],<br>       [12, 13, 14, 15]])</p>
+</blockquote>
+<p>####列的方向分割 axis 默認=0####</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">A1 , A2 = np.split(A , [<span class="number">2</span>]  , axis = <span class="number">1</span>)</div></pre></td></tr></table></figure>
+<p><strong>A1</strong></p>
+<blockquote>
+<p>array([[ 0,  1],<br>       [ 4,  5],<br>       [ 8,  9],<br>       [12, 13]])</p>
+</blockquote>
+<p><strong>A2</strong></p>
+<blockquote>
+<p>array([[ 2,  3],<br>       [ 6,  7],<br>       [10, 11],<br>       [14, 15]])</p>
+</blockquote>
+<p>####也可用vsplit 垂直方向分割####</p>
+<p><strong>A垂直的方向 以2這個點作為分割點 進行分割</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">upper , lower = np.vsplit(A , [<span class="number">2</span>])</div></pre></td></tr></table></figure>
+<p><strong>upper</strong></p>
+<blockquote>
+<p>array([[0, 1, 2, 3],<br>       [4, 5, 6, 7]])</p>
+</blockquote>
+<p><strong>lower</strong></p>
+<blockquote>
+<p>array([[ 8,  9, 10, 11],<br>       [12, 13, 14, 15]])</p>
+</blockquote>
+<h4 id="hvsplit-水平方向分割"><a href="#hvsplit-水平方向分割" class="headerlink" title="hvsplit 水平方向分割"></a>hvsplit 水平方向分割</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">left , right = np.hsplit(A , [<span class="number">2</span>])</div></pre></td></tr></table></figure>
+<p><strong>left</strong></p>
+<blockquote>
+<p>array([[ 0,  1],<br>       [ 4,  5],<br>       [ 8,  9],<br>       [12, 13]])</p>
+</blockquote>
+<p><strong>right</strong></p>
+<blockquote>
+<p>array([[ 2,  3],<br>       [ 6,  7],<br>       [10, 11],<br>       [14, 15]])</p>
+</blockquote>
+<p><strong>如果前面三個代表三個特徵 最後一個代表目標值<br>將特徵矩陣 與目標值向量 分割</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">data = np .arange(<span class="number">16</span>).reshape((<span class="number">4</span>  , <span class="number">4</span> ))</div><div class="line">data</div></pre></td></tr></table></figure>
+<blockquote>
+<p>array([[ 0,  1,  2,  3],<br>       [ 4,  5,  6,  7],<br>       [ 8,  9, 10, 11],<br>       [12, 13, 14, 15]])</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x , y =np.hsplit(data , [<span class="number">-1</span>])</div></pre></td></tr></table></figure>
+<p><strong>x</strong></p>
+<blockquote>
+<p>array([[ 0,  1,  2],<br>       [ 4,  5,  6],<br>       [ 8,  9, 10],<br>       [12, 13, 14]])</p>
+</blockquote>
+<p><strong>y</strong></p>
+<blockquote>
+<p>array([[ 3],<br>       [ 7],<br>       [11],<br>       [15]])</p>
+</blockquote>
+<p><strong>很多時候希望目標值 是個向量</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">y[ : , <span class="number">0</span> ]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>array([ 3,  7, 11, 15])</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <div>
+        
+          
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <p><span>文章標題:</span><a href="/2018/03/01/scikit-learn-machine-learning-1/">scikit-learn machine learning (一) (學習筆記整理) </a></p>
+  <p><span>文章作者:</span><a href="/" title="訪問 Dustinchu 的個人部落格">Dustinchu</a></p>
+  <p><span>發布時間:</span>2018年03月01日 - 02:03</p>
+  <p><span>最後更新:</span>2018年07月03日 - 20:07</p>
+  <p><span>原始連結:</span><a href="/2018/03/01/scikit-learn-machine-learning-1/" title="scikit-learn machine learning (一) (學習筆記整理) ">https://dustinchu.github.io/2018/03/01/scikit-learn-machine-learning-1/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://dustinchu.github.io/2018/03/01/scikit-learn-machine-learning-1/"  aria-label="複製成功!"></i></span>
+  </p>
+  <p><span>許可協議:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">屬名-非商業性使用-禁止編譯 4.0 國際</a>  轉載請保留原文連結及作者。</p>
+</div>
+<script>
+    var clipboard = new Clipboard('.fa-clipboard');
+	clipboard.on('success', $(function(){
+	  $(".fa-clipboard").click(function(){
+		swal({
+		  title: "",
+		  text: '複製成功',
+		  html: false,
+		  timer: 500,
+		  showConfirmButton: false
+	    });
+	  });
+    }));
+</script>
+
+
+        
+  </div>
+
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+            <a href="/tags/Matplotlib/" rel="tag"># Matplotlib</a>
+          
+            <a href="/tags/Numpy/" rel="tag"># Numpy</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/05/LabviewSocket/" rel="next" title="Labview將自動化機台資料傳出來使用Socket">
+                <i class="fa fa-chevron-left"></i> Labview將自動化機台資料傳出來使用Socket
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/25/work/" rel="prev" title="work">
+                work <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+	
+
+
+<div class ="widget tag">
+  <h3 class ="title"> </ h3>
+ <ul class ="entry">
+ <head>
+ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+ <script>
+   (adsbygoogle = window.adsbygoogle || []).push({
+     google_ad_client: "ca-pub-3136608336853382",
+     enable_page_level_ads: true
+   });
+ </script>
+ </head>
+ </ul>
+</div>
+
+
+      
+      
+    </footer>
+  </article>
+
+
+    <div class="post-spread">
+
+
+
+
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="fb-comments"
+           data-href="https://dustinchu.github.io/2018/03/01/scikit-learn-machine-learning-1/"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/logo.png"
+               alt="Dustinchu" />
+          <p class="site-author-name" itemprop="name">Dustinchu</p>
+          <p class="site-description motion-element" itemprop="description">There are no shortcuts to anyplace worth going.</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">41</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/profile.php?id=100000906403037" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#創建-Numpy-array-的方法"><span class="nav-number">1.</span> <span class="nav-text">創建 Numpy.array 的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#arange"><span class="nav-number">1.1.</span> <span class="nav-text">arange</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#linspace"><span class="nav-number">1.2.</span> <span class="nav-text">linspace</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random"><span class="nav-number">1.3.</span> <span class="nav-text">random</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Numpy-array-基本操作"><span class="nav-number">2.</span> <span class="nav-text">Numpy.array 基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#COPY"><span class="nav-number">2.0.1.</span> <span class="nav-text">COPY</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#合併操作"><span class="nav-number">3.</span> <span class="nav-text">合併操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分割"><span class="nav-number">3.1.</span> <span class="nav-text">分割</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hvsplit-水平方向分割"><span class="nav-number">3.1.1.</span> <span class="nav-text">hvsplit 水平方向分割</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Dustinchu</span>
+</div>
+
+
+<!--
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+-->
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+
+  <!-- 背景動畫 -->
+    <!-- <script type="text/javascript" src="/js/src/particle.js"></script> -->
+  <script type="text/javascript" color="18,169,236" opacity='0.7' zIndex="-2" count="150"src="/js/src/particle.js"></script>
+  <!-- <script type="text/javascript" color="18,169,236" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script> -->
+
+  <!-- 頁面小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+
+</body>
+</html>
