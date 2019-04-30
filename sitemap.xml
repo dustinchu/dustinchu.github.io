@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dustinchu.github.io/2016/09/03/taiwan/</loc>
+    
+    <lastmod>2019-04-30T14:02:02.812Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dustinchu.github.io/about/index.html</loc>
     
     <lastmod>2019-04-28T13:17:28.843Z</lastmod>
@@ -264,13 +271,6 @@
     <loc>https://dustinchu.github.io/2017/01/14/TextInputLayout/</loc>
     
     <lastmod>2017-09-14T14:44:04.860Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dustinchu.github.io/2016/09/03/taiwan/</loc>
-    
-    <lastmod>2017-09-14T14:44:02.314Z</lastmod>
     
   </url>
   
