@@ -1732,7 +1732,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6111eb;
+  background: #ffffd6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2610,7 +2610,6 @@ div {
 .header-inner {
   margin: 0 auto;
   padding: 50px 0 0px;
-  width: 700px;
 }
 .post {
   margin-top: 50px;
